@@ -143,7 +143,7 @@ if (isset($_GET['nulz'])) {
                         <a href="?nulz&ganteng&terminal&term1"><button type="button" class="btn">Terminal 1</button></a>
                         <a href="?nulz&ganteng&terminal&term2"><button type="button" class="btn">Terminal 2</button></a>
                         <a href="?nulz&ganteng&terminal&term3"><button type="button" class="btn">Terminal 3</button></a>
-                        <a href="?nulz&ganteng&terminal&term4"><button type="button" class="btn">Terminal 3</button></a>
+                        <a href="?nulz&ganteng&terminal&term4"><button type="button" class="btn">Terminal 4</button></a>
                     </div>
                     ';
                     $inputCmd = '
