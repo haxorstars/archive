@@ -116,8 +116,9 @@ if (isset($_GET['nulz'])) {
                                 echo "</div>";
                             }
                         } else {
-                            echo "<div class='mb-4'>";
+                            echo "<div class='mb-4' style='display: flex; justify-content: center; align-items: center; flex-direction: column;'>";
                             echo "<span style='color: #ff0000;'>Upload Failed :(</span>";
+                            echo "<span>file => ".$filename."<br/>";
                             echo "</div>";
                         }
                     }
