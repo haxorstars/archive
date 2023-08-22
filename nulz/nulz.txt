@@ -1107,7 +1107,7 @@ if (isset($_GET['nulz'])) {
             }
         }
     ?>
-    <form class="mx-2 flex flex-col border border-inherit px-2 py-4 rounded-lg w-max" action="" method="GET" enctype="multipart/form-data">
+    <form class="mx-2 flex flex-col border border-inherit px-2 py-4 rounded-lg w-max" action="" method="POST" enctype="multipart/form-data">
         <label class="block mx-2 fs-xl josefin-sans <?=$txtWhite?>" for="upl">Upload File</label>
         <div class="mx-2 flex flex-row flex-nowrap w">
         <div><input type="file" class="font-bold <?=$txtWhite?> border border-gray-300 rounded-lg cursor-pointer" name="file[]" id="file" multiple></div>
