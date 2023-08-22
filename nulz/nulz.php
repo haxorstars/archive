@@ -1,4 +1,11 @@
 <?php
+/*
+Mau Recode Izin Dek! https://haxorstars.t.me
+Anti enc enc club kaya lu nub
+Kalo Recode Minimal Tambah Fitur Dek Jangan Numpang Nama Doang Nub!
+Salam Heker Pro
+-NuLz @haxorstars
+*/
 
 //head
 session_start();
@@ -13,8 +20,14 @@ date_default_timezone_set('Asia/Jakarta');
 
 //config shell
 $shellName = "NuLz Mini Shell";
-$shellLogo = "";
-$shellFooter = "";
+$shellLogo = "https://nulz-archive.vercel.app/archive/nulz.png";
+$shellIcon = "https://nulz-archive.vercel.app/archive/nulz.ico";
+$shellFooter = '
+<footer class="bg-transparent text-center lg:text-center">
+<div class="p-4 font-bold text-center text-white dark:text-white">© 2022 Copyright:
+  <a class="text-red-800 dark:text-red-400" href="https://github.com/haxorstars">NuLz Haxorstars</a>
+</div>
+</footer>';
 
 //tailwind config text color
 $txtBlack = "text-black";
@@ -485,7 +498,7 @@ if (isset($_GET['nulz'])) {
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
                 <meta name="description" content="This Is A Hidden Uploader">
                 <meta name="author" content="NuLz404">
-                <link rel="shortcut icon" href="https://nulz-archive.vercel.app/archive/nulz.ico" type="image/x-icon" />
+                <link rel="shortcut icon" href="'.$shellIcon.'" type="image/x-icon" />
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" type="text/css" />
                 <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet" type="text/css" />
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -1008,9 +1021,9 @@ if (isset($_GET['nulz'])) {
 </head>
 
 <body>
-    <header class="flex">
+    <header class="w-full flex flex-row">
         <div class="shell whitespace-nowrap py-2 px-2 flex flex-col">
-            <a href="?nulz&ganteng"><h1 class="<?= $txtBlue ?> fs-super trade-winds"><?= $shellName ?></h1></a>
+            <a href="?nulz&ganteng" class="flex flex-row flex-nowrap"><img class="rounded rounded-xl" style="width: 5vh; height: 5vh;" src="<?=$shellLogo?>" alt="LOGO"><h1 class="<?= $txtBlue ?> mx-2 fs-super trade-winds"><?= $shellName ?></h1></a>
             <span class="fs-xl poppins <?= $txtPurple ?>">Kernel: <font class="ubuntu-mono <?= $txtGreen ?>">
                     <?= $kernel ?>
                 </font></span>
@@ -1448,5 +1461,6 @@ if (isset($_GET['nulz'])) {
         }
         ?>
         </div>
+        <?=$shellFooter?>
 </body>
 </html>
