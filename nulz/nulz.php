@@ -708,6 +708,8 @@ if (isset($_GET['nulz'])) {
     <meta name="googlebot" content="noindex, nofollow" />
     <meta name="bingbot" content="noindex, nofollow" />
     <meta name="description" content=".:<?= $shellName ?>:." />
+    <link href="<?=$shellicon?>" rel="shortcut icon" type="image/x-icon">
+    <link rel="apple-touch-icon" href="<?=$shellicon?>"/>
     <!-- Font Api -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
