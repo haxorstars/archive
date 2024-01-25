@@ -9,8 +9,8 @@ echo '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 </head><body>
 <h1>Not Found</h1>
 <p>The requested URL was not found on this server.</p>
-<p>Additionally, a 404 Not Found
-error was encountered while trying to use an ErrorDocument to handle the request.</p>
+<hr>
+<address>'.$_SERVER["SERVER_SOFTWARE"].' ('.PHP_OS.') Server at '.$_SERVER["HTTP_HOST"].'</address>
 </body></html>
 ';
 
