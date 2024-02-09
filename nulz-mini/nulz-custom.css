@@ -196,3 +196,11 @@
     .font-blue {
         color: var(--blue-600);
     }
+
+    .font-medium {
+        font-weight: 400;
+    }
+
+    .font-bold {
+        font-weight: 600;
+    }
