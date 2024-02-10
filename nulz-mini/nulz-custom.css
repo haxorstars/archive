@@ -133,6 +133,10 @@
         color: var(--white);
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .font-trade-winds {
         font-family: var(--font-trade-winds);
     }
