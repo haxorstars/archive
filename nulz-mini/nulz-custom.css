@@ -134,6 +134,10 @@
         color: var(--white);
     }
 
+    a {
+        text-decoration: none;
+    }
+
     a:hover {
         text-decoration: none;
     }
