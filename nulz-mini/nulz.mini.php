@@ -498,6 +498,7 @@ $path = str_replace("\\", "/", $path);
             <?php
                 $pa_t_hs = explode("/", $path);
                 echo '<span class="font-bold pwd"><i class="fa-duotone fa-folder-tree"></i>&nbsp;&nbsp;PWD: ';
+                echo '<a class="font-red" href="?path=/"><i class="fa-sharp fa-solid fa-slash-forward"></i></a>';
                 foreach ($pa_t_hs as $id => $pat) {
                     echo "<a class='path' href='?path=";
                     for ($i = 0; $i <= $id; $i++) {
@@ -1086,6 +1087,15 @@ $path = str_replace("\\", "/", $path);
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td><?='-'.'-'.'N'.'u'.'L'.'z'.'-'.'-'?></td>
+                            <td class="body-folder uk-text-nowrap"><a href="?path=<?=dirname($path)?>" class="dirpath font-white"><i class="fa-duotone fa-folders font-amber"></i>&nbsp;&nbsp;..</a></td>
+                            <td><?='-'.'-'.'N'.'u'.'L'.'z'.'-'.'-'?></td>
+                            <td><?='-'.'-'.'N'.'u'.'L'.'z'.'-'.'-'?></td>
+                            <td><?='-'.'-'.'N'.'u'.'L'.'z'.'-'.'-'?></td>
+                            <td><?='-'.'-'.'N'.'u'.'L'.'z'.'-'.'-'?></td>
+                            <td><?='-'.'-'.'N'.'u'.'L'.'z'.'-'.'-'?></td>
+                        </tr>
                         <?php
                         foreach ($scan as $dir) {
                             if (!is_dir("$path/$dir") || $dir == '.' || $dir == '..')
