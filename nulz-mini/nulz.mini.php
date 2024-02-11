@@ -1203,7 +1203,7 @@ $path = str_replace("\\", "/", $path);
                                     echo '<font class="font-sky">'.$f_group.'</font>';
                                 }
                             echo '</td>';
-                            echo '<td class="uk-text-nowrap"><a href="?path='.$path.'&permission='.$dir.'" class="body-permission">';
+                            echo '<td class="uk-text-nowrap"><a href="?path='.$path.'&permission='.$file.'" class="body-permission">';
                             $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
                             $is_r = 'is'.'_'.'re'.'ad'.'ab'.'le';
                                 if ($is_w("$path/$file"))
