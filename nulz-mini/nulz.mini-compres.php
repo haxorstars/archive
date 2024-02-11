@@ -178,7 +178,7 @@
                         </div>
                         <legend class="uk-legend font-bold font-protest-riot">Edit Files</legend>
                         <div class="uk-margin">
-                            <textarea class="uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" placeholder="NuLz Was Here!" aria-label="Textarea">'.$f_get($this_file).'</textarea>
+                            <textarea class="uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" placeholder="NuLz Was Here!" aria-label="Textarea">'.$hayoloh($f_get($this_file)).'</textarea>
                         </div>
                     </fieldset>
                 </form>
