@@ -236,6 +236,17 @@
         color: var(--white);
     }
 
+    .btn-cmd {
+        background: var(--gray-900);
+        border-radius: 5px;
+        transition: .3s;
+    }
+
+    .btn-cmd:hover {
+        background: var(--gray-700);
+        color: var(--white);
+    }
+
     .btn-new-folder {
         background: var(--amber-600);
         border-radius: 5px;
