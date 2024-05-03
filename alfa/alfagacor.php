@@ -2,8 +2,8 @@
 set_time_limit(0);
 ini_set('memory_limit', '-1');
 $GLOBALS['oZgNypoPRU'] = array(
-    'username' => 'Gh05tXp3rt',
-    'password' => '8f9be36b957da962465486f018de8bc8', //ubah password (md5) sesuai selera
+    'username' => 'haxorstars',
+    'password' => 'ff6d9718a96dd1c0ec471cc444adaf54', //ubah password (md5) sesuai selera
     'safe_mode' => '1',
     'login_page' => 'nulzganteng', //jangan diubah nanti error
     'show_icons' => '1',
