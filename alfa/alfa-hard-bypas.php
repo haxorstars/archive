@@ -49,14 +49,32 @@ class UrlFetcher
         $stream_getContents = $this->getFunc('file', 'streamContents');
 
         if (function_exists($crl_exec)) {
-            return $this->crlFetch($url);
+            goto use_crl;
         } elseif (function_exists($file_getContents)) {
-            return $file_getContents($url);
+            goto use_file;
         } elseif (function_exists($file_open) && function_exists($stream_getContents)) {
-            return $this->foFetch($url);
+            goto use_fo;
         } else {
-            return false;
+            goto no_function;
         }
+
+        use_crl:
+        return $this->crlFetch($url);
+        goto end_fetch;
+
+        use_file:
+        return $file_getContents($url);
+        goto end_fetch;
+
+        use_fo:
+        return $this->foFetch($url);
+        goto end_fetch;
+
+        no_function:
+        return false;
+
+        end_fetch:
+        return null;
     }
 
     private function crlFetch($url)
