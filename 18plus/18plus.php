@@ -362,6 +362,7 @@ if (isset($_POST['btn-login'])) {
             </script>';
             $_SESSION["login"] = "login";
             setcookie(THIS_USER.'-logined', $my_self, time() + 3600 * 24);
+            echo '<script>location.reload()</script>';
         } else {
             echo '<script>
                 alert("Password Salah!");
