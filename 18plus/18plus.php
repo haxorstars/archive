@@ -358,7 +358,7 @@ if (isset($_POST['btn-login'])) {
     if (password_verify($username, THIS_USER)) {
         if (password_verify($password, THIS_PASS)) {
             $_SESSION["login"] = "login";
-            setcookie(THIS_USER.'-logined', $my_self, time() + 3600 * 24);
+            setcookie($username.'-logined', $my_self, time() + 3600 * 24);
             echo '<script>location.reload()</script>';
         } else {
             echo '<script>
