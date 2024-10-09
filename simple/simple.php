@@ -4,7 +4,6 @@ Anti enc enc club kaya lu nub
 Kalo Recode Minimal Tambah Fitur Dek Jangan Numpang Nama Doang Nub!
 Salam Heker Pro
 -NuLz @haxorstars
-SHELL INI DIBUAT KHUSUS BUAT HACKER YANG SANGEAN YA GES YA, BIAR BISA NGEHACK SAMBIL COLI
 */
 session_start();
 set_time_limit(0);
