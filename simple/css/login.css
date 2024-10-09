@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('<?= $simage ?>') no-repeat center center;
+    background: url('https://raw.githubusercontent.com/haxorstars/archive/main/media/scleton.gif') no-repeat center center;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
